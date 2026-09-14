@@ -263,3 +263,62 @@
     overflow-wrap: anywhere;
   }
 }
+/* Larger phone typography. */
+@media (max-width: 700px) {
+  .data-status { font-size: 10px; }
+  h1 { font-size: 35px; }
+  .period-row strong { font-size: 18px; }
+  .period-row span { font-size: 11px; }
+  .weekly-totals span { font-size: 10px; }
+  .weekly-totals strong { font-size: 20px; }
+  .mobile-jump-nav a { font-size: 12px; }
+
+  .section-heading h2 { font-size: 23px; }
+  .section-heading > b { font-size: 13px; }
+  .section-subtitle h3 { font-size: 18px; }
+  .section-subtitle span { font-size: 13px; }
+  .method-note, .decision-note { font-size: 10px; }
+
+  .responsive-table td { font-size: 12px; }
+  .responsive-table td::before { font-size: 9px; }
+  .responsive-table td:first-child { font-size: 15px; }
+  .company-full-name { font-size: 10px; }
+  .sponsor-cell { font-size: 10px !important; }
+  .industry-tag { font-size: 10px; }
+
+  .money-card span, .metric-card span, .ranking-card > span { font-size: 11px; }
+  .money-card strong, .metric-card strong { font-size: 23px; }
+  .money-card small, .metric-card small { font-size: 9px; }
+  .ranking-card li { font-size: 10px; }
+  .ranking-card li > span b { font-size: 11px; }
+
+  .donut strong { font-size: 25px; }
+  .donut span { font-size: 9px; }
+  .donut small { font-size: 8px; }
+  .donut-legend span { font-size: 10px; }
+  .donut-legend strong { font-size: 15px; }
+  .event-card h3 { font-size: 14px; }
+  .event-tag b { font-size: 12px; }
+  .event-tag small { font-size: 10px; }
+
+  .csrc-summary span { font-size: 10px; }
+  .csrc-summary strong { font-size: 23px; }
+  .card-heading h3 { font-size: 16px; }
+  .card-heading span { font-size: 10px; }
+  .status-row { font-size: 11px; }
+  .received-item strong { font-size: 11px; }
+  .received-item > div, .received-item span { font-size: 9px; }
+
+  .window-banner span { font-size: 9px; }
+  .window-banner strong { font-size: 14px; }
+  .window-banner em { font-size: 9px; }
+  .decision-card h3 { font-size: 13px; }
+  .signal { font-size: 9px; }
+  .decision-primary { font-size: 21px; }
+  .decision-lines div { font-size: 9px; }
+  .decision-lines b { font-size: 11px; }
+  .valuation-date { font-size: 8px; }
+
+  .site-footer strong { font-size: 11px; }
+  .site-footer p { font-size: 9px; }
+}
