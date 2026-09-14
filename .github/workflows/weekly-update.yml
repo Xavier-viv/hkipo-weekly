@@ -13,19 +13,14 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  update-and-deploy:
+  update:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -66,11 +61,4 @@ jobs:
             git commit -m "Update IPO weekly report ${REPORT_DATE}"
             git push
           fi
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: .
-      - name: Deploy GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
 
