@@ -1,0 +1,76 @@
+name: Update weekly IPO report
+
+on:
+  workflow_dispatch:
+    inputs:
+      as_of:
+        description: "Optional Friday cutoff, YYYY-MM-DD"
+        required: false
+        type: string
+  schedule:
+    # Saturday 10:30 Beijing time. Covers the preceding Saturday-Friday week.
+    - cron: "30 2 * * 6"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install runtime and CJK fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          python -m pip install -r requirements.txt
+      - name: Fetch and validate primary-source data
+        shell: bash
+        run: |
+          if [ -n "${{ inputs.as_of }}" ]; then
+            python scripts/fetch_data.py --as-of "${{ inputs.as_of }}"
+          else
+            python scripts/fetch_data.py
+          fi
+      - name: Generate poster with this site's QR code
+        shell: bash
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          if [ "$REPO_NAME" = "${GITHUB_REPOSITORY_OWNER}.github.io" ]; then
+            SITE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/"
+          else
+            SITE_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/${REPO_NAME}/"
+          fi
+          python scripts/generate_poster.py --site-url "$SITE_URL"
+      - name: Commit refreshed data and poster
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/report.json data/history poster.png
+          if ! git diff --cached --quiet; then
+            REPORT_DATE=$(python -c "import json; print(json.load(open('data/report.json', encoding='utf-8'))['meta']['asOf'])")
+            git commit -m "Update IPO weekly report ${REPORT_DATE}"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

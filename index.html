@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="基于港交所和中国证监会一手公开数据生成的港股 IPO 审核动态周报。">
+  <title>港股市场审核动态周报</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-rings" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="eyebrow">HONG KONG IPO MARKET</div>
+      <div class="hero-grid">
+        <div>
+          <p class="market-name">港股市场</p>
+          <h1>审核动态周报</h1>
+          <div class="period-row">
+            <strong id="report-period">加载中</strong>
+            <span id="as-of">正在读取官方数据</span>
+          </div>
+        </div>
+        <aside class="qr-card">
+          <div id="site-qr" class="qr-box" aria-label="本站二维码"></div>
+          <strong>扫描打开本站</strong>
+          <small id="qr-note">二维码仅指向当前网站</small>
+        </aside>
+      </div>
+      <div class="hero-footer">
+        <div class="weekly-totals" id="weekly-totals"></div>
+        <div class="hero-actions">
+          <button id="download-poster" class="primary-button" type="button">下载本周长图</button>
+          <a class="secondary-button" href="#sources">查看严格数据来源</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="report-shell">
+    <section class="report-section" id="issuance">
+      <div class="section-heading">
+        <b>01</b>
+        <div><h2>发行上市情况</h2><p>发行价、募资额及股价均来自港交所官方文件</p></div>
+      </div>
+      <div class="section-subtitle"><h3>本周新上市</h3><span id="weekly-listing-count"></span></div>
+      <div class="table-card">
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>公司</th><th>上市日</th><th>发行价</th><th>募资额</th><th>首日收市</th><th>首日涨跌</th><th>保荐人</th></tr></thead>
+            <tbody id="weekly-listings"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="annual-grid">
+        <article class="money-card"><span>年内累计募资</span><strong id="annual-funds">—</strong><small>港交所 New Listing Report 汇总</small></article>
+        <article class="metric-card"><span>年内 IPO / 介绍上市</span><strong id="annual-count">—</strong><small>不含 GEM 转主板</small></article>
+        <article class="metric-card"><span>可计算最新表现</span><strong id="return-universe">—</strong><small id="market-date">按最近交易日收市价</small></article>
+        <article class="ranking-card"><span>年内涨幅前五</span><ol id="top-performers"></ol></article>
+      </div>
+    </section>
+
+    <section class="report-section" id="pipeline">
+      <div class="section-heading">
+        <b>02</b>
+        <div><h2>联交所审核动态</h2><p>有效申请和文件事件直接读取 HKEX 官方 JSON</p></div>
+      </div>
+      <div class="pipeline-grid">
+        <article class="donut-card">
+          <div class="donut" id="pipeline-donut"><div><strong id="active-total">—</strong><span>有效申请</span></div></div>
+          <div class="donut-legend">
+            <div><i class="main-dot"></i><span>主板</span><strong id="main-count">—</strong></div>
+            <div><i class="gem-dot"></i><span>GEM</span><strong id="gem-count">—</strong></div>
+          </div>
+        </article>
+        <div class="event-stack">
+          <article class="event-card"><strong id="phip-count">—</strong><div><h3>本周聆讯后资料集</h3><div id="phip-list" class="tag-list"></div></div></article>
+          <article class="event-card"><strong id="a1-count">—</strong><div><h3>本周申请版本（第一次呈交）</h3><div id="a1-list" class="tag-list"></div></div></article>
+        </div>
+      </div>
+      <p class="method-note">“申请版本（第一次呈交）”采用港交所文件名称，可能包括同一申请人的重新递交，不等同于企业历史上首次赴港递表。</p>
+    </section>
+
+    <section class="report-section" id="csrc">
+      <div class="section-heading">
+        <b>03</b>
+        <div><h2>中国证监会备案进度</h2><p>直接读取最新《境内企业境外发行证券和上市备案情况表》</p></div>
+      </div>
+      <div class="csrc-summary">
+        <article><span>在表项目</span><strong id="csrc-total">—</strong></article>
+        <article><span>已接收</span><strong id="csrc-accepted">—</strong></article>
+        <article><span>征求意见</span><strong id="csrc-consulting">—</strong></article>
+        <article><span>补充材料</span><strong id="csrc-supplement">—</strong></article>
+      </div>
+      <div class="csrc-grid">
+        <article class="status-card">
+          <div class="card-heading"><h3>当前备案状态分布</h3><span>官方表时点数据</span></div>
+          <div id="status-bars" class="status-bars"></div>
+        </article>
+        <article class="received-card">
+          <div class="card-heading"><h3>本周新增接收</h3><span id="received-count"></span></div>
+          <div id="received-list" class="received-list"></div>
+        </article>
+      </div>
+      <p class="method-note">本模块严格按证监会官方表中的“备案状态”和“接收日期”展示，不把材料接收、征求意见或补充材料误称为完成备案。</p>
+    </section>
+
+    <section class="sources-section" id="sources">
+      <div class="section-heading compact">
+        <b>04</b>
+        <div><h2>数据来源与校验</h2><p>每个指标均保留来源地址和截止日期</p></div>
+      </div>
+      <div id="source-list" class="source-list"></div>
+      <div class="source-policy"><strong>数据政策</strong><p>抓取任一关键官方来源失败、字段无法解析或合计不能勾稽时，自动任务直接失败并保留上期数据，不生成看似完整的新周报。</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>港股市场审核动态周报</strong><span>VIVAIA THEME</span></div>
+    <p>仅供信息参考，不构成投资建议。所有数字以所列截止日官方公开资料为准。</p>
+  </footer>
+
+  <div class="poster-modal" id="poster-modal" hidden>
+    <div class="poster-dialog">
+      <button type="button" id="close-poster" aria-label="关闭">×</button>
+      <canvas id="poster-canvas" width="1080" height="3400"></canvas>
+      <div class="poster-actions"><button id="save-poster" class="primary-button" type="button">保存 PNG</button></div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/qrcode.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
+

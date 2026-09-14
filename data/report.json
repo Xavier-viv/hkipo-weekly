@@ -1,0 +1,2862 @@
+{
+  "meta": {
+    "title": "港股市场审核动态周报",
+    "asOf": "2026-09-11",
+    "weekStart": "2026-09-05",
+    "weekEnd": "2026-09-11",
+    "marketDataAsOf": "2026-09-11",
+    "generatedAt": "2026-09-14T11:51:29+08:00",
+    "sourcePolicy": "primary-only",
+    "theme": "VIVAIA"
+  },
+  "issuance": {
+    "annual": {
+      "count": 107,
+      "fundraisingHkd100m": 3664.759275,
+      "returnUniverse": 102,
+      "averageLatestReturn": 0.4096194919444461,
+      "medianLatestReturn": 0.013781664237629276,
+      "topPerformers": [
+        {
+          "code": "2797.HK",
+          "stockCode": "2797",
+          "name": "Jiangxi Qiyunshan Food Co., Ltd. - H Shares",
+          "prospectusDate": "2026-06-30",
+          "listedOn": "2026-07-09",
+          "sponsors": "Zhongtai International Capital Limited",
+          "fundraisingHkd100m": 2.0,
+          "offerPrice": 8.0,
+          "latestClose": 85.5,
+          "latestReturn": 9.6875
+        },
+        {
+          "code": "2723.HK",
+          "stockCode": "2723",
+          "name": "Beijing DeepZero Technology Co., Ltd. - H Shares",
+          "prospectusDate": "2026-05-18",
+          "listedOn": "2026-05-27",
+          "sponsors": "ICBC International Capital Limited",
+          "fundraisingHkd100m": 5.03274,
+          "offerPrice": 55.5,
+          "latestClose": 568.0,
+          "latestReturn": 9.234234234234235
+        },
+        {
+          "code": "2526.HK",
+          "stockCode": "2526",
+          "name": "Hangzhou Diagens Biotechnology Co., Ltd. - B - H Shares",
+          "prospectusDate": "2026-03-20",
+          "listedOn": "2026-03-30",
+          "sponsors": "Huatai Financial Holdings (Hong Kong) Limited",
+          "fundraisingHkd100m": 7.919208,
+          "offerPrice": 99.0,
+          "latestClose": 474.6,
+          "latestReturn": 3.793939393939394
+        },
+        {
+          "code": "6658.HK",
+          "stockCode": "6658",
+          "name": "Liuliumei Co., Ltd. - H Shares",
+          "prospectusDate": "2026-06-05",
+          "listedOn": "2026-06-15",
+          "sponsors": "CITIC Securities (Hong Kong) Limited / Guoyuan Capital (Hong Kong) Limited",
+          "fundraisingHkd100m": 4.996055,
+          "offerPrice": 43.58,
+          "latestClose": 166.6,
+          "latestReturn": 2.822854520422212
+        },
+        {
+          "code": "3231.HK",
+          "stockCode": "3231",
+          "name": "Excelland Robotics (Wuxi) Co. Ltd. - H Shares",
+          "prospectusDate": "2026-08-31",
+          "listedOn": "2026-09-09",
+          "sponsors": "Silver Nile Global Investments Limited",
+          "fundraisingHkd100m": 6.5025,
+          "offerPrice": 14.45,
+          "latestClose": 41.66,
+          "latestReturn": 1.8830449826989617
+        }
+      ],
+      "officialReportLabel": "Year 2026 (up to 9 September 2026) "
+    },
+    "weekly": {
+      "count": 3,
+      "fundraisingHkd100m": 83.277617,
+      "companies": [
+        {
+          "code": "3231.HK",
+          "stockCode": "3231",
+          "name": "Excelland Robotics (Wuxi) Co. Ltd. - H Shares",
+          "prospectusDate": "2026-08-31",
+          "listedOn": "2026-09-09",
+          "sponsors": "Silver Nile Global Investments Limited",
+          "fundraisingHkd100m": 6.5025,
+          "offerPrice": 14.45,
+          "firstDayClose": 36.68,
+          "firstDayReturn": 1.5384083044982702,
+          "firstDayTurnoverHkd": 227391005,
+          "latestClose": 41.66
+        },
+        {
+          "code": "9976.HK",
+          "stockCode": "9976",
+          "name": "Shenzhen Longsys Electronics Co., Ltd. - H Shares",
+          "prospectusDate": "2026-08-31",
+          "listedOn": "2026-09-08",
+          "sponsors": "CITIC Securities (Hong Kong) Limited / Citigroup Global Markets Asia Limited",
+          "fundraisingHkd100m": 70.775102,
+          "offerPrice": 236.0,
+          "firstDayClose": 233.6,
+          "firstDayReturn": -0.01016949152542379,
+          "firstDayTurnoverHkd": 1728374642,
+          "latestClose": 206.2
+        },
+        {
+          "code": "2041.HK",
+          "stockCode": "2041",
+          "name": "Medcaptain Medical Technology Co., Ltd. - H Shares",
+          "prospectusDate": "2026-08-28",
+          "listedOn": "2026-09-07",
+          "sponsors": "Morgan Stanley Asia Limited / Huatai Financial Holdings (Hong Kong) Limited",
+          "fundraisingHkd100m": 6.000015,
+          "offerPrice": 15.42,
+          "firstDayClose": 8.8,
+          "firstDayReturn": -0.42931258106355374,
+          "firstDayTurnoverHkd": 128712127,
+          "latestClose": 8.78
+        }
+      ]
+    },
+    "listings": [
+      {
+        "code": "6082.HK",
+        "stockCode": "6082",
+        "name": "Shanghai Biren Technology Co., Ltd.- H shares",
+        "prospectusDate": "2025-12-22",
+        "listedOn": "2026-01-02",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Ping An of China Capital (Hong Kong) Company Limited / BOCI Asia Limited",
+        "fundraisingHkd100m": 64.204386,
+        "offerPrice": 19.6,
+        "latestClose": 35.46,
+        "latestReturn": 0.8091836734693876
+      },
+      {
+        "code": "2513.HK",
+        "stockCode": "2513",
+        "name": "Knowledge Atlas Technology Joint Stock Company Limited - H shares",
+        "prospectusDate": "2025-12-30",
+        "listedOn": "2026-01-08",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 50.003649,
+        "offerPrice": 116.2
+      },
+      {
+        "code": "9903.HK",
+        "stockCode": "9903",
+        "name": "Shanghai Iluvatar CoreX Semiconductor Co., Ltd. - H shares",
+        "prospectusDate": "2025-12-30",
+        "listedOn": "2026-01-08",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 36.774383,
+        "offerPrice": 144.6,
+        "latestClose": 311.6,
+        "latestReturn": 1.1549100968188108
+      },
+      {
+        "code": "2675.HK",
+        "stockCode": "2675",
+        "name": "Shenzhen Edge Medical Co., Ltd.- B - H shares",
+        "prospectusDate": "2025-12-30",
+        "listedOn": "2026-01-08",
+        "sponsors": "Morgan Stanley Asia Limited / GF Capital (Hong Kong) Limited",
+        "fundraisingHkd100m": 13.785128,
+        "offerPrice": 43.24,
+        "latestClose": 37.0,
+        "latestReturn": -0.14431082331174838
+      },
+      {
+        "code": "0100.HK",
+        "stockCode": "0100",
+        "name": "MiniMax Group Inc. - W - P",
+        "prospectusDate": "2025-12-31",
+        "listedOn": "2026-01-09",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited/ UBS Securities Hong Kong Limited",
+        "fundraisingHkd100m": 55.402446,
+        "offerPrice": 165.0
+      },
+      {
+        "code": "6938.HK",
+        "stockCode": "6938",
+        "name": "Suzhou Ribo Life Science Co., Ltd. - B - H shares",
+        "prospectusDate": "2025-12-31",
+        "listedOn": "2026-01-09",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Citigroup Global Markets Asia Limited",
+        "fundraisingHkd100m": 21.073138,
+        "offerPrice": 57.97,
+        "latestClose": 54.15,
+        "latestReturn": -0.06589615318268072
+      },
+      {
+        "code": "3636.HK",
+        "stockCode": "3636",
+        "name": "Yunnan Jinxun Resources Co., Ltd. - H shares",
+        "prospectusDate": "2025-12-31",
+        "listedOn": "2026-01-09",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 12.68412,
+        "offerPrice": 30.0,
+        "latestClose": 16.56,
+        "latestReturn": -0.44800000000000006
+      },
+      {
+        "code": "0501.HK",
+        "stockCode": "0501",
+        "name": "OmniVision Integrated Circuits Group, Inc. - H shares",
+        "prospectusDate": "2025-12-31",
+        "listedOn": "2026-01-12",
+        "sponsors": "UBS Securities Hong Kong Limited / China International Capital Corporation Hong Kong Securities Limited / Ping An of China Capital (Hong Kong) Company Limited / GF Capital (Hong Kong) Limited",
+        "fundraisingHkd100m": 53.176673,
+        "offerPrice": 104.8,
+        "latestClose": 69.0,
+        "latestReturn": -0.34160305343511443
+      },
+      {
+        "code": "3986.HK",
+        "stockCode": "3986",
+        "name": "GigaDevice Semiconductor Inc. - H shares",
+        "prospectusDate": "2025-12-31",
+        "listedOn": "2026-01-13",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 53.870022,
+        "offerPrice": 162.0,
+        "latestClose": 452.2,
+        "latestReturn": 1.791358024691358
+      },
+      {
+        "code": "1641.HK",
+        "stockCode": "1641",
+        "name": "Hongxing Coldchain (Hunan) Co., Ltd.- H shares",
+        "prospectusDate": "2025-12-31",
+        "listedOn": "2026-01-13",
+        "sponsors": "CCB International Capital Limited / ABCI Capital Limited",
+        "fundraisingHkd100m": 2.852044,
+        "offerPrice": 12.26,
+        "latestClose": 3.77,
+        "latestReturn": -0.6924959216965743
+      },
+      {
+        "code": "9611.HK",
+        "stockCode": "9611",
+        "name": "Shanghai Longcheer Technology Co., Ltd.- H shares",
+        "prospectusDate": "2026-01-14",
+        "listedOn": "2026-01-22",
+        "sponsors": "Citigroup Global Markets Asia Limited / Haitong International Capital Limited / Guotai Junan Capital Limited",
+        "fundraisingHkd100m": 16.200321,
+        "offerPrice": 31.0,
+        "latestClose": 20.58,
+        "latestReturn": -0.33612903225806456
+      },
+      {
+        "code": "1768.HK",
+        "stockCode": "1768",
+        "name": "BUSY MING GROUP CO., LTD.- H shares",
+        "prospectusDate": "2026-01-20",
+        "listedOn": "2026-01-28",
+        "sponsors": "Goldman Sachs (Asia) L.L.C / Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 42.204235,
+        "offerPrice": 236.6,
+        "latestClose": 363.4,
+        "latestReturn": 0.5359256128486898
+      },
+      {
+        "code": "9980.HK",
+        "stockCode": "9980",
+        "name": "Eastroc Beverage (Group) Co., Ltd. - H shares",
+        "prospectusDate": "2026-01-26",
+        "listedOn": "2026-02-03",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited / Morgan Stanley Asia Limited / UBS Securities Hong Kong Limited",
+        "fundraisingHkd100m": 110.994136,
+        "offerPrice": 248.0,
+        "latestClose": 101.2,
+        "latestReturn": -0.5919354838709677
+      },
+      {
+        "code": "2768.HK",
+        "stockCode": "2768",
+        "name": "Qingdao Gon Technology Co., Ltd. - H shares",
+        "prospectusDate": "2026-01-27",
+        "listedOn": "2026-02-04",
+        "sponsors": "China Merchants Securities (HK) Co., Limited",
+        "fundraisingHkd100m": 10.8,
+        "offerPrice": 36.0,
+        "latestClose": 36.64,
+        "latestReturn": 0.017777777777777892
+      },
+      {
+        "code": "2677.HK",
+        "stockCode": "2677",
+        "name": "Distinct Healthcare Holdings Limited",
+        "prospectusDate": "2026-01-29",
+        "listedOn": "2026-02-06",
+        "sponsors": "Haitong International Capital Limited / SPDB International Capital Limited",
+        "fundraisingHkd100m": 2.962714,
+        "offerPrice": 59.9,
+        "latestClose": 23.4,
+        "latestReturn": -0.6093489148580968
+      },
+      {
+        "code": "2714.HK",
+        "stockCode": "2714",
+        "name": "Muyuan Foods Co., Ltd. - H shares",
+        "prospectusDate": "2026-01-29",
+        "listedOn": "2026-02-06",
+        "sponsors": "Morgan Stanley Asia Limited / CITIC Securities (Hong Kong) Limited / Goldman Sachs (Asia) L.L.C.",
+        "fundraisingHkd100m": 120.987009,
+        "offerPrice": 39.0,
+        "latestClose": 38.08,
+        "latestReturn": -0.02358974358974364
+      },
+      {
+        "code": "3200.HK",
+        "stockCode": "3200",
+        "name": "Shenzhen Han’s CNC Technology Co., Ltd. - H shares",
+        "prospectusDate": "2026-01-29",
+        "listedOn": "2026-02-06",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 55.582681,
+        "offerPrice": 95.8,
+        "latestClose": 103.6,
+        "latestReturn": 0.08141962421711901
+      },
+      {
+        "code": "6809.HK",
+        "stockCode": "6809",
+        "name": "Montage Technology Co., Ltd. - H shares",
+        "prospectusDate": "2026-01-30",
+        "listedOn": "2026-02-09",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Morgan Stanley Asia Limited / UBS Securities Hong Kong Limited",
+        "fundraisingHkd100m": 80.994294,
+        "offerPrice": 106.89,
+        "latestClose": 258.0,
+        "latestReturn": 1.4136963233230424
+      },
+      {
+        "code": "0600.HK",
+        "stockCode": "0600",
+        "name": "Axera Semiconductor Co., Ltd. - H shares",
+        "prospectusDate": "2026-01-30",
+        "listedOn": "2026-02-10",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Guotai Junan Capital Limited / BOCOM International (Asia) Limited",
+        "fundraisingHkd100m": 29.917747,
+        "offerPrice": 28.2,
+        "latestClose": 17.98,
+        "latestReturn": -0.3624113475177305
+      },
+      {
+        "code": "2720.HK",
+        "stockCode": "2720",
+        "name": "Ridge Outdoor International Limited",
+        "prospectusDate": "2026-01-30",
+        "listedOn": "2026-02-10",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 3.455112,
+        "offerPrice": 12.25,
+        "latestClose": 27.78,
+        "latestReturn": 1.2677551020408164
+      },
+      {
+        "code": "0470.HK",
+        "stockCode": "0470",
+        "name": "WUXI LEAD INTELLIGENT EQUIPMENT CO., LTD. - H shares",
+        "prospectusDate": "2026-02-03",
+        "listedOn": "2026-02-11",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / J.P. Morgan Securities (Far East) Limited",
+        "fundraisingHkd100m": 49.490747,
+        "offerPrice": 45.8,
+        "latestClose": 26.48,
+        "latestReturn": -0.42183406113537114
+      },
+      {
+        "code": "2706.HK",
+        "stockCode": "2706",
+        "name": "Beijing Haizhi Technology Group Co., Ltd. - H Shares",
+        "prospectusDate": "2026-02-05",
+        "listedOn": "2026-02-13",
+        "sponsors": "CMB International Capital Limited / BOCI Asia Limited / Shenwan Hongyuan Capital (H.K.) Limited",
+        "fundraisingHkd100m": 7.584972,
+        "offerPrice": 27.06,
+        "latestClose": 41.68,
+        "latestReturn": 0.5402808573540281
+      },
+      {
+        "code": "9981.HK",
+        "stockCode": "9981",
+        "name": "Shenzhen Woer Heat-Shrinkable Material Co., Ltd. - H Shares",
+        "prospectusDate": "2026-02-05",
+        "listedOn": "2026-02-13",
+        "sponsors": "China Securities (International) Corporate Finance Company Limited / China Merchants Securities (HK) Co., Limited",
+        "fundraisingHkd100m": 28.12375,
+        "offerPrice": 20.09,
+        "latestClose": 10.1,
+        "latestReturn": -0.4972623195619711
+      },
+      {
+        "code": "2649.HK",
+        "stockCode": "2649",
+        "name": "ALSCO Pooling Service Co., Ltd. - H Shares",
+        "prospectusDate": "2026-02-27",
+        "listedOn": "2026-03-09",
+        "sponsors": "China Securities (International) Corporate Finance Company Limited",
+        "fundraisingHkd100m": 2.23696,
+        "offerPrice": 11.0
+      },
+      {
+        "code": "2715.HK",
+        "stockCode": "2715",
+        "name": "ESTUN AUTOMATION CO., LTD - H Shares",
+        "prospectusDate": "2026-02-27",
+        "listedOn": "2026-03-09",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 14.865408,
+        "offerPrice": 15.36,
+        "latestClose": 14.46,
+        "latestReturn": -0.05859374999999989
+      },
+      {
+        "code": "2692.HK",
+        "stockCode": "2692",
+        "name": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd. - H Shares",
+        "prospectusDate": "2026-02-27",
+        "listedOn": "2026-03-09",
+        "sponsors": "China Merchants Securities (HK) Co., Limited / Deutsche Securities Asia Limited",
+        "fundraisingHkd100m": 19.066188,
+        "offerPrice": 71.28,
+        "latestClose": 37.46,
+        "latestReturn": -0.4744668911335578
+      },
+      {
+        "code": "3268.HK",
+        "stockCode": "3268",
+        "name": "MeiG Smart Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-02-27",
+        "listedOn": "2026-03-10",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Ltd.",
+        "fundraisingHkd100m": 11.61615,
+        "offerPrice": 28.86,
+        "latestClose": 19.41,
+        "latestReturn": -0.3274428274428274
+      },
+      {
+        "code": "7489.HK",
+        "stockCode": "7489",
+        "name": "VOYAH Automotive Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-02-12",
+        "listedOn": "2026-03-19",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 0.0,
+        "offerPrice": 0.0
+      },
+      {
+        "code": "1989.HK",
+        "stockCode": "1989",
+        "name": "Delton Technology (Guangzhou) Inc. - H Shares",
+        "prospectusDate": "2026-03-12",
+        "listedOn": "2026-03-20",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / HSBC Corporate Finance (Hong Kong) Limited",
+        "fundraisingHkd100m": 33.0648,
+        "offerPrice": 71.88,
+        "latestClose": 124.8,
+        "latestReturn": 0.7362270450751254
+      },
+      {
+        "code": "2701.HK",
+        "stockCode": "2701",
+        "name": "Nsing Technologies Inc. - H Shares",
+        "prospectusDate": "2026-03-13",
+        "listedOn": "2026-03-23",
+        "sponsors": "CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 10.26,
+        "offerPrice": 10.8,
+        "latestClose": 8.105,
+        "latestReturn": -0.249537037037037
+      },
+      {
+        "code": "3355.HK",
+        "stockCode": "3355",
+        "name": "FS.COM Ltd. - H Shares",
+        "prospectusDate": "2026-03-13",
+        "listedOn": "2026-03-23",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / China Securities (International) Corporate Finance Company Limited / China Merchants Securities (HK) Co., Limited",
+        "fundraisingHkd100m": 19.001091,
+        "offerPrice": 41.6,
+        "latestClose": 39.0,
+        "latestReturn": -0.0625
+      },
+      {
+        "code": "2632.HK",
+        "stockCode": "2632",
+        "name": "Jiangsu New Vision Automotive Electronics Co., Ltd. - H Shares",
+        "prospectusDate": "2026-03-16",
+        "listedOn": "2026-03-24",
+        "sponsors": "Haitong International Capital Limited. / CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 7.172113,
+        "offerPrice": 44.2,
+        "latestClose": 61.65,
+        "latestReturn": 0.39479638009049767
+      },
+      {
+        "code": "2729.HK",
+        "stockCode": "2729",
+        "name": "Zhejiang Galaxis Technology Group Co., Ltd. - H Shares",
+        "prospectusDate": "2026-03-16",
+        "listedOn": "2026-03-24",
+        "sponsors": "Guotai Junan Capital Limited / CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 6.130547,
+        "offerPrice": 16.66,
+        "latestClose": 42.42,
+        "latestReturn": 1.5462184873949583
+      },
+      {
+        "code": "1021.HK",
+        "stockCode": "1021",
+        "name": "Guangdong Huayan Robotics Co., Ltd. - H Shares",
+        "prospectusDate": "2026-03-20",
+        "listedOn": "2026-03-30",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Deutsche Securities Asia Limited",
+        "fundraisingHkd100m": 18.083172,
+        "offerPrice": 17.0,
+        "latestClose": 11.89,
+        "latestReturn": -0.3005882352941176
+      },
+      {
+        "code": "2526.HK",
+        "stockCode": "2526",
+        "name": "Hangzhou Diagens Biotechnology Co., Ltd. - B - H Shares",
+        "prospectusDate": "2026-03-20",
+        "listedOn": "2026-03-30",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 7.919208,
+        "offerPrice": 99.0,
+        "latestClose": 474.6,
+        "latestReturn": 3.793939393939394
+      },
+      {
+        "code": "2726.HK",
+        "stockCode": "2726",
+        "name": "Epiworld International Co., Ltd. - H Shares",
+        "prospectusDate": "2026-03-20",
+        "listedOn": "2026-03-30",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 16.389837,
+        "offerPrice": 76.26,
+        "latestClose": 104.8,
+        "latestReturn": 0.37424600052452117
+      },
+      {
+        "code": "6636.HK",
+        "stockCode": "6636",
+        "name": "Shandong Extreme Vision Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-03-20",
+        "listedOn": "2026-03-30",
+        "sponsors": "CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 4.992,
+        "offerPrice": 40.0,
+        "latestClose": 77.0,
+        "latestReturn": 0.925
+      },
+      {
+        "code": "0664.HK",
+        "stockCode": "0664",
+        "name": "Hangzhou Tongshifu Cultural and Creative (Group) Co., Ltd. - H Shares",
+        "prospectusDate": "2026-03-23",
+        "listedOn": "2026-03-31",
+        "sponsors": "CMB International Capital Limited",
+        "fundraisingHkd100m": 4.44408,
+        "offerPrice": 60.0,
+        "latestClose": 12.5,
+        "latestReturn": -0.7916666666666666
+      },
+      {
+        "code": "3625.HK",
+        "stockCode": "3625",
+        "name": "Shanghai FourSemi Semiconductor Co., Ltd. - H Shares",
+        "prospectusDate": "2026-03-23",
+        "listedOn": "2026-03-31",
+        "sponsors": "Guotai Junan Capital Limited / Orient Capital (Hong Kong) Limited",
+        "fundraisingHkd100m": 4.8,
+        "offerPrice": 40.0,
+        "latestClose": 66.35,
+        "latestReturn": 0.65875
+      },
+      {
+        "code": "6656.HK",
+        "stockCode": "6656",
+        "name": "Sigenergy Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-04-08",
+        "listedOn": "2026-04-16",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / BNP Paribas Securities (Asia) Limited",
+        "fundraisingHkd100m": 50.607296,
+        "offerPrice": 324.2,
+        "latestClose": 310.2,
+        "latestReturn": -0.043183220234423225
+      },
+      {
+        "code": "3277.HK",
+        "stockCode": "3277",
+        "name": "Gpixel Changchun Microelectronics Inc. - H Shares",
+        "prospectusDate": "2026-04-09",
+        "listedOn": "2026-04-17",
+        "sponsors": "CITIC Securities (Hong Kong) Limited/ Guotai Junan Capital Limited",
+        "fundraisingHkd100m": 29.945214,
+        "offerPrice": 39.88,
+        "latestClose": 81.2,
+        "latestReturn": 1.0361083249749248
+      },
+      {
+        "code": "0068.HK",
+        "stockCode": "0068",
+        "name": "Manycore Tech Inc.",
+        "prospectusDate": "2026-04-09",
+        "listedOn": "2026-04-17",
+        "sponsors": "J.P. Morgan Securities (Far East) Limited/ CCB International Capital Limited",
+        "fundraisingHkd100m": 14.075016,
+        "offerPrice": 7.62,
+        "latestClose": 9.095,
+        "latestReturn": 0.19356955380577445
+      },
+      {
+        "code": "2476.HK",
+        "stockCode": "2476",
+        "name": "Victory Giant Technology (HuiZhou) Co., Ltd. - H Shares",
+        "prospectusDate": "2026-04-13",
+        "listedOn": "2026-04-21",
+        "sponsors": "J.P. Morgan Securities (Far East) Limited / China Securities (International) Corporate Finance Company Limited / GF Capital (Hong Kong) Limited",
+        "fundraisingHkd100m": 231.345477,
+        "offerPrice": 209.88,
+        "latestClose": 200.0,
+        "latestReturn": -0.04707451877263191
+      },
+      {
+        "code": "3296.HK",
+        "stockCode": "3296",
+        "name": "Huaqin Co., Ltd. - H Shares",
+        "prospectusDate": "2026-04-15",
+        "listedOn": "2026-04-23",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Merrill Lynch (Asia Pacific) Limited",
+        "fundraisingHkd100m": 52.315721,
+        "offerPrice": 77.7,
+        "latestClose": 71.05,
+        "latestReturn": -0.08558558558558571
+      },
+      {
+        "code": "1879.HK",
+        "stockCode": "1879",
+        "name": "Shanghai Xizhi Technology Co., Ltd. - P - H Shares",
+        "prospectusDate": "2026-04-20",
+        "listedOn": "2026-04-28",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Haitong International Capital Limited",
+        "fundraisingHkd100m": 29.063755,
+        "offerPrice": 183.2,
+        "latestClose": 312.4,
+        "latestReturn": 0.705240174672489
+      },
+      {
+        "code": "2493.HK",
+        "stockCode": "2493",
+        "name": "Mabwell (Shanghai) Bioscience Co., Ltd. - B - H Shares",
+        "prospectusDate": "2026-04-20",
+        "listedOn": "2026-04-28",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / Haitong International Capital Limited",
+        "fundraisingHkd100m": 13.026787,
+        "offerPrice": 27.64,
+        "latestClose": 20.3,
+        "latestReturn": -0.26555716353111436
+      },
+      {
+        "code": "6810.HK",
+        "stockCode": "6810",
+        "name": "Shanghai Sunmi Technology Co., Ltd. - W - H Shares",
+        "prospectusDate": "2026-04-21",
+        "listedOn": "2026-04-29",
+        "sponsors": "Deutsche Securities Asia Limited / CITIC Securities (Hong Kong) Limited / ABCI Capital Limited",
+        "fundraisingHkd100m": 10.597022,
+        "offerPrice": 24.86,
+        "latestClose": 55.55,
+        "latestReturn": 1.2345132743362832
+      },
+      {
+        "code": "1609.HK",
+        "stockCode": "1609",
+        "name": "Star Sports Medicine Co., Ltd. - H Shares",
+        "prospectusDate": "2026-04-24",
+        "listedOn": "2026-05-05",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / CCB International Capital Limited",
+        "fundraisingHkd100m": 8.295522,
+        "offerPrice": 98.5,
+        "latestClose": 100.3,
+        "latestReturn": 0.018274111675126825
+      },
+      {
+        "code": "1187.HK",
+        "stockCode": "1187",
+        "name": "Cofoe Medical Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-04-27",
+        "listedOn": "2026-05-06",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited / BNP Paribas Securities (Asia) Limited",
+        "fundraisingHkd100m": 10.6191,
+        "offerPrice": 39.33,
+        "latestClose": 31.86,
+        "latestReturn": -0.18993135011441642
+      },
+      {
+        "code": "1236.HK",
+        "stockCode": "1236",
+        "name": "SHENZHEN LDROBOT CO., LTD - H Shares",
+        "prospectusDate": "2026-04-30",
+        "listedOn": "2026-05-11",
+        "sponsors": "Haitong International Capital Limited / Guotai Junan Capital Limited",
+        "fundraisingHkd100m": 8.786684,
+        "offerPrice": 26.36,
+        "latestClose": 30.98,
+        "latestReturn": 0.17526555386949938
+      },
+      {
+        "code": "7630.HK",
+        "stockCode": "7630",
+        "name": "IMPACT Therapeutics, Inc - B - H Shares",
+        "prospectusDate": "2026-05-05",
+        "listedOn": "2026-05-13",
+        "sponsors": "Goldman Sachs (Asia) L.L.C. / China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 9.702953,
+        "offerPrice": 20.1,
+        "latestClose": 12.9,
+        "latestReturn": -0.35820895522388063
+      },
+      {
+        "code": "7666.HK",
+        "stockCode": "7666",
+        "name": "Metis TechBio Co., Ltd. - P - H Shares",
+        "prospectusDate": "2026-05-05",
+        "listedOn": "2026-05-13",
+        "sponsors": "Jefferies Hong Kong Limited / Deutsche Securities Asia Limited / CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 24.298365,
+        "offerPrice": 10.5,
+        "latestClose": 15.42,
+        "latestReturn": 0.46857142857142864
+      },
+      {
+        "code": "6871.HK",
+        "stockCode": "6871",
+        "name": "Robotphoenix Intelligent Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-05-08",
+        "listedOn": "2026-05-18",
+        "sponsors": "ABCI Capital Limited",
+        "fundraisingHkd100m": 7.503,
+        "offerPrice": 30.5,
+        "latestClose": 25.08,
+        "latestReturn": -0.17770491803278698
+      },
+      {
+        "code": "1511.HK",
+        "stockCode": "1511",
+        "name": "UISEE Technologies (Beijing) Co., Ltd. - H Shares",
+        "prospectusDate": "2026-05-12",
+        "listedOn": "2026-05-20",
+        "sponsors": "CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 8.720104,
+        "offerPrice": 60.3,
+        "latestClose": 56.0,
+        "latestReturn": -0.0713101160862355
+      },
+      {
+        "code": "7688.HK",
+        "stockCode": "7688",
+        "name": "Shanghai Top Numerical Control Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-05-12",
+        "listedOn": "2026-05-20",
+        "sponsors": "Guotai Junan Capital Limited / CCB International Capital Limited",
+        "fundraisingHkd100m": 19.826675,
+        "offerPrice": 26.39,
+        "latestClose": 19.2,
+        "latestReturn": -0.27245168624478977
+      },
+      {
+        "code": "6872.HK",
+        "stockCode": "6872",
+        "name": "TenNor Therapeutics (Suzhou) Limited - B - H Shares",
+        "prospectusDate": "2026-05-14",
+        "listedOn": "2026-05-22",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / ABCI Capital Limited",
+        "fundraisingHkd100m": 6.703992,
+        "offerPrice": 75.7,
+        "latestClose": 125.0,
+        "latestReturn": 0.6512549537648613
+      },
+      {
+        "code": "0901.HK",
+        "stockCode": "0901",
+        "name": "Shenzhen SDMC Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-05-18",
+        "listedOn": "2026-05-27",
+        "sponsors": "China Securities (International) Corporate Finance Company Limited",
+        "fundraisingHkd100m": 6.299994,
+        "offerPrice": 32.8,
+        "latestClose": 69.3,
+        "latestReturn": 1.1128048780487805
+      },
+      {
+        "code": "2723.HK",
+        "stockCode": "2723",
+        "name": "Beijing DeepZero Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-05-18",
+        "listedOn": "2026-05-27",
+        "sponsors": "ICBC International Capital Limited",
+        "fundraisingHkd100m": 5.03274,
+        "offerPrice": 55.5,
+        "latestClose": 568.0,
+        "latestReturn": 9.234234234234235
+      },
+      {
+        "code": "3310.HK",
+        "stockCode": "3310",
+        "name": "Viewtrix Technology Co., Ltd - H Shares",
+        "prospectusDate": "2026-05-18",
+        "listedOn": "2026-05-27",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 12.649983,
+        "offerPrice": 20.81,
+        "latestClose": 24.14,
+        "latestReturn": 0.16001922152811154
+      },
+      {
+        "code": "3388.HK",
+        "stockCode": "3388",
+        "name": "Shenzhen Creality 3D Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-05-20",
+        "listedOn": "2026-05-29",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 15.875021,
+        "offerPrice": 18.8,
+        "latestClose": 21.86,
+        "latestReturn": 0.16276595744680833
+      },
+      {
+        "code": "2553.HK",
+        "stockCode": "2553",
+        "name": "Beijing Shougang LanzaTech Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-05-26",
+        "listedOn": "2026-06-03",
+        "sponsors": "Yue Xiu Capital Limited",
+        "fundraisingHkd100m": 5.84,
+        "offerPrice": 14.6,
+        "latestClose": 18.81,
+        "latestReturn": 0.2883561643835615
+      },
+      {
+        "code": "1081.HK",
+        "stockCode": "1081",
+        "name": "Dajin Heavy Industry Co., Ltd. - H Shares",
+        "prospectusDate": "2026-05-28",
+        "listedOn": "2026-06-05",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited / China Merchants Securities (HK) Co., Limited",
+        "fundraisingHkd100m": 67.951436,
+        "offerPrice": 66.4,
+        "latestClose": 31.66,
+        "latestReturn": -0.5231927710843374
+      },
+      {
+        "code": "1779.HK",
+        "stockCode": "1779",
+        "name": "LongBio Pharma (Suzhou) Co., Ltd. - B - H Shares",
+        "prospectusDate": "2026-05-28",
+        "listedOn": "2026-06-05",
+        "sponsors": "Sinolink Securities (Hong Kong) Company Limited",
+        "fundraisingHkd100m": 15.679009,
+        "offerPrice": 96.06,
+        "latestClose": 97.0,
+        "latestReturn": 0.00978555069748066
+      },
+      {
+        "code": "2290.HK",
+        "stockCode": "2290",
+        "name": "Lung Fung Group Holdings Limited",
+        "prospectusDate": "2026-05-28",
+        "listedOn": "2026-06-05",
+        "sponsors": "DBS Asia Capital Limited",
+        "fundraisingHkd100m": 6.475,
+        "offerPrice": 5.18,
+        "latestClose": 3.755,
+        "latestReturn": -0.27509652509652505
+      },
+      {
+        "code": "6658.HK",
+        "stockCode": "6658",
+        "name": "Liuliumei Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-05",
+        "listedOn": "2026-06-15",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / Guoyuan Capital (Hong Kong) Limited",
+        "fundraisingHkd100m": 4.996055,
+        "offerPrice": 43.58,
+        "latestClose": 166.6,
+        "latestReturn": 2.822854520422212
+      },
+      {
+        "code": "6675.HK",
+        "stockCode": "6675",
+        "name": "SENASIC Electronics Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-09",
+        "listedOn": "2026-06-17",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Guotai Junan Capital Limited",
+        "fundraisingHkd100m": 10.32985,
+        "offerPrice": 18.36,
+        "latestClose": 31.0,
+        "latestReturn": 0.6884531590413945
+      },
+      {
+        "code": "1392.HK",
+        "stockCode": "1392",
+        "name": "Shenzhen HQVT Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-11",
+        "listedOn": "2026-06-22",
+        "sponsors": "CMBC International Capital Limited / SPDB International Capital Limited",
+        "fundraisingHkd100m": 6.1317,
+        "offerPrice": 7.2,
+        "latestClose": 19.03,
+        "latestReturn": 1.6430555555555557
+      },
+      {
+        "code": "6067.HK",
+        "stockCode": "6067",
+        "name": "Shenzhen Senior Technology Material Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-12",
+        "listedOn": "2026-06-23",
+        "sponsors": "China Securities (International) Corporate Finance Company Limited",
+        "fundraisingHkd100m": 13.42721,
+        "offerPrice": 8.98,
+        "latestClose": 7.535,
+        "latestReturn": -0.16091314031180404
+      },
+      {
+        "code": "6132.HK",
+        "stockCode": "6132",
+        "name": "HJ Science Co., Ltd. - B - H Shares",
+        "prospectusDate": "2026-06-12",
+        "listedOn": "2026-06-23",
+        "sponsors": "CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 11.1248,
+        "offerPrice": 81.8,
+        "latestClose": 41.62,
+        "latestReturn": -0.49119804400977995
+      },
+      {
+        "code": "2335.HK",
+        "stockCode": "2335",
+        "name": "Shaanxi Micot Pharmaceutical Technology Co., Ltd. - B - H Shares",
+        "prospectusDate": "2026-06-15",
+        "listedOn": "2026-06-24",
+        "sponsors": "CCB International Capital Limited / China Merchants Securities (HK) Co., Limited",
+        "fundraisingHkd100m": 10.565901,
+        "offerPrice": 18.2,
+        "latestClose": 21.98,
+        "latestReturn": 0.20769230769230784
+      },
+      {
+        "code": "6106.HK",
+        "stockCode": "6106",
+        "name": "Shanghai Seer Intelligent Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-15",
+        "listedOn": "2026-06-24",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 10.665257,
+        "offerPrice": 101.6,
+        "latestClose": 79.95,
+        "latestReturn": -0.21309055118110232
+      },
+      {
+        "code": "1688.HK",
+        "stockCode": "1688",
+        "name": "LINGYI iTECH (GUANGDONG) COMPANY - H Shares",
+        "prospectusDate": "2026-06-17",
+        "listedOn": "2026-06-26",
+        "sponsors": "Guotai Junan Capital Limited",
+        "fundraisingHkd100m": 82.642449,
+        "offerPrice": 10.18,
+        "latestClose": 6.465,
+        "latestReturn": -0.36493123772102165
+      },
+      {
+        "code": "1956.HK",
+        "stockCode": "1956",
+        "name": "Beijing Zhongke WengeAI Science and Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-17",
+        "listedOn": "2026-06-26",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 9.814947,
+        "offerPrice": 60.7,
+        "latestClose": 79.3,
+        "latestReturn": 0.3064250411861613
+      },
+      {
+        "code": "2272.HK",
+        "stockCode": "2272",
+        "name": "KEYTOP PARKING INC. - H Shares",
+        "prospectusDate": "2026-06-17",
+        "listedOn": "2026-06-26",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / CMBC International Capital Limited",
+        "fundraisingHkd100m": 3.999407,
+        "offerPrice": 39.55,
+        "latestClose": 84.5,
+        "latestReturn": 1.13653603034134
+      },
+      {
+        "code": "9630.HK",
+        "stockCode": "9630",
+        "name": "Circuit Fabology Microelectronics Equipment Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-17",
+        "listedOn": "2026-06-26",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 37.314068,
+        "offerPrice": 252.73,
+        "latestClose": 346.6,
+        "latestReturn": 0.3714240493807621
+      },
+      {
+        "code": "3661.HK",
+        "stockCode": "3661",
+        "name": "SG Micro Corp - H Shares",
+        "prospectusDate": "2026-06-17",
+        "listedOn": "2026-06-26",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 52.910308,
+        "offerPrice": 85.2,
+        "latestClose": 91.0,
+        "latestReturn": 0.068075117370892
+      },
+      {
+        "code": "6228.HK",
+        "stockCode": "6228",
+        "name": "PT MERDEKA GOLD RESOURCES Tbk- DRS",
+        "prospectusDate": "2026-06-17",
+        "listedOn": "2026-06-26",
+        "sponsors": "UBS Securities Hong Kong Limited / CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 24.660222,
+        "offerPrice": 26.6,
+        "latestClose": 39.18,
+        "latestReturn": 0.47293233082706765
+      },
+      {
+        "code": "1191.HK",
+        "stockCode": "1191",
+        "name": "Crealights Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-18",
+        "listedOn": "2026-06-29",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 17.608668,
+        "offerPrice": 114.0,
+        "latestClose": 156.2,
+        "latestReturn": 0.37017543859649105
+      },
+      {
+        "code": "2672.HK",
+        "stockCode": "2672",
+        "name": "Baige Online Digital Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-18",
+        "listedOn": "2026-06-29",
+        "sponsors": "CMBC International Capital Limited / BOCI Asia Limited",
+        "fundraisingHkd100m": 5.201726,
+        "offerPrice": 15.6,
+        "latestClose": 34.26,
+        "latestReturn": 1.196153846153846
+      },
+      {
+        "code": "9637.HK",
+        "stockCode": "9637",
+        "name": "Alebund Pharmaceuticals (Jiangsu) Limited - B - H Shares",
+        "prospectusDate": "2026-06-18",
+        "listedOn": "2026-06-29",
+        "sponsors": "Jefferies Hong Kong Limited / Merrill Lynch (Asia Pacific) Limited / Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 14.750726,
+        "offerPrice": 22.6,
+        "latestClose": 24.02,
+        "latestReturn": 0.0628318584070795
+      },
+      {
+        "code": "2697.HK",
+        "stockCode": "2697",
+        "name": "Guangdong True Health Medical Technology Development Co., Ltd. - B - H Shares",
+        "prospectusDate": "2026-06-22",
+        "listedOn": "2026-06-30",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / DBS Asia Capital Limited",
+        "fundraisingHkd100m": 4.498651,
+        "offerPrice": 126.2,
+        "latestClose": 282.6,
+        "latestReturn": 1.239302694136292
+      },
+      {
+        "code": "6915.HK",
+        "stockCode": "6915",
+        "name": "Jiangxi Institute of Biological Products Inc. - H Shares",
+        "prospectusDate": "2026-06-22",
+        "listedOn": "2026-06-30",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / China Merchants Securities (HK) Co., Limited",
+        "fundraisingHkd100m": 4.058264,
+        "offerPrice": 11.2,
+        "latestClose": 15.54,
+        "latestReturn": 0.38749999999999996
+      },
+      {
+        "code": "3952.HK",
+        "stockCode": "3952",
+        "name": "Zhejiang Laifual Drive Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-22",
+        "listedOn": "2026-06-30",
+        "sponsors": "CMB International Capital Limited",
+        "fundraisingHkd100m": 12.122447,
+        "offerPrice": 85.5,
+        "latestClose": 51.8,
+        "latestReturn": -0.3941520467836258
+      },
+      {
+        "code": "6715.HK",
+        "stockCode": "6715",
+        "name": "Hangzhou Qiandaohu Xunlong Sci-tech Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-22",
+        "listedOn": "2026-06-30",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / China Securities (International) Corporate Finance Company Limited",
+        "fundraisingHkd100m": 12.33134,
+        "offerPrice": 75.5,
+        "latestClose": 67.8,
+        "latestReturn": -0.10198675496688747
+      },
+      {
+        "code": "0668.HK",
+        "stockCode": "0668",
+        "name": "Anker Innovations Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-23",
+        "listedOn": "2026-07-02",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Goldman Sachs (Asia) L.L.C. / J.P. Morgan Securities (Far East) Limited",
+        "fundraisingHkd100m": 49.735583,
+        "offerPrice": 99.32,
+        "latestClose": 121.0,
+        "latestReturn": 0.2182843334675797
+      },
+      {
+        "code": "2667.HK",
+        "stockCode": "2667",
+        "name": "Beijing Tong Ren Tang Healthcare Investment Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-26",
+        "listedOn": "2026-07-07",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 5.948442,
+        "offerPrice": 5.5,
+        "latestClose": 2.395,
+        "latestReturn": -0.5645454545454545
+      },
+      {
+        "code": "7656.HK",
+        "stockCode": "7656",
+        "name": "Reconova Technologies Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-29",
+        "listedOn": "2026-07-08",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited / CCB International Capital Limited / ABCI Capital Limited",
+        "fundraisingHkd100m": 6.083644,
+        "offerPrice": 21.66,
+        "latestClose": 16.23,
+        "latestReturn": -0.2506925207756232
+      },
+      {
+        "code": "9971.HK",
+        "stockCode": "9971",
+        "name": "BASiC Semiconductor Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-29",
+        "listedOn": "2026-07-08",
+        "sponsors": "Sinolink Securities (Hong Kong) Company Limited / BOCI Asia Limited",
+        "fundraisingHkd100m": 8.659516,
+        "offerPrice": 31.62,
+        "latestClose": 46.0,
+        "latestReturn": 0.45477545857052504
+      },
+      {
+        "code": "6880.HK",
+        "stockCode": "6880",
+        "name": "MOMENTA GLOBAL LIMITED - W",
+        "prospectusDate": "2026-06-29",
+        "listedOn": "2026-07-08",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Deutsche Securities Asia Limited",
+        "fundraisingHkd100m": 58.937615,
+        "offerPrice": 295.6,
+        "latestClose": 184.6,
+        "latestReturn": -0.37550744248985124
+      },
+      {
+        "code": "7687.HK",
+        "stockCode": "7687",
+        "name": "EACON Group Co., Ltd - H Shares",
+        "prospectusDate": "2026-06-29",
+        "listedOn": "2026-07-08",
+        "sponsors": "Haitong International Capital Limited",
+        "fundraisingHkd100m": 25.411562,
+        "offerPrice": 87.92,
+        "latestClose": 66.85,
+        "latestReturn": -0.2396496815286625
+      },
+      {
+        "code": "1770.HK",
+        "stockCode": "1770",
+        "name": "DKE Holding Company Limited - H Shares",
+        "prospectusDate": "2026-06-29",
+        "listedOn": "2026-07-09",
+        "sponsors": "CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 4.025267,
+        "offerPrice": 78.64,
+        "latestClose": 80.15,
+        "latestReturn": 0.019201424211597207
+      },
+      {
+        "code": "0537.HK",
+        "stockCode": "0537",
+        "name": "RIGOL Technologies Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-30",
+        "listedOn": "2026-07-09",
+        "sponsors": "CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 11.404052,
+        "offerPrice": 45.98,
+        "latestClose": 21.2,
+        "latestReturn": -0.5389299695519791
+      },
+      {
+        "code": "1377.HK",
+        "stockCode": "1377",
+        "name": "Guangdong Dtech Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-30",
+        "listedOn": "2026-07-09",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / HSBC Corporate Finance (Hong Kong) Limited",
+        "fundraisingHkd100m": 48.0016,
+        "offerPrice": 380.0,
+        "latestClose": 317.4,
+        "latestReturn": -0.16473684210526318
+      },
+      {
+        "code": "2475.HK",
+        "stockCode": "2475",
+        "name": "Luxshare Precision Industry Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-30",
+        "listedOn": "2026-07-09",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / Goldman Sachs (Asia) L.L.C. / China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 250.598102,
+        "offerPrice": 63.28,
+        "latestClose": 59.0,
+        "latestReturn": -0.0676359039190898
+      },
+      {
+        "code": "3752.HK",
+        "stockCode": "3752",
+        "name": "Rokae (Shandong) Robotics Group Inc. - H Shares",
+        "prospectusDate": "2026-06-30",
+        "listedOn": "2026-07-09",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited / Guotai Junan Capital Limited",
+        "fundraisingHkd100m": 10.064908,
+        "offerPrice": 38.0,
+        "latestClose": 50.55,
+        "latestReturn": 0.3302631578947368
+      },
+      {
+        "code": "6951.HK",
+        "stockCode": "6951",
+        "name": "Chaozhou Three-Circle (Group) Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-30",
+        "listedOn": "2026-07-09",
+        "sponsors": "China Galaxy International Securities (Hong Kong) Co., Limited",
+        "fundraisingHkd100m": 80.461864,
+        "offerPrice": 100.3,
+        "latestClose": 124.4,
+        "latestReturn": 0.24027916251246273
+      },
+      {
+        "code": "2797.HK",
+        "stockCode": "2797",
+        "name": "Jiangxi Qiyunshan Food Co., Ltd. - H Shares",
+        "prospectusDate": "2026-06-30",
+        "listedOn": "2026-07-09",
+        "sponsors": "Zhongtai International Capital Limited",
+        "fundraisingHkd100m": 2.0,
+        "offerPrice": 8.0,
+        "latestClose": 85.5,
+        "latestReturn": 9.6875
+      },
+      {
+        "code": "2249.HK",
+        "stockCode": "2249",
+        "name": "NEXCHIP SEMICONDUCTOR (CHINA) LIMITED - H Shares",
+        "prospectusDate": "2026-06-30",
+        "listedOn": "2026-07-10",
+        "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
+        "fundraisingHkd100m": 73.33841,
+        "offerPrice": 32.3,
+        "latestClose": 28.0,
+        "latestReturn": -0.13312693498452
+      },
+      {
+        "code": "6745.HK",
+        "stockCode": "6745",
+        "name": "Befar Group Co., Ltd - H Shares",
+        "prospectusDate": "2026-06-30",
+        "listedOn": "2026-07-10",
+        "sponsors": "Huatai Financial Holdings (Hong Kong) Limited / CCB International Capital Limited",
+        "fundraisingHkd100m": 12.253985,
+        "offerPrice": 3.48,
+        "latestClose": 3.085,
+        "latestReturn": -0.1135057471264368
+      },
+      {
+        "code": "3308.HK",
+        "stockCode": "3308",
+        "name": "ZHONGJI INNOLIGHT CO., LTD. - H Shares",
+        "prospectusDate": "2026-07-22",
+        "listedOn": "2026-07-30",
+        "sponsors": "Goldman Sachs (Asia) L.L.C. / China International Capital Corporation Hong Kong Securities Limited / Morgan Stanley Asia Limited / GF Capital (Hong Kong) Limited",
+        "fundraisingHkd100m": 614.215,
+        "offerPrice": 980.0
+      },
+      {
+        "code": "2261.HK",
+        "stockCode": "2261",
+        "name": "NASN Intelligent Tech (Zhejiang) Co., Ltd. - H Shares",
+        "prospectusDate": "2026-07-30",
+        "listedOn": "2026-08-07",
+        "sponsors": "Haitong International Capital Limited / BOCI Asia Limited",
+        "fundraisingHkd100m": 6.001347,
+        "offerPrice": 10.42,
+        "latestClose": 16.5,
+        "latestReturn": 0.5834932821497121
+      },
+      {
+        "code": "3223.HK",
+        "stockCode": "3223",
+        "name": "Ingenic Semiconductor Co., Ltd. - H Shares",
+        "prospectusDate": "2026-08-17",
+        "listedOn": "2026-08-25",
+        "sponsors": "Guotai Junan Capital Limited",
+        "fundraisingHkd100m": 31.2873,
+        "offerPrice": 100.0,
+        "latestClose": 98.0,
+        "latestReturn": -0.020000000000000018
+      },
+      {
+        "code": "9615.HK",
+        "stockCode": "9615",
+        "name": "Mech-Mind Robotics Technologies Co., Ltd. - H Shares",
+        "prospectusDate": "2026-08-24",
+        "listedOn": "2026-09-01",
+        "sponsors": "China Securities (International) Corporate Finance Company Limited / CITIC Securities (Hong Kong) Limited",
+        "fundraisingHkd100m": 23.53398,
+        "offerPrice": 101.7,
+        "latestClose": 95.0,
+        "latestReturn": -0.06588003933136677
+      },
+      {
+        "code": "0625.HK",
+        "stockCode": "0625",
+        "name": "SHEIN Global Holdings Limited - W",
+        "prospectusDate": "2026-08-24",
+        "listedOn": "2026-09-01",
+        "sponsors": "Goldman Sachs (Asia) L.L.C. / Morgan Stanley Asia Limited / J.P. Morgan Securities (Far East) Limited",
+        "fundraisingHkd100m": 135.964358,
+        "offerPrice": 48.56,
+        "latestClose": 40.06,
+        "latestReturn": -0.1750411861614497
+      },
+      {
+        "code": "2041.HK",
+        "stockCode": "2041",
+        "name": "Medcaptain Medical Technology Co., Ltd. - H Shares",
+        "prospectusDate": "2026-08-28",
+        "listedOn": "2026-09-07",
+        "sponsors": "Morgan Stanley Asia Limited / Huatai Financial Holdings (Hong Kong) Limited",
+        "fundraisingHkd100m": 6.000015,
+        "offerPrice": 15.42,
+        "latestClose": 8.78,
+        "latestReturn": -0.43060959792477305
+      },
+      {
+        "code": "9976.HK",
+        "stockCode": "9976",
+        "name": "Shenzhen Longsys Electronics Co., Ltd. - H Shares",
+        "prospectusDate": "2026-08-31",
+        "listedOn": "2026-09-08",
+        "sponsors": "CITIC Securities (Hong Kong) Limited / Citigroup Global Markets Asia Limited",
+        "fundraisingHkd100m": 70.775102,
+        "offerPrice": 236.0,
+        "latestClose": 206.2,
+        "latestReturn": -0.12627118644067803
+      },
+      {
+        "code": "3231.HK",
+        "stockCode": "3231",
+        "name": "Excelland Robotics (Wuxi) Co. Ltd. - H Shares",
+        "prospectusDate": "2026-08-31",
+        "listedOn": "2026-09-09",
+        "sponsors": "Silver Nile Global Investments Limited",
+        "fundraisingHkd100m": 6.5025,
+        "offerPrice": 14.45,
+        "latestClose": 41.66,
+        "latestReturn": 1.8830449826989617
+      }
+    ]
+  },
+  "hkex": {
+    "activeCount": 368,
+    "mainBoardCount": 357,
+    "gemCount": 11,
+    "weeklyApplicationProofs": [
+      {
+        "id": "108867",
+        "company": "廣東微電新能源股份有限公司",
+        "date": "2026-09-10",
+        "board": "主板",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108867/documents/sehk26091001725_c.pdf"
+      },
+      {
+        "id": "108866",
+        "company": "河北聯吉啟成產業園區運營管理股份有限公司",
+        "date": "2026-09-10",
+        "board": "GEM",
+        "document": "https://www1.hkexnews.hk/app/gem/2026/108866/documents/gem26091001157.pdf"
+      },
+      {
+        "id": "108869",
+        "company": "浙江和夏科技股份有限公司",
+        "date": "2026-09-11",
+        "board": "GEM",
+        "document": "https://www1.hkexnews.hk/app/gem/2026/108869/documents/gem26091101921.pdf"
+      },
+      {
+        "id": "108868",
+        "company": "翱捷科技股份有限公司",
+        "date": "2026-09-11",
+        "board": "主板",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108868/documents/sehk26091101555_c.pdf"
+      }
+    ],
+    "weeklyPhips": [
+      {
+        "id": "108727",
+        "company": "深圳四方精創資訊股份有限公司",
+        "date": "2026-09-06",
+        "board": "主板",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108727/documents/sehk26090600083_c.pdf"
+      },
+      {
+        "id": "108575",
+        "company": "浙江濤濤車業股份有限公司",
+        "date": "2026-09-07",
+        "board": "主板",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108575/documents/sehk26090701489_c.pdf"
+      },
+      {
+        "id": "108714",
+        "company": "深圳市景旺電子股份有限公司",
+        "date": "2026-09-07",
+        "board": "主板",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108714/documents/sehk26090701433_c.pdf"
+      }
+    ],
+    "officialUpdated": {
+      "mainBoard": "13/09/2026",
+      "gem": "11/09/2026"
+    }
+  },
+  "csrc": {
+    "officialTitle": "境内企业境外发行证券和上市备案情况表（首次公开发行及全流通）（截至2026年9月11日）",
+    "recordCount": 250,
+    "receivedCount": 63,
+    "statusCounts": {
+      "补充材料": 89,
+      "征求意见": 98,
+      "已接收": 63
+    },
+    "weeklyNewReceived": [
+      {
+        "company": "安徽华创新材料股份有限公司",
+        "receivedOn": "2026-09-08",
+        "status": "已接收"
+      },
+      {
+        "company": "龙迅半导体（合肥）股份有限公司",
+        "receivedOn": "2026-09-08",
+        "status": "已接收"
+      },
+      {
+        "company": "奥动新能源股份有限公司",
+        "receivedOn": "2026-09-08",
+        "status": "已接收"
+      },
+      {
+        "company": "宁波德业科技股份有限公司",
+        "receivedOn": "2026-09-09",
+        "status": "已接收"
+      },
+      {
+        "company": "博纳西亚（杭州）医药科技股份有限公司",
+        "receivedOn": "2026-09-10",
+        "status": "已接收"
+      },
+      {
+        "company": "江西铜博科技股份有限公司",
+        "receivedOn": "2026-09-11",
+        "status": "已接收"
+      },
+      {
+        "company": "珠海金智维人工智能股份有限公司",
+        "receivedOn": "2026-09-11",
+        "status": "已接收"
+      },
+      {
+        "company": "山东省环能设计院股份有限公司",
+        "receivedOn": "2026-09-11",
+        "status": "已接收"
+      },
+      {
+        "company": "凌科药业（浙江）股份有限公司",
+        "receivedOn": "2026-09-11",
+        "status": "已接收"
+      }
+    ],
+    "headers": [
+      "序号",
+      "企业名称",
+      "申报类型",
+      "申报主体",
+      "拟上市证券交易所",
+      "中介机构",
+      "",
+      "接收日期",
+      "备案状态",
+      "备注",
+      "",
+      "",
+      ""
+    ],
+    "records": [
+      {
+        "company": "GoodFaithTechnologyInc.",
+        "receivedOn": "2023-06-28",
+        "status": "补充材料"
+      },
+      {
+        "company": "LemengHoldingsLimited（乐盟控股有限公司）",
+        "receivedOn": "2023-07-06",
+        "status": "补充材料"
+      },
+      {
+        "company": "MEDEIBYHoldingCo.,Limited（璦碧医疗控股有限公司）",
+        "receivedOn": "2023-07-11",
+        "status": "补充材料"
+      },
+      {
+        "company": "NEOTVGROUPLIMITED",
+        "receivedOn": "2023-07-20",
+        "status": "补充材料"
+      },
+      {
+        "company": "Semidux(Cayman)HoldingLimited（杰微开曼国际控股公司）",
+        "receivedOn": "2023-07-24",
+        "status": "补充材料"
+      },
+      {
+        "company": "Yunhuisuan（Cayman）TechnologyLtd",
+        "receivedOn": "2023-08-07",
+        "status": "补充材料"
+      },
+      {
+        "company": "FDTECHNOLOGYINC.（分蛋信息科技有限公司）",
+        "receivedOn": "2023-08-25",
+        "status": "补充材料"
+      },
+      {
+        "company": "OUIGlobal",
+        "receivedOn": "2023-11-09",
+        "status": "补充材料"
+      },
+      {
+        "company": "UEOPLETechnologyHoldingLimited",
+        "receivedOn": "2024-01-08",
+        "status": "征求意见"
+      },
+      {
+        "company": "GalleinphiInc.",
+        "receivedOn": "2024-02-04",
+        "status": "补充材料"
+      },
+      {
+        "company": "KepuniHoldingsInc.",
+        "receivedOn": "2024-03-12",
+        "status": "补充材料"
+      },
+      {
+        "company": "EarntzHealthcareProducts,Inc.（盈兹医疗保健产品有限公司）",
+        "receivedOn": "2024-03-25",
+        "status": "补充材料"
+      },
+      {
+        "company": "Xinzi（新子）",
+        "receivedOn": "2024-04-11",
+        "status": "补充材料"
+      },
+      {
+        "company": "ZerolimitTechnologyHoldingCo.Ltd.（正链科技控股有限公司）",
+        "receivedOn": "2024-04-23",
+        "status": "补充材料"
+      },
+      {
+        "company": "AoChuangHoldings,Inc.",
+        "receivedOn": "2024-05-07",
+        "status": "补充材料"
+      },
+      {
+        "company": "CHAUTOInc.",
+        "receivedOn": "2024-05-08",
+        "status": "补充材料"
+      },
+      {
+        "company": "JINGRUIWANGPUHOLDINGSGROUPLTD（京睿旺铺控股集团有限公司）",
+        "receivedOn": "2024-05-14",
+        "status": "补充材料"
+      },
+      {
+        "company": "HENGGUANGHOLDINGSCO.,LIMITED",
+        "receivedOn": "2024-05-22",
+        "status": "补充材料"
+      },
+      {
+        "company": "ZhongYuanBio-TechnologyHoldingsLimited（中元生物科技控股有限公司）",
+        "receivedOn": "2024-06-20",
+        "status": "补充材料"
+      },
+      {
+        "company": "JAJIGlobalIncorporation",
+        "receivedOn": "2024-07-05",
+        "status": "补充材料"
+      },
+      {
+        "company": "CineTopCultureHoldingsLimited（影高文化控股有限公司）",
+        "receivedOn": "2024-07-17",
+        "status": "补充材料"
+      },
+      {
+        "company": "诚天国际集团有限公司",
+        "receivedOn": "2024-07-22",
+        "status": "补充材料"
+      },
+      {
+        "company": "小氢未来有限公司",
+        "receivedOn": "2024-08-05",
+        "status": "补充材料"
+      },
+      {
+        "company": "QMSKTechnologyCo.,Ltd(青民数科科技有限公司）",
+        "receivedOn": "2024-08-08",
+        "status": "征求意见"
+      },
+      {
+        "company": "联和氢能环球有限公司",
+        "receivedOn": "2024-09-09",
+        "status": "补充材料"
+      },
+      {
+        "company": "QinhuiTechnologyInternationalCo.,Ltd（勤惠科技国际有限公司）",
+        "receivedOn": "2024-09-24",
+        "status": "补充材料"
+      },
+      {
+        "company": "LeadingGroupLimited（利鼎集团有限公司）",
+        "receivedOn": "2024-09-25",
+        "status": "补充材料"
+      },
+      {
+        "company": "TotemNewEnergyTechnologyInc（腾图新能源科技公司）",
+        "receivedOn": "2024-10-15",
+        "status": "补充材料"
+      },
+      {
+        "company": "多拉拉集团有限公司",
+        "receivedOn": "2024-11-07",
+        "status": "补充材料"
+      },
+      {
+        "company": "GreatRichTechnologiesLimited（宏裕科技有限公司）",
+        "receivedOn": "2024-11-07",
+        "status": "补充材料"
+      },
+      {
+        "company": "TongYingGroup（通盈集团）",
+        "receivedOn": "2024-11-19",
+        "status": "补充材料"
+      },
+      {
+        "company": "DCRTECHGROUPLTD（数智云库科技有限公司）",
+        "receivedOn": "2024-11-28",
+        "status": "补充材料"
+      },
+      {
+        "company": "WorldRoadInc.（世界之路公司）",
+        "receivedOn": "2025-02-14",
+        "status": "补充材料"
+      },
+      {
+        "company": "CamerryNewMaterialTechLimited（佳美控股）",
+        "receivedOn": "2025-02-18",
+        "status": "补充材料"
+      },
+      {
+        "company": "VIWOTechnologyInc.（微沃科技公司）",
+        "receivedOn": "2025-03-06",
+        "status": "补充材料"
+      },
+      {
+        "company": "HenghongTechnologyInc.（恒鸿科技有限公司）",
+        "receivedOn": "2025-03-13",
+        "status": "补充材料"
+      },
+      {
+        "company": "AOJEINC（奥杰股份有限公司）",
+        "receivedOn": "2025-03-14",
+        "status": "补充材料"
+      },
+      {
+        "company": "HUGEAMOUNTGROUPLIMITED（大数据集团有限公司）",
+        "receivedOn": "2025-04-02",
+        "status": "补充材料"
+      },
+      {
+        "company": "SharewowLimited（速相（开曼）有限公司）",
+        "receivedOn": "2025-04-03",
+        "status": "补充材料"
+      },
+      {
+        "company": "BOUNDLESSGROUP（栢拓集团）",
+        "receivedOn": "2025-04-16",
+        "status": "补充材料"
+      },
+      {
+        "company": "深圳市优必选科技股份有限公司",
+        "receivedOn": "2025-04-18",
+        "status": "补充材料"
+      },
+      {
+        "company": "KOKOBOTSGROUP（毛驴快跑机器人（开曼）集团公司）",
+        "receivedOn": "2025-05-19",
+        "status": "补充材料"
+      },
+      {
+        "company": "MainusPharmaceutialCO.,Ltd.（贵之言医药）",
+        "receivedOn": "2025-05-27",
+        "status": "补充材料"
+      },
+      {
+        "company": "HZJLCaymanLimited（杭州佳邻开曼有限公司）",
+        "receivedOn": "2025-06-06",
+        "status": "补充材料"
+      },
+      {
+        "company": "JuNengTechnologyLimited（巨能科技有限公司）",
+        "receivedOn": "2025-07-03",
+        "status": "补充材料"
+      },
+      {
+        "company": "关于微泰医疗器械（杭州）股份有限公司",
+        "receivedOn": "2025-07-03",
+        "status": "已接收"
+      },
+      {
+        "company": "众安在线财产保险股份有限公司",
+        "receivedOn": "2025-07-04",
+        "status": "补充材料"
+      },
+      {
+        "company": "HartfordCreativeGroup，Inc.（浩福创意集团）",
+        "receivedOn": "2025-07-08",
+        "status": "补充材料"
+      },
+      {
+        "company": "湖北香江电器集团股份有限公司",
+        "receivedOn": "2025-07-13",
+        "status": "已接收"
+      },
+      {
+        "company": "AquaGenikTechnologyInc.（开曼碧水源智慧科技股份有限公司）",
+        "receivedOn": "2025-07-18",
+        "status": "补充材料"
+      },
+      {
+        "company": "宁波健世科技股份有限公司",
+        "receivedOn": "2025-07-24",
+        "status": "补充材料"
+      },
+      {
+        "company": "沪上阿姨（上海）实业股份有限公司",
+        "receivedOn": "2025-08-07",
+        "status": "补充材料"
+      },
+      {
+        "company": "深圳市越疆科技股份有限公司",
+        "receivedOn": "2025-08-20",
+        "status": "补充材料"
+      },
+      {
+        "company": "江西一脉阳光集团股份有限公司",
+        "receivedOn": "2025-08-25",
+        "status": "征求意见"
+      },
+      {
+        "company": "温州康宁医院股份有限公司",
+        "receivedOn": "2025-09-05",
+        "status": "补充材料"
+      },
+      {
+        "company": "浙江太美医疗科技股份有限公司",
+        "receivedOn": "2025-09-09",
+        "status": "补充材料"
+      },
+      {
+        "company": "阳光保险集团股份有限公司",
+        "receivedOn": "2025-09-09",
+        "status": "补充材料"
+      },
+      {
+        "company": "MingdeTechnologyLimited",
+        "receivedOn": "2025-09-22",
+        "status": "补充材料"
+      },
+      {
+        "company": "REDSTONEAloTGROUPLIMITED（红石物联网集团有限公司）",
+        "receivedOn": "2025-10-09",
+        "status": "已接收"
+      },
+      {
+        "company": "KingtitanTechnologyLimited（金特安科技有限公司）",
+        "receivedOn": "2025-10-15",
+        "status": "已接收"
+      },
+      {
+        "company": "江苏中慧元通生物科技股份有限公司",
+        "receivedOn": "2025-10-17",
+        "status": "补充材料"
+      },
+      {
+        "company": "美中嘉和医学技术发展集团股份有限公司",
+        "receivedOn": "2025-10-17",
+        "status": "征求意见"
+      },
+      {
+        "company": "CarbonZeroTechnologiesInternationalInc.（零碳环保科技公司）",
+        "receivedOn": "2025-10-23",
+        "status": "已接收"
+      },
+      {
+        "company": "北京友宝在线科技股份有限公司",
+        "receivedOn": "2025-11-21",
+        "status": "补充材料"
+      },
+      {
+        "company": "北京第四范式智能技术股份有限公司",
+        "receivedOn": "2025-11-21",
+        "status": "已接收"
+      },
+      {
+        "company": "药捷安康（南京）科技股份有限公司",
+        "receivedOn": "2025-11-21",
+        "status": "补充材料"
+      },
+      {
+        "company": "连连数字科技股份有限公司",
+        "receivedOn": "2025-11-21",
+        "status": "补充材料"
+      },
+      {
+        "company": "山西省安装集团股份有限公司",
+        "receivedOn": "2026-01-09",
+        "status": "补充材料"
+      },
+      {
+        "company": "上海宝济药业股份有限公司",
+        "receivedOn": "2026-01-09",
+        "status": "补充材料"
+      },
+      {
+        "company": "灵宝黄金集团股份有限公司",
+        "receivedOn": "2026-01-13",
+        "status": "补充材料"
+      },
+      {
+        "company": "北京极智嘉科技股份有限公司",
+        "receivedOn": "2026-01-16",
+        "status": "补充材料"
+      },
+      {
+        "company": "卧龙电气驱动集团股份有限公司",
+        "receivedOn": "2026-03-20",
+        "status": "征求意见"
+      },
+      {
+        "company": "HopeSeaInc.（富洋供应链集团有限公司）",
+        "receivedOn": "2026-04-13",
+        "status": "征求意见"
+      },
+      {
+        "company": "斑马智能信息技术股份有限公司",
+        "receivedOn": "2026-04-15",
+        "status": "补充材料"
+      },
+      {
+        "company": "杭州先为达生物科技股份有限公司",
+        "receivedOn": "2026-04-15",
+        "status": "已接收"
+      },
+      {
+        "company": "赛美特信息集团股份有限公司",
+        "receivedOn": "2026-04-17",
+        "status": "征求意见"
+      },
+      {
+        "company": "杭州新元素药业股份有限公司",
+        "receivedOn": "2026-04-17",
+        "status": "征求意见"
+      },
+      {
+        "company": "SiriusTherapeutics（靖因药业）",
+        "receivedOn": "2026-04-17",
+        "status": "征求意见"
+      },
+      {
+        "company": "华明电力装备股份有限公司",
+        "receivedOn": "2026-04-21",
+        "status": "征求意见"
+      },
+      {
+        "company": "浙江可胜技术股份有限公司",
+        "receivedOn": "2026-04-24",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳市锐明技术股份有限公司",
+        "receivedOn": "2026-04-24",
+        "status": "征求意见"
+      },
+      {
+        "company": "诺比侃人工智能科技（成都）股份有限公司",
+        "receivedOn": "2026-04-24",
+        "status": "已接收"
+      },
+      {
+        "company": "上海林清轩化妆品集团股份有限公司",
+        "receivedOn": "2026-04-24",
+        "status": "已接收"
+      },
+      {
+        "company": "青岛特锐德电气股份有限公司",
+        "receivedOn": "2026-04-28",
+        "status": "征求意见"
+      },
+      {
+        "company": "中文在线集团股份有限公司",
+        "receivedOn": "2026-04-28",
+        "status": "征求意见"
+      },
+      {
+        "company": "上海璞泰来新能源科技集团股份有限公司",
+        "receivedOn": "2026-04-28",
+        "status": "征求意见"
+      },
+      {
+        "company": "福建万辰食品集团股份有限公司",
+        "receivedOn": "2026-04-29",
+        "status": "征求意见"
+      },
+      {
+        "company": "暖哇洞察科技有限公司",
+        "receivedOn": "2026-04-30",
+        "status": "征求意见"
+      },
+      {
+        "company": "安诺优达基因科技（北京）股份有限公司",
+        "receivedOn": "2026-04-30",
+        "status": "征求意见"
+      },
+      {
+        "company": "广州若羽臣科技股份有限公司",
+        "receivedOn": "2026-05-07",
+        "status": "已接收"
+      },
+      {
+        "company": "天津望圆智能科技股份有限公司",
+        "receivedOn": "2026-05-07",
+        "status": "征求意见"
+      },
+      {
+        "company": "星宸科技股份有限公司",
+        "receivedOn": "2026-05-08",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳市晶存科技股份有限公司",
+        "receivedOn": "2026-05-08",
+        "status": "征求意见"
+      },
+      {
+        "company": "武汉艾米森生命科技股份有限公司",
+        "receivedOn": "2026-05-08",
+        "status": "已接收"
+      },
+      {
+        "company": "上海汇伦医药股份有限公司",
+        "receivedOn": "2026-05-08",
+        "status": "征求意见"
+      },
+      {
+        "company": "武汉聚芯微电子股份有限公司",
+        "receivedOn": "2026-05-09",
+        "status": "征求意见"
+      },
+      {
+        "company": "RadvanceCaymanLimited",
+        "receivedOn": "2026-05-11",
+        "status": "已接收"
+      },
+      {
+        "company": "岚图汽车科技股份有限公司",
+        "receivedOn": "2026-05-12",
+        "status": "补充材料"
+      },
+      {
+        "company": "武汉帝尔激光科技股份有限公司",
+        "receivedOn": "2026-05-12",
+        "status": "征求意见"
+      },
+      {
+        "company": "广州极飞科技股份有限公司",
+        "receivedOn": "2026-05-13",
+        "status": "征求意见"
+      },
+      {
+        "company": "宜品营养科技（青岛）集团股份有限公司",
+        "receivedOn": "2026-05-13",
+        "status": "征求意见"
+      },
+      {
+        "company": "中茵微电子（北京）股份有限公司",
+        "receivedOn": "2026-05-13",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳小阔科技股份有限公司",
+        "receivedOn": "2026-05-13",
+        "status": "征求意见"
+      },
+      {
+        "company": "杭州热联集团股份有限公司",
+        "receivedOn": "2026-05-14",
+        "status": "征求意见"
+      },
+      {
+        "company": "北京五和博澳药业股份有限公司",
+        "receivedOn": "2026-05-14",
+        "status": "征求意见"
+      },
+      {
+        "company": "讯飞医疗科技股份有限公司",
+        "receivedOn": "2026-05-15",
+        "status": "已接收"
+      },
+      {
+        "company": "西藏智汇矿业股份有限公司",
+        "receivedOn": "2026-05-15",
+        "status": "已接收"
+      },
+      {
+        "company": "江苏华盛锂电材料股份有限公司",
+        "receivedOn": "2026-05-18",
+        "status": "征求意见"
+      },
+      {
+        "company": "CHANDOGlobalHoldingLimited（自然堂全球控股有限公司）",
+        "receivedOn": "2026-05-19",
+        "status": "征求意见"
+      },
+      {
+        "company": "InxMedLimited",
+        "receivedOn": "2026-05-21",
+        "status": "补充材料"
+      },
+      {
+        "company": "易点天下网络科技股份有限公司",
+        "receivedOn": "2026-05-21",
+        "status": "征求意见"
+      },
+      {
+        "company": "陕西源杰半导体科技股份有限公司",
+        "receivedOn": "2026-05-21",
+        "status": "已接收"
+      },
+      {
+        "company": "深圳宜美智科技股份有限公司",
+        "receivedOn": "2026-05-21",
+        "status": "征求意见"
+      },
+      {
+        "company": "钛动科技股份有限公司",
+        "receivedOn": "2026-05-21",
+        "status": "征求意见"
+      },
+      {
+        "company": "EccogeneInc.（诚益生物开曼有限公司）",
+        "receivedOn": "2026-05-22",
+        "status": "征求意见"
+      },
+      {
+        "company": "SmartMoreInc.",
+        "receivedOn": "2026-05-22",
+        "status": "已接收"
+      },
+      {
+        "company": "上海华依科技集团股份有限公司",
+        "receivedOn": "2026-05-25",
+        "status": "征求意见"
+      },
+      {
+        "company": "阳光电源股份有限公司",
+        "receivedOn": "2026-05-26",
+        "status": "已接收"
+      },
+      {
+        "company": "清陶（昆山）能源发展集团股份有限公司",
+        "receivedOn": "2026-05-27",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳菲亚兰德科技集团股份有限公司",
+        "receivedOn": "2026-05-27",
+        "status": "补充材料"
+      },
+      {
+        "company": "广东天域半导体股份有限公司",
+        "receivedOn": "2026-05-29",
+        "status": "已接收"
+      },
+      {
+        "company": "新希望乳业股份有限公司",
+        "receivedOn": "2026-05-29",
+        "status": "征求意见"
+      },
+      {
+        "company": "苏州天孚光通信股份有限公司",
+        "receivedOn": "2026-05-29",
+        "status": "征求意见"
+      },
+      {
+        "company": "ElpiscienceBiopharmaceuticals,Inc.",
+        "receivedOn": "2026-06-02",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳迈瑞生物医疗电子股份有限公司",
+        "receivedOn": "2026-06-02",
+        "status": "征求意见"
+      },
+      {
+        "company": "深向科技股份有限公司",
+        "receivedOn": "2026-06-02",
+        "status": "征求意见"
+      },
+      {
+        "company": "中微半导体（深圳）股份有限公司",
+        "receivedOn": "2026-06-02",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳佰维存储科技股份有限公司",
+        "receivedOn": "2026-06-05",
+        "status": "征求意见"
+      },
+      {
+        "company": "科兴生物制药股份有限公司",
+        "receivedOn": "2026-06-05",
+        "status": "征求意见"
+      },
+      {
+        "company": "珀莱雅化妆品股份有限公司",
+        "receivedOn": "2026-06-05",
+        "status": "征求意见"
+      },
+      {
+        "company": "宁波拓普集团股份有限公司",
+        "receivedOn": "2026-06-05",
+        "status": "征求意见"
+      },
+      {
+        "company": "伊卡路斯（苏州）科技股份有限公司",
+        "receivedOn": "2026-06-05",
+        "status": "补充材料"
+      },
+      {
+        "company": "石大胜华新材料集团股份有限公司",
+        "receivedOn": "2026-06-09",
+        "status": "征求意见"
+      },
+      {
+        "company": "SQAdvancedInterconnectBerhad（瑞科先进互连有限公司）",
+        "receivedOn": "2026-06-10",
+        "status": "征求意见"
+      },
+      {
+        "company": "XREALLtd.",
+        "receivedOn": "2026-06-11",
+        "status": "征求意见"
+      },
+      {
+        "company": "昆山玛冀电子股份有限公司",
+        "receivedOn": "2026-06-12",
+        "status": "征求意见"
+      },
+      {
+        "company": "上海百秋尚美科技服务集团股份有限公司",
+        "receivedOn": "2026-06-12",
+        "status": "征求意见"
+      },
+      {
+        "company": "北京数聚智连科技股份有限公司",
+        "receivedOn": "2026-06-12",
+        "status": "征求意见"
+      },
+      {
+        "company": "哲弗智能系统（上海）股份有限公司",
+        "receivedOn": "2026-06-12",
+        "status": "征求意见"
+      },
+      {
+        "company": "AqaraInternationalLtd",
+        "receivedOn": "2026-06-16",
+        "status": "征求意见"
+      },
+      {
+        "company": "北京圆心科技集团股份有限公司",
+        "receivedOn": "2026-06-17",
+        "status": "补充材料"
+      },
+      {
+        "company": "赛诺医疗科学技术股份有限公司",
+        "receivedOn": "2026-06-17",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳市爱德泰科技股份有限公司",
+        "receivedOn": "2026-06-17",
+        "status": "征求意见"
+      },
+      {
+        "company": "广东融泰药业股份有限公司",
+        "receivedOn": "2026-06-18",
+        "status": "补充材料"
+      },
+      {
+        "company": "珠海精实测控技术股份有限公司",
+        "receivedOn": "2026-06-22",
+        "status": "已接收"
+      },
+      {
+        "company": "杭州高光制药股份有限公司",
+        "receivedOn": "2026-06-22",
+        "status": "补充材料"
+      },
+      {
+        "company": "阿麦斯食品（集团）股份有限公司",
+        "receivedOn": "2026-06-26",
+        "status": "补充材料"
+      },
+      {
+        "company": "浙江力积存储科技股份有限公司",
+        "receivedOn": "2026-06-26",
+        "status": "已接收"
+      },
+      {
+        "company": "BANUINTERNATIONALHOLDINGLTD（巴奴国际控股有限公司）",
+        "receivedOn": "2026-06-26",
+        "status": "征求意见"
+      },
+      {
+        "company": "华工科技产业股份有限公司",
+        "receivedOn": "2026-07-01",
+        "status": "征求意见"
+      },
+      {
+        "company": "安擎计算机信息股份有限公司",
+        "receivedOn": "2026-07-02",
+        "status": "补充材料"
+      },
+      {
+        "company": "广州市易鸿智能装备股份有限公司",
+        "receivedOn": "2026-07-02",
+        "status": "补充材料"
+      },
+      {
+        "company": "深圳云天励飞技术股份有限公司",
+        "receivedOn": "2026-07-15",
+        "status": "征求意见"
+      },
+      {
+        "company": "昆山万源通电子科技股份有限公司",
+        "receivedOn": "2026-07-16",
+        "status": "征求意见"
+      },
+      {
+        "company": "上海易景信息科技股份有限公司",
+        "receivedOn": "2026-07-16",
+        "status": "已接收"
+      },
+      {
+        "company": "美克生能源科技股份有限公司",
+        "receivedOn": "2026-07-16",
+        "status": "已接收"
+      },
+      {
+        "company": "芜湖伯特利汽车安全系统股份有限公司",
+        "receivedOn": "2026-07-16",
+        "status": "已接收"
+      },
+      {
+        "company": "北京神州细胞生物技术集团股份公司",
+        "receivedOn": "2026-07-16",
+        "status": "已接收"
+      },
+      {
+        "company": "苏州天瞳威视电子科技股份有限公司",
+        "receivedOn": "2026-07-16",
+        "status": "已接收"
+      },
+      {
+        "company": "FJDInc.",
+        "receivedOn": "2026-07-17",
+        "status": "已接收"
+      },
+      {
+        "company": "北京质肽生物医药科技股份有限公司",
+        "receivedOn": "2026-07-20",
+        "status": "征求意见"
+      },
+      {
+        "company": "LupengPharmaceuticalLtd.（麓鹏制药有限公司）",
+        "receivedOn": "2026-07-22",
+        "status": "已接收"
+      },
+      {
+        "company": "深圳华大北斗科技股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "已接收"
+      },
+      {
+        "company": "苏州和林微纳科技股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "格林美股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "北京高能时代环境技术股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "景泽生物医药（合肥）股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "补充材料"
+      },
+      {
+        "company": "杭州铂科电子股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "宏和电子材料科技股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "CSWInc.",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "上海基流科技股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "已接收"
+      },
+      {
+        "company": "阿维塔科技（重庆）股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "COREECompanyLimited（科郦有限公司）",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "上海森亿智慧信息科技股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "YangtuoHoldingsInc.",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳宏芯宇电子股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳市道通科技股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "征求意见"
+      },
+      {
+        "company": "浙江金龙电机股份有限公司",
+        "receivedOn": "2026-07-23",
+        "status": "补充材料"
+      },
+      {
+        "company": "HolyfireHoldingsGroupLimited（圣火控股集团有限公司）",
+        "receivedOn": "2026-07-24",
+        "status": "已接收"
+      },
+      {
+        "company": "微康益生菌（苏州）股份有限公司",
+        "receivedOn": "2026-07-24",
+        "status": "补充材料"
+      },
+      {
+        "company": "深圳曦华科技股份有限公司",
+        "receivedOn": "2026-07-24",
+        "status": "征求意见"
+      },
+      {
+        "company": "主线科技（北京）股份有限公司",
+        "receivedOn": "2026-07-24",
+        "status": "征求意见"
+      },
+      {
+        "company": "AxbioInternationalLimited（安序源科技有限公司）",
+        "receivedOn": "2026-07-24",
+        "status": "已接收"
+      },
+      {
+        "company": "上海君赛生物股份有限公司",
+        "receivedOn": "2026-07-24",
+        "status": "已接收"
+      },
+      {
+        "company": "山东安得医疗用品股份有限公司",
+        "receivedOn": "2026-07-24",
+        "status": "补充材料"
+      },
+      {
+        "company": "MingYuPharmaceuticalLimited（明宇制药有限公司）",
+        "receivedOn": "2026-07-24",
+        "status": "征求意见"
+      },
+      {
+        "company": "无锡东恒新能源科技股份有限公司",
+        "receivedOn": "2026-07-28",
+        "status": "补充材料"
+      },
+      {
+        "company": "孩子王数智科技股份有限公司",
+        "receivedOn": "2026-07-30",
+        "status": "已接收"
+      },
+      {
+        "company": "MegatronixInc.（镁佳股份有限公司）",
+        "receivedOn": "2026-07-30",
+        "status": "已接收"
+      },
+      {
+        "company": "北京戴纳实验科技股份有限公司",
+        "receivedOn": "2026-07-30",
+        "status": "征求意见"
+      },
+      {
+        "company": "格雷博智能动力科技股份有限公司",
+        "receivedOn": "2026-07-31",
+        "status": "补充材料"
+      },
+      {
+        "company": "南京擎天全税通信息科技股份有限公司",
+        "receivedOn": "2026-07-31",
+        "status": "已接收"
+      },
+      {
+        "company": "新思考电机股份有限公司",
+        "receivedOn": "2026-07-31",
+        "status": "征求意见"
+      },
+      {
+        "company": "用友网络科技股份有限公司",
+        "receivedOn": "2026-07-31",
+        "status": "征求意见"
+      },
+      {
+        "company": "北京云中融信网络科技股份有限公司",
+        "receivedOn": "2026-07-31",
+        "status": "补充材料"
+      },
+      {
+        "company": "江苏知原药业股份有限公司",
+        "receivedOn": "2026-07-31",
+        "status": "已接收"
+      },
+      {
+        "company": "崇舜股份有限公司",
+        "receivedOn": "2026-08-03",
+        "status": "征求意见"
+      },
+      {
+        "company": "YushengHoldingsLimited（裕晟控股有限公司）",
+        "receivedOn": "2026-08-03",
+        "status": "已接收"
+      },
+      {
+        "company": "深圳市格林晟科技股份有限公司",
+        "receivedOn": "2026-08-03",
+        "status": "补充材料"
+      },
+      {
+        "company": "湖南明珠矿用化工科技股份有限公司",
+        "receivedOn": "2026-08-03",
+        "status": "已接收"
+      },
+      {
+        "company": "深圳市汇川技术股份有限公司",
+        "receivedOn": "2026-08-03",
+        "status": "征求意见"
+      },
+      {
+        "company": "国联绿色科技（无锡）股份有限公司",
+        "receivedOn": "2026-08-03",
+        "status": "征求意见"
+      },
+      {
+        "company": "扬州纳力新材料科技股份有限公司",
+        "receivedOn": "2026-08-06",
+        "status": "补充材料"
+      },
+      {
+        "company": "XiaoeInc.",
+        "receivedOn": "2026-08-07",
+        "status": "征求意见"
+      },
+      {
+        "company": "踏歌智行科技股份有限公司",
+        "receivedOn": "2026-08-07",
+        "status": "征求意见"
+      },
+      {
+        "company": "江苏零一汽车科技股份有限公司",
+        "receivedOn": "2026-08-07",
+        "status": "已接收"
+      },
+      {
+        "company": "CasstimeHoldingsLtd.（开思时代控股有限公司）",
+        "receivedOn": "2026-08-07",
+        "status": "已接收"
+      },
+      {
+        "company": "济南建邦金属材料股份有限公司",
+        "receivedOn": "2026-08-07",
+        "status": "补充材料"
+      },
+      {
+        "company": "地上铁绿色科技（深圳）股份有限公司",
+        "receivedOn": "2026-08-07",
+        "status": "征求意见"
+      },
+      {
+        "company": "南京领行科技股份有限公司",
+        "receivedOn": "2026-08-07",
+        "status": "补充材料"
+      },
+      {
+        "company": "南京硅基智能科技集团股份有限公司",
+        "receivedOn": "2026-08-10",
+        "status": "征求意见"
+      },
+      {
+        "company": "成都卡诺普机器人技术股份有限公司",
+        "receivedOn": "2026-08-10",
+        "status": "征求意见"
+      },
+      {
+        "company": "江苏贝尔家居科技股份有限公司",
+        "receivedOn": "2026-08-12",
+        "status": "补充材料"
+      },
+      {
+        "company": "太合音乐集团",
+        "receivedOn": "2026-08-12",
+        "status": "征求意见"
+      },
+      {
+        "company": "WinHealthInternationalHoldingGroupCompanyLimited（维健国际控股集团有限公司）",
+        "receivedOn": "2026-08-12",
+        "status": "征求意见"
+      },
+      {
+        "company": "深圳市长盈精密技术股份有限公司",
+        "receivedOn": "2026-08-14",
+        "status": "补充材料"
+      },
+      {
+        "company": "广东华成电力能源股份有限公司",
+        "receivedOn": "2026-08-14",
+        "status": "已接收"
+      },
+      {
+        "company": "浙江晶通新材料集团股份有限公司",
+        "receivedOn": "2026-08-14",
+        "status": "补充材料"
+      },
+      {
+        "company": "广州视源电子科技股份有限公司",
+        "receivedOn": "2026-08-14",
+        "status": "征求意见"
+      },
+      {
+        "company": "卡奥斯物联科技股份有限公司",
+        "receivedOn": "2026-08-17",
+        "status": "已接收"
+      },
+      {
+        "company": "深圳粤十数智股份有限公司",
+        "receivedOn": "2026-08-17",
+        "status": "已接收"
+      },
+      {
+        "company": "斯坦德机器人（无锡）股份有限公司",
+        "receivedOn": "2026-08-17",
+        "status": "征求意见"
+      },
+      {
+        "company": "广东同亚科技股份有限公司",
+        "receivedOn": "2026-08-17",
+        "status": "补充材料"
+      },
+      {
+        "company": "勤浩医药（苏州）股份有限公司",
+        "receivedOn": "2026-08-17",
+        "status": "征求意见"
+      },
+      {
+        "company": "杭州顺丰同城实业股份有限公司",
+        "receivedOn": "2026-08-19",
+        "status": "已接收"
+      },
+      {
+        "company": "上海观安信息技术股份有限公司",
+        "receivedOn": "2026-08-19",
+        "status": "已接收"
+      },
+      {
+        "company": "众安信科（深圳）股份有限公司",
+        "receivedOn": "2026-08-20",
+        "status": "补充材料"
+      },
+      {
+        "company": "华院计算技术（上海）股份有限公司",
+        "receivedOn": "2026-08-24",
+        "status": "补充材料"
+      },
+      {
+        "company": "燕文物流股份有限公司",
+        "receivedOn": "2026-08-31",
+        "status": "征求意见"
+      },
+      {
+        "company": "爱士惟科技股份有限公司",
+        "receivedOn": "2026-08-31",
+        "status": "已接收"
+      },
+      {
+        "company": "合肥新汇成微电子股份有限公司",
+        "receivedOn": "2026-08-31",
+        "status": "征求意见"
+      },
+      {
+        "company": "智租物联科技集团股份有限公司",
+        "receivedOn": "2026-09-01",
+        "status": "已接收"
+      },
+      {
+        "company": "杭州灵卡科技股份有限公司",
+        "receivedOn": "2026-09-02",
+        "status": "征求意见"
+      },
+      {
+        "company": "石药创新制药股份有限公司",
+        "receivedOn": "2026-09-02",
+        "status": "已接收"
+      },
+      {
+        "company": "开封清明上河园股份有限公司",
+        "receivedOn": "2026-09-02",
+        "status": "已接收"
+      },
+      {
+        "company": "北京四方继保自动化股份有限公司",
+        "receivedOn": "2026-09-02",
+        "status": "已接收"
+      },
+      {
+        "company": "湖北东圣实业股份有限公司",
+        "receivedOn": "2026-09-02",
+        "status": "已接收"
+      },
+      {
+        "company": "苏州群策科技股份有限公司",
+        "receivedOn": "2026-09-02",
+        "status": "征求意见"
+      },
+      {
+        "company": "昆仑新能源材料技术（宜昌）股份有限公司",
+        "receivedOn": "2026-09-03",
+        "status": "已接收"
+      },
+      {
+        "company": "上海联泰科技股份有限公司",
+        "receivedOn": "2026-09-04",
+        "status": "已接收"
+      },
+      {
+        "company": "大秦数字能源技术股份有限公司",
+        "receivedOn": "2026-09-04",
+        "status": "已接收"
+      },
+      {
+        "company": "安徽华创新材料股份有限公司",
+        "receivedOn": "2026-09-08",
+        "status": "已接收"
+      },
+      {
+        "company": "龙迅半导体（合肥）股份有限公司",
+        "receivedOn": "2026-09-08",
+        "status": "已接收"
+      },
+      {
+        "company": "奥动新能源股份有限公司",
+        "receivedOn": "2026-09-08",
+        "status": "已接收"
+      },
+      {
+        "company": "宁波德业科技股份有限公司",
+        "receivedOn": "2026-09-09",
+        "status": "已接收"
+      },
+      {
+        "company": "博纳西亚（杭州）医药科技股份有限公司",
+        "receivedOn": "2026-09-10",
+        "status": "已接收"
+      },
+      {
+        "company": "江西铜博科技股份有限公司",
+        "receivedOn": "2026-09-11",
+        "status": "已接收"
+      },
+      {
+        "company": "珠海金智维人工智能股份有限公司",
+        "receivedOn": "2026-09-11",
+        "status": "已接收"
+      },
+      {
+        "company": "山东省环能设计院股份有限公司",
+        "receivedOn": "2026-09-11",
+        "status": "已接收"
+      },
+      {
+        "company": "凌科药业（浙江）股份有限公司",
+        "receivedOn": "2026-09-11",
+        "status": "已接收"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "label": "HKEX New Listing Report",
+      "url": "https://www2.hkexnews.hk/-/media/HKEXnews/Homepage/New-Listings/New-Listing-Information/New-Listing-Report/Main/NLR2026_Eng.xlsx",
+      "usedFor": "上市日期、发行价、募资额、保荐人",
+      "asOf": "2026-09-11"
+    },
+    {
+      "label": "HKEX 每日报价 2026-09-11",
+      "url": "https://www.hkex.com.hk/eng/stat/smstat/dayquot/d260911e.htm",
+      "usedFor": "最新收市价及年内新股表现",
+      "asOf": "2026-09-11"
+    },
+    {
+      "label": "HKEX 每日报价 2026-09-07",
+      "url": "https://www.hkex.com.hk/eng/stat/smstat/dayquot/d260907e.htm",
+      "usedFor": "本周新股首日收市价",
+      "asOf": "2026-09-07"
+    },
+    {
+      "label": "HKEX 每日报价 2026-09-08",
+      "url": "https://www.hkex.com.hk/eng/stat/smstat/dayquot/d260908e.htm",
+      "usedFor": "本周新股首日收市价",
+      "asOf": "2026-09-08"
+    },
+    {
+      "label": "HKEX 每日报价 2026-09-09",
+      "url": "https://www.hkex.com.hk/eng/stat/smstat/dayquot/d260909e.htm",
+      "usedFor": "本周新股首日收市价",
+      "asOf": "2026-09-09"
+    },
+    {
+      "label": "HKEX 主板有效申请 JSON",
+      "url": "https://www1.hkexnews.hk/ncms/json/eds/appactive_app_sehk_c.json",
+      "usedFor": "有效主板申请数",
+      "asOf": "2026-09-11"
+    },
+    {
+      "label": "HKEX GEM 有效申请 JSON",
+      "url": "https://www1.hkexnews.hk/ncms/json/eds/appactive_app_gem_c.json",
+      "usedFor": "有效 GEM 申请数",
+      "asOf": "2026-09-11"
+    },
+    {
+      "label": "HKEX 2026 主板申请进度 JSON",
+      "url": "https://www1.hkexnews.hk/ncms/json/eds/app_2026_sehk_c.json",
+      "usedFor": "本周申请版本及 PHIP",
+      "asOf": "2026-09-11"
+    },
+    {
+      "label": "HKEX 2026 GEM 申请进度 JSON",
+      "url": "https://www1.hkexnews.hk/ncms/json/eds/app_2026_gem_c.json",
+      "usedFor": "本周申请版本及 PHIP",
+      "asOf": "2026-09-11"
+    },
+    {
+      "label": "中国证监会境外发行上市备案情况表页面",
+      "url": "https://www.csrc.gov.cn/csrc/c106251/c7658245/content.shtml",
+      "usedFor": "备案材料接收与审核进度",
+      "asOf": "2026-09-11"
+    },
+    {
+      "label": "中国证监会境外发行上市备案情况表 XLSX",
+      "url": "https://www.csrc.gov.cn/csrc/c106251/c7658245/7658245/files/%E5%A2%83%E5%86%85%E4%BC%81%E4%B8%9A%E5%A2%83%E5%A4%96%E5%8F%91%E8%A1%8C%E8%AF%81%E5%88%B8%E5%92%8C%E4%B8%8A%E5%B8%82%E5%A4%87%E6%A1%88%E6%83%85%E5%86%B5%E8%A1%A8%EF%BC%88%E9%A6%96%E6%AC%A1%E5%85%AC%E5%BC%80%E5%8F%91%E8%A1%8C%E5%8F%8A%E5%85%A8%E6%B5%81%E9%80%9A%EF%BC%89%EF%BC%88%E6%88%AA%E8%87%B32026%E5%B9%B49%E6%9C%8811%E6%97%A5%EF%BC%89%20.xlsx",
+      "usedFor": "备案明细原始表",
+      "asOf": "2026-09-11"
+    }
+  ]
+}
