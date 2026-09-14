@@ -6,9 +6,9 @@
   <meta name="description" content="港股 IPO 发行、联交所审核及中国证监会备案动态周报。">
   <title>港股市场审核动态周报</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <link rel="stylesheet" href="assets/overrides.css">
+  <link rel="stylesheet" href="assets/overrides.css?v=2">
   <link rel="stylesheet" href="assets/decision.css">
-  <link rel="stylesheet" href="assets/mobile.css?v=4">
+  <link rel="stylesheet" href="assets/mobile.css?v=5">
 </head>
 <body>
   <header class="hero">
@@ -68,15 +68,15 @@
     <section class="report-section" id="pipeline">
       <div class="section-heading">
         <b>02</b>
-        <div><h2>联交所审核动态</h2><p>官方总体在审规模、公开可见申请及本周关键节点</p></div>
+        <div><h2>联交所审核动态</h2><p>主板及GEM审核工作量、公开申请及本周关键节点</p></div>
       </div>
       <div class="pipeline-grid">
         <article class="donut-card">
-          <div class="donut" id="pipeline-donut"><div><strong id="active-total">—</strong><span>官方处理中</span><small id="workload-as-of">—</small></div></div>
+          <div class="pipeline-primary"><span>主板＋GEM</span><strong id="active-total">—</strong><b>宗处理中</b><small id="workload-as-of">—</small></div>
           <div class="donut-legend">
-            <div><i class="main-dot"></i><span>公开可见</span><strong id="public-visible">—</strong></div>
-            <div><i class="gem-dot"></i><span>年内处理</span><strong id="ytd-processed">—</strong></div>
-            <div><i class="pending-dot"></i><span>批准待上市</span><strong id="approved-pending">—</strong></div>
+            <div><i class="main-dot"></i><span>公开可见有效申请</span><strong id="public-visible">—</strong></div>
+            <div><i class="gem-dot"></i><span>年内纳入处理</span><strong id="ytd-processed">—</strong></div>
+            <div><i class="pending-dot"></i><span>已获批、尚待上市</span><strong id="approved-pending">—</strong></div>
           </div>
         </article>
         <div class="event-stack">
@@ -84,7 +84,7 @@
           <article class="event-card"><strong id="a1-count">—</strong><div><h3>本周申请版本（第一次呈交）</h3><div id="a1-list" class="tag-list"></div></div></article>
         </div>
       </div>
-      <p class="method-note">2026年7月24日起，非公开递交已扩展至所有新申请人；“公开可见”不代表实际在审总量。“申请版本（第一次呈交）”可能包括重新递交。行业标签为内部归类。</p>
+      <p class="method-note">官方月度工作量统一采用主板＋GEM口径；公开可见有效申请来自公开资料库，两项统计日期不同，分别展示，不构成组成比例，也不能相减推算密交数量。“申请版本（第一次呈交）”可能包括重新递交。</p>
     </section>
 
     <section class="report-section" id="csrc">
@@ -124,12 +124,12 @@
         <article class="decision-card">
           <header><h3>申报拥挤度</h3><span class="signal" id="congestion-label">—</span></header>
           <strong class="decision-primary" id="congestion-active">—</strong>
-          <div class="decision-lines"><div><span>公开可见申请</span><b id="congestion-a1">—</b></div><div><span>新申请/新上市</span><b id="congestion-phip">—</b></div><div><span>申请至聆讯资料</span><b id="congestion-listings">—</b></div></div>
+          <div class="decision-lines"><div><span>公开可见申请</span><b id="congestion-a1">—</b></div><div><span>年内新申请/上市</span><b id="congestion-phip">—</b></div><div><span>申请至聆讯资料</span><b id="congestion-listings">—</b></div></div>
         </article>
         <article class="decision-card">
           <header><h3>二级市场行情</h3><span class="signal" id="market-label">—</span></header>
           <strong class="decision-primary" id="hsi-return">—</strong>
-          <div class="decision-lines"><div><span>恒生国企指数</span><b id="hscei-return">—</b></div><div><span>全日成交额</span><b id="market-turnover">—</b></div><div><span>成交额周变化</span><b id="turnover-change">—</b></div></div>
+          <div class="decision-lines"><div><span>恒生国企指数</span><b id="hscei-return">—</b></div><div><span>全日成交额</span><b id="market-turnover">—</b></div><div><span>周五单日成交额环比</span><b id="turnover-change">—</b></div></div>
         </article>
         <article class="decision-card">
           <header><h3>估值水平</h3><span class="signal">月度</span></header>
@@ -140,10 +140,10 @@
         <article class="decision-card">
           <header><h3>市场情绪</h3><span class="signal" id="sentiment-label">—</span></header>
           <strong class="decision-primary" id="ipo-median">—</strong>
-          <div class="decision-lines"><div><span>新股上涨比例</span><b id="ipo-positive">—</b></div><div><span>上涨/下跌家数</span><b id="market-breadth">—</b></div><div><span>涨跌家数比</span><b id="breadth-ratio">—</b></div></div>
+          <div class="decision-lines"><div><span>新股上涨比例</span><b id="ipo-positive">—</b></div><div><span>上涨/下跌证券数</span><b id="market-breadth">—</b></div><div><span>涨跌证券数比</span><b id="breadth-ratio">—</b></div></div>
         </article>
       </div>
-      <p class="decision-note">拥挤度和窗口判断属于内部计算指标，用于观察趋势，不构成对具体申报或发行时间的建议。估值采用恒生指数公司最新月度指数基本面数据。</p>
+      <p class="decision-note">拥挤度和窗口判断属于内部计算指标，不构成申报或发行时间建议。“周五单日成交额环比”比较报告期末与前一周同期的单日成交额；涨跌数量为证券数而非公司家数。估值采用恒生指数公司最新月度指数基本面数据。</p>
     </section>
   </main>
 
@@ -152,7 +152,7 @@
     <p>仅供信息参考，不构成投资建议。数据在后台通过一手公开资料校验。</p>
   </footer>
 
-  <script src="assets/app-v2.js?v=5"></script>
+  <script src="assets/app-v2.js?v=6"></script>
 </body>
 </html>
 

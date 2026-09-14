@@ -1,4 +1,3 @@
-const palette = {blue:'#405a7a',red:'#c41230'};
 const $ = id => document.getElementById(id);
 const pct = (v,d=1) => v == null ? '—' : `${v>=0?'+':''}${(v*100).toFixed(d)}%`;
 const money = v => v == null ? '—' : `HK$${Number(v).toLocaleString('zh-CN',{maximumFractionDigits:1})}亿`;
@@ -31,8 +30,7 @@ function render(report) {
 
   const workload=hkex.officialWorkload;
   $('workload-as-of').textContent=`截至 ${workload.asOf}`;
-  $('active-total').textContent=workload.underProcessing;$('public-visible').textContent=`${hkex.activeCount}家`;$('ytd-processed').textContent=`${workload.processed}宗`;$('approved-pending').textContent=`${workload.approvedPending}宗`;
-  const visibleRate=workload.underProcessing?Math.min(100,hkex.activeCount/workload.underProcessing*100):0;$('pipeline-donut').style.background=`conic-gradient(${palette.blue} 0 ${visibleRate}%,#eadde0 ${visibleRate}% 100%)`;
+  $('active-total').textContent=workload.underProcessing;$('public-visible').textContent=`${hkex.activeCount}宗`;$('ytd-processed').textContent=`${workload.processed}宗`;$('approved-pending').textContent=`${workload.approvedPending}宗`;
   $('phip-count').textContent=hkex.weeklyPhips.length;$('a1-count').textContent=hkex.weeklyApplicationProofs.length;
   renderEvents($('phip-list'),hkex.weeklyPhips);renderEvents($('a1-list'),hkex.weeklyApplicationProofs);
 

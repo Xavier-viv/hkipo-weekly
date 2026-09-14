@@ -8,3 +8,6 @@
 .pending-dot{background:#d3a44b}
 
 .donut small{display:block;margin-top:4px;color:#8a94a4;font-size:10px;font-weight:600}
+
+.pipeline-primary{display:flex;min-height:190px;align-items:center;justify-content:center;flex-direction:column;border-radius:18px;background:linear-gradient(145deg,#f6eaec,#fff);text-align:center}.pipeline-primary>span{color:#8b1a2b;font-size:12px;font-weight:800}.pipeline-primary>strong{margin-top:10px;color:#405a7a;font-size:48px;line-height:1}.pipeline-primary>b{margin-top:5px;color:#182235;font-size:14px}.pipeline-primary>small{margin-top:8px;color:#7b8493;font-size:10px}
+@media(max-width:700px){.pipeline-primary{min-height:106px;border-radius:12px}.pipeline-primary>span{font-size:9px}.pipeline-primary>strong{margin-top:5px;font-size:27px}.pipeline-primary>b{margin-top:2px;font-size:9px}.pipeline-primary>small{margin-top:4px;font-size:8px}.donut-card{grid-template-columns:112px 1fr}}

@@ -5,7 +5,7 @@
     "weekStart": "2026-09-05",
     "weekEnd": "2026-09-11",
     "marketDataAsOf": "2026-09-11",
-    "generatedAt": "2026-09-14T17:14:26+08:00",
+    "generatedAt": "2026-09-14T17:40:19+08:00",
     "sourcePolicy": "primary-only",
     "theme": "VIVAIA"
   },
@@ -230,11 +230,42 @@
       "gem": "11/09/2026"
     },
     "officialWorkload": {
-      "processed": 866,
-      "newApplications": 487,
-      "listedApplications": 135,
-      "approvedPending": 23,
-      "underProcessing": 511,
+      "processed": 833,
+      "newApplications": 455,
+      "listedApplications": 106,
+      "approvedPending": 20,
+      "underProcessing": 510,
+      "scope": "Main Board + GEM",
+      "allScopes": {
+        "processed": 866,
+        "newApplications": 487,
+        "listedApplications": 135,
+        "approvedPending": 23,
+        "underProcessing": 511
+      },
+      "byBoard": {
+        "main": {
+          "processed": 816,
+          "newApplications": 444,
+          "listedApplications": 104,
+          "approvedPending": 20,
+          "underProcessing": 501
+        },
+        "gem": {
+          "processed": 17,
+          "newApplications": 11,
+          "listedApplications": 2,
+          "approvedPending": 0,
+          "underProcessing": 9
+        },
+        "others": {
+          "processed": 33,
+          "newApplications": 32,
+          "listedApplications": 29,
+          "approvedPending": 3,
+          "underProcessing": 1
+        }
+      },
       "listedCompanies": 106,
       "medianApplicationToHearingBundleDays": 106,
       "asOf": "2026-08-31"
@@ -244,13 +275,13 @@
     "windowSummary": "恒指周跌3.3%，成交额回落17.5%；3只新股首日1涨2跌，申请版本4宗、上市3宗",
     "congestion": {
       "label": "高位",
-      "underProcessing": 511,
+      "underProcessing": 510,
       "publicVisible": 368,
-      "ytdProcessed": 866,
-      "ytdNewApplications": 487,
-      "approvedPending": 23,
+      "ytdProcessed": 833,
+      "ytdNewApplications": 455,
+      "approvedPending": 20,
       "medianApplicationToHearingBundleDays": 106,
-      "newApplicationToListingRatio": 4.59433962264151,
+      "newApplicationToListingRatio": 4.2924528301886795,
       "officialAsOf": "2026-08-31",
       "weeklyApplicationProofs": 4,
       "weeklyPhips": 3,

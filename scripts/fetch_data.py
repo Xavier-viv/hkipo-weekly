@@ -415,17 +415,28 @@ def read_official_workload(as_of: date) -> dict[str, Any]:
     for key, url in (("main", HKEX_PROGRESS_MAIN), ("gem", HKEX_PROGRESS_GEM), ("others", HKEX_PROGRESS_OTHERS)):
         raw = fetch(url)
         pages[key] = re.sub(r"\s+", " ", html.fromstring(raw).text_content()).strip()
-    totals = {"processed": 0, "newApplications": 0, "listedApplications": 0, "approvedPending": 0, "underProcessing": 0}
+
+    board_values: dict[str, dict[str, int]] = {}
     for key, text_value in pages.items():
-        values = {
+        board_values[key] = {
             "processed": extract_progress_value(text_value, r"Applications brought forward.*?TOTAL:\s*([\d,]+)", f"{key} processed"),
             "newApplications": extract_progress_value(text_value, rf"New applications acknowledged in {as_of.year}.*?([\d,]+)\s+(?:TOTAL|SUB TOTAL)", f"{key} new applications"),
             "listedApplications": extract_progress_value(text_value, r"THE APPLICATION STATUS OF WHICH.*?Listed.*?([\d,]+)\s+2\.", f"{key} listed"),
             "approvedPending": extract_progress_value(text_value, r"Approved by the Listing Committee pending listing\s+([\d,]+)", f"{key} approved pending"),
             "underProcessing": extract_progress_value(text_value, r"Under processing\s+([\d,]+)", f"{key} under processing"),
         }
-        for metric, value in values.items():
-            totals[metric] += value
+
+    metrics = ("processed", "newApplications", "listedApplications", "approvedPending", "underProcessing")
+    # The decision dashboard is for company IPOs, so use Main Board + GEM only.
+    company_totals = {
+        metric: board_values["main"][metric] + board_values["gem"][metric]
+        for metric in metrics
+    }
+    all_scope_totals = {
+        metric: sum(values[metric] for values in board_values.values())
+        for metric in metrics
+    }
+
     main_text = pages["main"]
     report_date_match = re.search(r"as at\s+(\d{1,2}\s+\w+\s+\d{4})", main_text, re.I)
     median_match = re.search(r"Median of total business days taken from the listing application acknowledgement date to the date of hearing bundle letter.*?([\d,]+)\s+New Listings", main_text, re.I)
@@ -434,15 +445,20 @@ def read_official_workload(as_of: date) -> dict[str, Any]:
         report_date_match = re.search(r"\(as at\s+(\d{1,2}\s+\w+\s+\d{4})\)", main_text, re.I)
     report_date = datetime.strptime(report_date_match.group(1), "%d %B %Y").date().isoformat() if report_date_match else None
     median_days = int(median_match.group(1)) if median_match else 106
-    # Main Board and GEM listed company count is kept separately from listed applications including investment vehicles.
-    listed_companies = 106 if not company_listings_match else int(company_listings_match.group(1)) + int(company_listings_match.group(2))
+    listed_companies = (
+        int(company_listings_match.group(1)) + int(company_listings_match.group(2))
+        if company_listings_match
+        else company_totals["listedApplications"]
+    )
     return {
-        **totals,
+        **company_totals,
+        "scope": "Main Board + GEM",
+        "allScopes": all_scope_totals,
+        "byBoard": board_values,
         "listedCompanies": listed_companies,
         "medianApplicationToHearingBundleDays": median_days,
         "asOf": report_date,
     }
-
 def read_hkex_pipeline(as_of: date, week_start: date) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     year = as_of.year
     active_main_url = HKEX_JSON.format(name="appactive_app_sehk_c")
