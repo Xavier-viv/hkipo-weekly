@@ -109,7 +109,7 @@ def generate(report, site_url, output):
     text(draw, (300, 345), f"数据截至 {report['meta']['asOf']}", 20, "#efd6db")
     draw.line((68, 382, 1012, 382), fill="#b96976", width=1)
     weekly = report["issuance"]["weekly"]
-    headline = f"本周 {weekly['count']} 上市   {len(report['hkex']['weeklyPhips'])} 聆讯后资料集   {len(report['hkex']['weeklyApplicationProofs'])} 申请版本   {len(report['csrc']['weeklyNewReceived'])} 材料接收"
+    headline = f"本周 {weekly['count']} 上市   {len(report['hkex']['weeklyPhips'])} 通过聆讯   {len(report['hkex']['weeklyApplicationProofs'])} 申请版本   {len(report['csrc']['weeklyNewReceived'])} 材料接收"
     text(draw, (68, 440), headline, 24, C["white"], True)
     qr = qrcode.make(site_url).convert("RGB").resize((96, 96))
     rr(draw, (852, 388, 1006, 506), 18, C["cream2"])
@@ -130,15 +130,16 @@ def generate(report, site_url, output):
     rr(draw, (58, y, 1022, y + 240), 24, C["white"], C["line"])
     text(draw, (84, y + 39), "本周新上市", 20, C["ruby"], True)
     text(draw, (988, y + 39), f"{weekly['count']}家", 18, C["ruby"], True, "ra")
-    for label, x in zip(("公司", "募资额", "首日涨跌", "保荐人"), (84, 430, 620, 760)):
+    for label, x in zip(("公司", "行业", "募资额", "首日涨跌", "保荐人"), (84, 350, 490, 625, 760)):
         text(draw, (x, y + 72), label, 13, C["muted"], True)
     for idx, item in enumerate(weekly["companies"]):
         yy = y + 112 + idx * 50
         if idx % 2 == 0:
             rr(draw, (72, yy - 28, 1008, yy + 14), 10, "#fffbfb")
-        fit_text(draw, item["name"], (84, yy - 15, 405, yy + 15), 14, bold=True, max_lines=1)
-        text(draw, (430, yy), money(item["fundraisingHkd100m"]), 15, bold=True)
-        text(draw, (620, yy), pct(item["firstDayReturn"]), 16, C["red"] if item["firstDayReturn"] >= 0 else C["green"], True)
+        fit_text(draw, item.get("shortName") or item["name"], (84, yy - 15, 330, yy + 15), 14, bold=True, max_lines=1)
+        text(draw, (350, yy), item.get("industry", "其他"), 12, C["ruby"], True)
+        text(draw, (490, yy), money(item["fundraisingHkd100m"]), 15, bold=True)
+        text(draw, (625, yy), pct(item["firstDayReturn"]), 16, C["red"] if item["firstDayReturn"] >= 0 else C["green"], True)
         fit_text(draw, item.get("sponsors") or "—", (760, yy - 15, 990, yy + 15), 12, C["muted"], max_lines=1)
     y += 270
     rr(draw, (58, y, 1022, y + 190), 24, C["white"], C["line"])
@@ -152,25 +153,26 @@ def generate(report, site_url, output):
     rr(draw, (622, y + 60, 998, y + 164), 16, "#fafbfc", C["line"])
     text(draw, (644, y + 88), "年内涨幅前五", 14, C["muted"], True)
     for idx, item in enumerate(report["issuance"]["annual"]["topPerformers"][:5]):
-        text(draw, (644, y + 111 + idx * 16), f"{idx + 1}  {item['name'][:22]}", 11, bold=True)
+        text(draw, (644, y + 111 + idx * 16), f"{idx + 1}  {(item.get('shortName') or item['name'])[:16]} · {item.get('industry', '其他')}", 11, bold=True)
         text(draw, (980, y + 111 + idx * 16), pct(item["latestReturn"]), 11, C["ruby"], True, "ra")
     y += 240
 
     section("02", "联交所审核动态", "有效申请及本周文件节点")
     rr(draw, (58, y, 508, y + 350), 24, C["white"], C["line"])
-    text(draw, (84, y + 40), "有效申请", 18, C["ruby"], True)
-    text(draw, (280, y + 175), report["hkex"]["activeCount"], 58, C["blue"], True, "mm")
-    text(draw, (280, y + 215), "家", 18, C["muted"], True, "mm")
-    text(draw, (110, y + 290), f"主板 {report['hkex']['mainBoardCount']}家", 18, C["blue"], True)
-    text(draw, (318, y + 290), f"GEM {report['hkex']['gemCount']}家", 18, C["red"], True)
+    text(draw, (84, y + 40), "官方审核工作量", 18, C["ruby"], True)
+    text(draw, (280, y + 175), report["hkex"]["officialWorkload"]["underProcessing"], 58, C["blue"], True, "mm")
+    text(draw, (280, y + 215), "宗处理中", 15, C["muted"], True, "mm")
+    text(draw, (90, y + 278), f"公开可见 {report['hkex']['activeCount']}家", 15, C["blue"], True)
+    text(draw, (90, y + 310), f"年内处理 {report['hkex']['officialWorkload']['processed']}宗", 15, C["ruby"], True)
+    text(draw, (310, y + 310), f"批准待上市 {report['hkex']['officialWorkload']['approvedPending']}宗", 15, C["muted"], True)
     for box_y, number, title_value, records in (
-        (y, len(report["hkex"]["weeklyPhips"]), "本周聆讯后资料集", report["hkex"]["weeklyPhips"]),
+        (y, len(report["hkex"]["weeklyPhips"]), "本周通过聆讯", report["hkex"]["weeklyPhips"]),
         (y + 180, len(report["hkex"]["weeklyApplicationProofs"]), "本周申请版本", report["hkex"]["weeklyApplicationProofs"]),
     ):
         rr(draw, (530, box_y, 1022, box_y + 160), 24, C["white"], C["line"])
         text(draw, (562, box_y + 92), number, 50, C["ruby"], True)
         text(draw, (636, box_y + 52), title_value, 19, C["ruby"], True)
-        fit_text(draw, " · ".join(x["company"] for x in records) or "暂无", (636, box_y + 77, 990, box_y + 145), 14, bold=True, max_lines=3)
+        fit_text(draw, " · ".join(f"{x['company']}（{x.get('industry', '其他')}）" for x in records) or "暂无", (636, box_y + 77, 990, box_y + 145), 14, bold=True, max_lines=3)
     y += 410
 
     section("03", "中国证监会备案进度", "最新备案情况表时点数据")
@@ -196,16 +198,34 @@ def generate(report, site_url, output):
     text(draw, (606, y + 42), "本周新增接收", 20, C["ruby"], True)
     text(draw, (996, y + 42), f"{len(report['csrc']['weeklyNewReceived'])}家", 17, C["ruby"], True, "ra")
     for idx, item in enumerate(report["csrc"]["weeklyNewReceived"][:11]):
-        text(draw, (606, y + 88 + idx * 30), item["company"][:26], 13, bold=True)
+        text(draw, (606, y + 88 + idx * 30), item["company"][:21], 13, bold=True)
+        text(draw, (850, y + 88 + idx * 30), item.get("industry", "其他"), 11, C["ruby"], True)
         text(draw, (994, y + 88 + idx * 30), item["receivedOn"], 12, C["muted"], anchor="ra")
     y += 485
 
-    section("04", "严格数据来源", "仅使用港交所、中国证监会官方数据")
-    for idx, item in enumerate(report["sources"][:8]):
-        yy = y + idx * 62
-        rr(draw, (58, yy, 1022, yy + 48), 12, C["white"], C["line"])
-        text(draw, (78, yy + 30), item["label"], 14, bold=True)
-        text(draw, (998, yy + 30), item.get("asOf") or "", 12, C["muted"], anchor="ra")
+    section("04", "IPO发行窗口观察", "排队、行情、估值和市场情绪")
+    decision = report["decision"]
+    market = decision["market"]
+    valuation = decision["valuation"]
+    sentiment = decision["sentiment"]
+    congestion = decision["congestion"]
+    rr(draw, (58, y, 1022, y + 82), 18, C["ruby"])
+    text(draw, (82, y + 29), "本周窗口变化", 13, "#efcbd1", True)
+    fit_text(draw, decision["windowSummary"], (82, y + 43, 980, y + 76), 18, C["white"], True, max_lines=1)
+    cards = [
+        ("申报拥挤度", f"{congestion['underProcessing']}宗 · {congestion['label']}", f"公开{congestion['publicVisible']}家 · 新申请/上市{congestion['newApplicationToListingRatio']:.1f}x · {congestion['medianApplicationToHearingBundleDays']}天"),
+        ("二级市场", f"恒指 {pct(market['hsiWeeklyReturn'])}", f"国企指数{pct(market['hsceiWeeklyReturn'])} · 成交额{pct(market['turnoverWeeklyChange'])}"),
+        ("估值水平", f"可选消费 {valuation['consumerDiscretionaryPe']:.1f}x", f"恒指{valuation['hsiPe']:.1f}x · 恒科{valuation['hstechPe']:.1f}x"),
+        ("市场情绪", f"新股中位数 {pct(sentiment['weeklyIpoMedianReturn'])}", f"上涨比例{sentiment['weeklyIpoPositiveRatio']*100:.0f}% · 涨跌比{market['advanceDeclineRatio']:.2f}"),
+    ]
+    for idx, (label, value, detail) in enumerate(cards):
+        col, row = idx % 2, idx // 2
+        x1 = 58 + col * 490
+        yy = y + 104 + row * 132
+        rr(draw, (x1, yy, x1 + 472, yy + 112), 17, C["white"], C["line"])
+        text(draw, (x1 + 20, yy + 29), label, 13, C["muted"], True)
+        text(draw, (x1 + 20, yy + 67), value, 24, C["ruby"], True)
+        text(draw, (x1 + 20, yy + 94), detail, 12, C["muted"])
     draw.rectangle((0, 3290, W, H), fill=C["ink"])
     text(draw, (58, 3333), "港股市场审核动态周报 · VIVAIA THEME", 15, C["white"], True)
     text(draw, (58, 3365), "仅供信息参考，不构成投资建议", 12, "#aab4c5")

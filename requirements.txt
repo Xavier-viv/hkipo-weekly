@@ -2,4 +2,5 @@ lxml>=5.2,<7
 openpyxl>=3.1,<4
 Pillow>=10.4,<13
 qrcode[pil]>=7.4,<9
-
+pypdf>=5,<7
+opencc-python-reimplemented>=0.1.7,<0.2

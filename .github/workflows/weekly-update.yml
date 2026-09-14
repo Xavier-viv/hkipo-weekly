@@ -10,6 +10,8 @@ on:
   schedule:
     # Saturday 10:30 Beijing time. Covers the preceding Saturday-Friday week.
     - cron: "30 2 * * 6"
+    # Sunday retry for late official publications or transient source failures.
+    - cron: "30 2 * * 0"
 
 permissions:
   contents: write
@@ -21,6 +23,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
