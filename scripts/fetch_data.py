@@ -667,8 +667,7 @@ def build_report(as_of: date) -> dict[str, Any]:
     csrc = read_csrc_table(csrc_bytes)
     new_received = [
         record for record in csrc["records"]
-        if record["status"] == "已接收"
-        and record["receivedOn"]
+        if record["receivedOn"]
         and week_start <= date.fromisoformat(record["receivedOn"]) <= as_of
     ]
 

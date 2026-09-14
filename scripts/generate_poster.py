@@ -197,7 +197,7 @@ def generate(report, site_url, output):
         rr(draw, (190, yy - 19, 190 + 280 * value / maximum, yy + 5), 12, C["ruby"])
         text(draw, (526, yy), f"{value}项", 16, C["ruby"], True, "ra")
     rr(draw, (580, y, 1022, y + 430), 24, C["white"], C["line"])
-    text(draw, (606, y + 42), "报告期接收且当前仍为已接收", 17, C["ruby"], True)
+    text(draw, (606, y + 42), "本周新增已接收", 20, C["ruby"], True)
     text(draw, (996, y + 42), f"{len(report['csrc']['weeklyNewReceived'])}项", 17, C["ruby"], True, "ra")
     for idx, item in enumerate(report["csrc"]["weeklyNewReceived"][:11]):
         text(draw, (606, y + 88 + idx * 30), item["company"][:21], 13, bold=True)

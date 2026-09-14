@@ -38,7 +38,7 @@ function render(report) {
 
   const statuses=csrc.statusCounts||{};$('csrc-total').textContent=`${csrc.recordCount}项`;$('csrc-accepted').textContent=`${statuses['已接收']||0}项`;$('csrc-consulting').textContent=`${statuses['征求意见']||0}项`;$('csrc-supplement').textContent=`${statuses['补充材料']||0}项`;
   const max=Math.max(1,...Object.values(statuses));$('status-bars').innerHTML=Object.entries(statuses).sort((a,b)=>b[1]-a[1]).map(([label,count])=>`<div class="status-row"><span>${safe(label)}</span><div class="status-track"><i style="width:${count/max*100}%"></i></div><b>${count}项</b></div>`).join('');
-  $('received-count').textContent=`${csrc.weeklyNewReceived.length}项`;$('received-list').innerHTML=csrc.weeklyNewReceived.length?csrc.weeklyNewReceived.map(item=>`<div class="received-item"><strong>${safe(item.company)}</strong><div>${industry(item.industry)}<span>${item.receivedOn}</span></div></div>`).join(''):'<div class="received-item"><strong>报告期内无此类记录</strong></div>';
+  $('received-count').textContent=`${csrc.weeklyNewReceived.length}项`;$('received-list').innerHTML=csrc.weeklyNewReceived.length?csrc.weeklyNewReceived.map(item=>`<div class="received-item"><strong>${safe(item.company)}</strong><div>${industry(item.industry)}<span>${item.receivedOn}</span></div></div>`).join(''):'<div class="received-item"><strong>本周暂无新增已接收</strong></div>';
 
   const decision=report.decision,congestion=decision.congestion,market=decision.market,valuation=decision.valuation,sentiment=decision.sentiment;
   $('window-summary').textContent=decision.windowSummary;$('window-as-of').textContent=`截至 ${market.asOf}`;
