@@ -164,3 +164,102 @@
   .decision-lines { grid-template-columns: 1fr 1fr; gap: 4px 7px; }
   .decision-lines div:last-child { grid-column: 1/-1; }
 }
+/* Readability corrections: full names, no label collisions. */
+@media (max-width: 700px) {
+  .mobile-jump-nav { grid-template-columns: repeat(4,1fr); }
+
+  .company-full-name {
+    display: block;
+    max-width: none;
+    margin-top: 3px;
+    overflow: visible;
+    font-size: 8px;
+    line-height: 1.35;
+    text-overflow: clip;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .responsive-table td { white-space: normal; overflow-wrap: anywhere; }
+  .sponsor-cell {
+    max-width: none;
+    overflow: visible;
+    line-height: 1.35;
+    text-overflow: clip;
+    white-space: normal !important;
+  }
+
+  .ranking-card { min-height: 0 !important; overflow: visible; }
+  .ranking-card ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-top: 8px;
+    overflow: visible;
+  }
+  .ranking-card li {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: minmax(0,1fr) auto;
+    gap: 4px;
+    align-items: start;
+    margin: 0;
+    padding: 6px;
+    border-radius: 8px;
+    background: #faf7f5;
+  }
+  .ranking-card li > span { display: grid; min-width: 0; gap: 3px; }
+  .ranking-card li > span b {
+    overflow: visible;
+    line-height: 1.3;
+    text-overflow: clip;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .ranking-card li > strong { white-space: nowrap; }
+
+  .donut { width: 106px; height: 106px; }
+  .donut::before { width: 77px; height: 77px; }
+  .donut > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.05;
+  }
+  .donut strong { font-size: 23px; line-height: 1; }
+  .donut span { margin-top: 3px; font-size: 8px; line-height: 1; }
+  .donut small { margin-top: 4px; font-size: 7px; line-height: 1; white-space: nowrap; }
+
+  .tag-list { grid-template-columns: 1fr; gap: 5px; }
+  .tag-list .event-tag {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) auto;
+    gap: 5px 8px;
+    padding: 7px 8px;
+  }
+  .event-tag b {
+    grid-column: 1/-1;
+    overflow: visible;
+    font-size: 10px;
+    line-height: 1.35;
+    text-overflow: clip;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .event-tag .industry-tag { grid-column: 1; grid-row: 2; justify-self: start; }
+  .event-tag small {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    font-size: 8px;
+    white-space: nowrap;
+  }
+
+  .received-list { grid-template-columns: 1fr 1fr; }
+  .received-item strong {
+    overflow: visible;
+    line-height: 1.35;
+    text-overflow: clip;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}

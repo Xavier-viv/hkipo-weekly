@@ -47,17 +47,7 @@ function render(report) {
   $('consumer-pe').textContent=`可选消费 ${valuation.consumerDiscretionaryPe.toFixed(1)}x`;$('hsi-pe').textContent=`${valuation.hsiPe.toFixed(1)}x`;$('hstech-pe').textContent=`${valuation.hstechPe.toFixed(1)}x`;$('consumer-return').textContent=pct(valuation.consumerDiscretionaryOneMonthReturn);$('valuation-date').textContent=`估值数据截至 ${valuation.asOf}`;
   $('sentiment-label').textContent=sentiment.label;$('ipo-median').textContent=`新股中位数 ${pct(sentiment.weeklyIpoMedianReturn)}`;$('ipo-positive').textContent=sentiment.weeklyIpoCount?`${Math.round(sentiment.weeklyIpoPositiveRatio*sentiment.weeklyIpoCount)}/${sentiment.weeklyIpoCount}`:'—';$('market-breadth').textContent=`${market.advances.toLocaleString('zh-CN')} / ${market.declines.toLocaleString('zh-CN')}`;$('breadth-ratio').textContent=market.advanceDeclineRatio?.toFixed(2)??'—';}
 
-function renderHistory(data){
-  const reports=data?.reports||[];
-  $('history-list').innerHTML=reports.length?reports.map(item=>`<article class="history-card"><a href="archive/${safe(item.file)}" target="_blank" rel="noopener"><img src="archive/${safe(item.file)}" alt="港股IPO周报 ${safe(item.date)}" loading="lazy"></a><footer><strong>截至 ${safe(item.date)}</strong><a href="archive/${safe(item.file)}" download>下载长图</a></footer></article>`).join(''):'<p class="history-empty">暂无历史周报</p>';
-}
-
-async function init(){
-  try{
-    const [reportResponse,historyResponse]=await Promise.all([fetch(`data/report.json?v=${Date.now()}`),fetch(`archive/index.json?v=${Date.now()}`)]);
-    if(!reportResponse.ok)throw new Error(`数据文件 HTTP ${reportResponse.status}`);
-    const report=await reportResponse.json();render(report);
-    if(historyResponse.ok)renderHistory(await historyResponse.json());else renderHistory({reports:[]});
-  }catch(error){document.body.innerHTML=`<main class="load-error"><h1>数据加载失败</h1><p>${safe(error.message)}</p></main>`;}
-}
-init();
+fetch(`data/report.json?v=${Date.now()}`)
+  .then(response=>{if(!response.ok)throw new Error(`数据文件 HTTP ${response.status}`);return response.json();})
+  .then(render)
+  .catch(error=>{document.body.innerHTML=`<main class="load-error"><h1>数据加载失败</h1><p>${safe(error.message)}</p></main>`;});
