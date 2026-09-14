@@ -15,7 +15,7 @@
   .period-row strong { font-size: 17px; }
   .period-row span { font-size: 10px; }
   .hero-footer { gap: 12px; margin-top: 14px; padding-top: 12px; }
-  .weekly-totals { display: grid; width: 100%; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+  .weekly-totals { display: grid; width: 100%; grid-template-columns: repeat(3, 1fr); gap: 4px; }
   .weekly-totals span { text-align: center; font-size: 9px; white-space: nowrap; }
   .weekly-totals strong { display: block; margin: 0 0 1px; font-size: 18px; }
   .hero-actions { width: 100%; flex-direction: row; }
@@ -321,4 +321,16 @@
 
   .site-footer strong { font-size: 11px; }
   .site-footer p { font-size: 9px; }
+}
+/* Keep the CSRC scope visible on mobile because it is an independent regulatory dataset. */
+@media (max-width: 700px) {
+  #csrc .section-heading { align-items: flex-start; }
+  #csrc .section-heading p {
+    display: block;
+    margin-top: 3px;
+    color: #8b1a2b;
+    font-size: 10px;
+    font-weight: 750;
+    line-height: 1.35;
+  }
 }

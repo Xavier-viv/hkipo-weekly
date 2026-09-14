@@ -15,7 +15,7 @@ function render(report) {
   const {meta,issuance,hkex,csrc}=report;
   $('report-period').textContent=period(meta.weekStart,meta.weekEnd);
   $('as-of').textContent=`数据截至 ${meta.asOf}`;
-  $('weekly-totals').innerHTML=`<span>本周<strong>${issuance.weekly.count}</strong>上市</span><span><strong>${hkex.weeklyPhips.length}</strong>通过聆讯</span><span><strong>${hkex.weeklyApplicationProofs.length}</strong>申请版本</span><span><strong>${csrc.weeklyNewReceived.length}</strong>材料接收</span>`;
+  $('weekly-totals').innerHTML=`<span>本周<strong>${issuance.weekly.count}</strong>上市</span><span><strong>${hkex.weeklyPhips.length}</strong>通过聆讯</span><span><strong>${hkex.weeklyApplicationProofs.length}</strong>申请版本</span>`;
   $('weekly-listing-count').textContent=`${issuance.weekly.count}家`;
   $('weekly-listings').innerHTML=issuance.weekly.companies.length?issuance.weekly.companies.map(item=>`<tr>
     <td data-label="公司"><strong>${safe(item.shortName||item.name)}</strong><small class="company-full-name">${safe(item.name)} · ${item.code}</small></td>
@@ -36,9 +36,9 @@ function render(report) {
   $('phip-count').textContent=hkex.weeklyPhips.length;$('a1-count').textContent=hkex.weeklyApplicationProofs.length;
   renderEvents($('phip-list'),hkex.weeklyPhips);renderEvents($('a1-list'),hkex.weeklyApplicationProofs);
 
-  const statuses=csrc.statusCounts||{};$('csrc-total').textContent=`${csrc.recordCount}家`;$('csrc-accepted').textContent=`${statuses['已接收']||0}家`;$('csrc-consulting').textContent=`${statuses['征求意见']||0}家`;$('csrc-supplement').textContent=`${statuses['补充材料']||0}家`;
-  const max=Math.max(1,...Object.values(statuses));$('status-bars').innerHTML=Object.entries(statuses).sort((a,b)=>b[1]-a[1]).map(([label,count])=>`<div class="status-row"><span>${safe(label)}</span><div class="status-track"><i style="width:${count/max*100}%"></i></div><b>${count}家</b></div>`).join('');
-  $('received-count').textContent=`${csrc.weeklyNewReceived.length}家`;$('received-list').innerHTML=csrc.weeklyNewReceived.length?csrc.weeklyNewReceived.map(item=>`<div class="received-item"><strong>${safe(item.company)}</strong><div>${industry(item.industry)}<span>${item.receivedOn}</span></div></div>`).join(''):'<div class="received-item"><strong>本周暂无新增接收</strong></div>';
+  const statuses=csrc.statusCounts||{};$('csrc-total').textContent=`${csrc.recordCount}项`;$('csrc-accepted').textContent=`${statuses['已接收']||0}项`;$('csrc-consulting').textContent=`${statuses['征求意见']||0}项`;$('csrc-supplement').textContent=`${statuses['补充材料']||0}项`;
+  const max=Math.max(1,...Object.values(statuses));$('status-bars').innerHTML=Object.entries(statuses).sort((a,b)=>b[1]-a[1]).map(([label,count])=>`<div class="status-row"><span>${safe(label)}</span><div class="status-track"><i style="width:${count/max*100}%"></i></div><b>${count}项</b></div>`).join('');
+  $('received-count').textContent=`${csrc.weeklyNewReceived.length}项`;$('received-list').innerHTML=csrc.weeklyNewReceived.length?csrc.weeklyNewReceived.map(item=>`<div class="received-item"><strong>${safe(item.company)}</strong><div>${industry(item.industry)}<span>${item.receivedOn}</span></div></div>`).join(''):'<div class="received-item"><strong>报告期内无此类记录</strong></div>';
 
   const decision=report.decision,congestion=decision.congestion,market=decision.market,valuation=decision.valuation,sentiment=decision.sentiment;
   $('window-summary').textContent=decision.windowSummary;$('window-as-of').textContent=`截至 ${market.asOf}`;

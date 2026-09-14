@@ -110,7 +110,7 @@ def generate(report, site_url, output):
     text(draw, (300, 345), f"数据截至 {report['meta']['asOf']}", 20, "#efd6db")
     draw.line((68, 382, 1012, 382), fill="#b96976", width=1)
     weekly = report["issuance"]["weekly"]
-    headline = f"本周 {weekly['count']} 上市   {len(report['hkex']['weeklyPhips'])} 通过聆讯   {len(report['hkex']['weeklyApplicationProofs'])} 申请版本   {len(report['csrc']['weeklyNewReceived'])} 材料接收"
+    headline = f"本周 {weekly['count']} 上市   {len(report['hkex']['weeklyPhips'])} 通过聆讯   {len(report['hkex']['weeklyApplicationProofs'])} 申请版本"
     text(draw, (68, 440), headline, 24, C["white"], True)
     qr = qrcode.make(site_url).convert("RGB").resize((96, 96))
     rr(draw, (852, 388, 1006, 506), 18, C["cream2"])
@@ -179,12 +179,12 @@ def generate(report, site_url, output):
 
     section("03", "中国证监会备案进度", "最新备案情况表时点数据")
     statuses = report["csrc"].get("statusCounts", {})
-    stats = (("在表项目", report["csrc"]["recordCount"]), ("已接收", statuses.get("已接收", 0)), ("征求意见", statuses.get("征求意见", 0)), ("补充材料", statuses.get("补充材料", 0)))
+    stats = (("备案表记录", report["csrc"]["recordCount"]), ("状态：已接收", statuses.get("已接收", 0)), ("状态：征求意见", statuses.get("征求意见", 0)), ("状态：补充材料", statuses.get("补充材料", 0)))
     for idx, (label, value) in enumerate(stats):
         x = 58 + idx * 241
         rr(draw, (x, y, x + 224, y + 104), 17, C["ruby"])
         text(draw, (x + 18, y + 35), label, 14, "#f2cbd1")
-        text(draw, (x + 18, y + 80), f"{value}家", 30, C["white"], True)
+        text(draw, (x + 18, y + 80), f"{value}项", 30, C["white"], True)
     y += 134
     rr(draw, (58, y, 558, y + 430), 24, C["white"], C["line"])
     text(draw, (84, y + 42), "当前状态分布", 20, C["ruby"], True)
@@ -195,10 +195,10 @@ def generate(report, site_url, output):
         text(draw, (84, yy), label, 16, bold=True)
         rr(draw, (190, yy - 19, 470, yy + 5), 12, "#f0e5e7")
         rr(draw, (190, yy - 19, 190 + 280 * value / maximum, yy + 5), 12, C["ruby"])
-        text(draw, (526, yy), f"{value}家", 16, C["ruby"], True, "ra")
+        text(draw, (526, yy), f"{value}项", 16, C["ruby"], True, "ra")
     rr(draw, (580, y, 1022, y + 430), 24, C["white"], C["line"])
-    text(draw, (606, y + 42), "本周新增接收", 20, C["ruby"], True)
-    text(draw, (996, y + 42), f"{len(report['csrc']['weeklyNewReceived'])}家", 17, C["ruby"], True, "ra")
+    text(draw, (606, y + 42), "报告期接收且当前仍为已接收", 17, C["ruby"], True)
+    text(draw, (996, y + 42), f"{len(report['csrc']['weeklyNewReceived'])}项", 17, C["ruby"], True, "ra")
     for idx, item in enumerate(report["csrc"]["weeklyNewReceived"][:11]):
         text(draw, (606, y + 88 + idx * 30), item["company"][:21], 13, bold=True)
         text(draw, (850, y + 88 + idx * 30), item.get("industry", "其他"), 11, C["ruby"], True)
