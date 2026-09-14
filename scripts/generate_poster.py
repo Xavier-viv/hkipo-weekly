@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import shutil
 from pathlib import Path
 
 import qrcode
@@ -130,17 +131,18 @@ def generate(report, site_url, output):
     rr(draw, (58, y, 1022, y + 240), 24, C["white"], C["line"])
     text(draw, (84, y + 39), "本周新上市", 20, C["ruby"], True)
     text(draw, (988, y + 39), f"{weekly['count']}家", 18, C["ruby"], True, "ra")
-    for label, x in zip(("公司", "行业", "募资额", "首日涨跌", "保荐人"), (84, 350, 490, 625, 760)):
+    for label, x in zip(("公司", "行业", "募资额", "发行市盈率", "首日涨跌", "保荐人"), (84, 315, 430, 555, 665, 775)):
         text(draw, (x, y + 72), label, 13, C["muted"], True)
     for idx, item in enumerate(weekly["companies"]):
         yy = y + 112 + idx * 50
         if idx % 2 == 0:
             rr(draw, (72, yy - 28, 1008, yy + 14), 10, "#fffbfb")
-        fit_text(draw, item.get("shortName") or item["name"], (84, yy - 15, 330, yy + 15), 14, bold=True, max_lines=1)
-        text(draw, (350, yy), item.get("industry", "其他"), 12, C["ruby"], True)
-        text(draw, (490, yy), money(item["fundraisingHkd100m"]), 15, bold=True)
-        text(draw, (625, yy), pct(item["firstDayReturn"]), 16, C["red"] if item["firstDayReturn"] >= 0 else C["green"], True)
-        fit_text(draw, item.get("sponsors") or "—", (760, yy - 15, 990, yy + 15), 12, C["muted"], max_lines=1)
+        fit_text(draw, item.get("shortName") or item["name"], (84, yy - 15, 295, yy + 15), 14, bold=True, max_lines=1)
+        text(draw, (315, yy), item.get("industry", "其他"), 12, C["ruby"], True)
+        text(draw, (430, yy), money(item["fundraisingHkd100m"]), 14, bold=True)
+        text(draw, (555, yy), item.get("issuePeDisplay") or "待核验", 14, C["ruby"], True)
+        text(draw, (665, yy), pct(item["firstDayReturn"]), 15, C["red"] if item["firstDayReturn"] >= 0 else C["green"], True)
+        fit_text(draw, item.get("sponsors") or "—", (775, yy - 15, 990, yy + 15), 11, C["muted"], max_lines=1)
     y += 270
     rr(draw, (58, y, 1022, y + 190), 24, C["white"], C["line"])
     text(draw, (84, y + 38), "年内概览", 20, C["ruby"], True)
@@ -239,10 +241,24 @@ def main():
     parser.add_argument("--input", default=str(ROOT / "data" / "report.json"))
     parser.add_argument("--output", default=str(ROOT / "poster.png"))
     parser.add_argument("--site-url", required=True, help="Canonical URL encoded in the QR code")
+    parser.add_argument("--archive-dir", default=str(ROOT / "archive"))
     args = parser.parse_args()
     report = json.loads(Path(args.input).read_text(encoding="utf-8"))
-    generate(report, args.site_url, Path(args.output))
-    print(json.dumps({"output": args.output, "siteUrl": args.site_url}, ensure_ascii=False))
+    output_path = Path(args.output)
+    generate(report, args.site_url, output_path)
+    archive_dir = Path(args.archive_dir)
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    archive_path = archive_dir / f"{report['meta']['asOf']}.png"
+    if output_path.resolve() != archive_path.resolve():
+        shutil.copy2(output_path, archive_path)
+    entries = []
+    for image_path in sorted(archive_dir.glob("????-??-??.png"), reverse=True):
+        entries.append({"date": image_path.stem, "file": image_path.name})
+    (archive_dir / "index.json").write_text(
+        json.dumps({"reports": entries}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(json.dumps({"output": args.output, "archive": str(archive_path), "siteUrl": args.site_url}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

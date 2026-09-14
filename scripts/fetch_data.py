@@ -38,6 +38,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 REPORT_PATH = DATA_DIR / "report.json"
 HISTORY_DIR = DATA_DIR / "history"
+ISSUE_PE_PATH = DATA_DIR / "issue_pe.json"
 
 HKEX_NLR = "https://www2.hkexnews.hk/-/media/HKEXnews/Homepage/New-Listings/New-Listing-Information/New-Listing-Report/Main/NLR{year}_Eng.xlsx"
 HKEX_NLR_CHI = "https://www2.hkexnews.hk/-/media/HKEXnews/Homepage/New-Listings/New-Listing-Information/New-Listing-Report/Main/NLR{year}_Chi.xlsx"
@@ -189,8 +190,8 @@ class Listing:
     funds_hkd: float
     offer_price: float
 
-    def public(self) -> dict[str, Any]:
-        return {
+    def public(self, issue_pe_records: dict[str, Any] | None = None) -> dict[str, Any]:
+        item = {
             "code": f"{int(self.code):04d}.HK",
             "stockCode": f"{int(self.code):04d}",
             "name": self.name,
@@ -202,6 +203,25 @@ class Listing:
             "fundraisingHkd100m": round(self.funds_hkd / 100_000_000, 6),
             "offerPrice": self.offer_price,
         }
+        pe = (issue_pe_records or {}).get(self.code)
+        if pe:
+            item.update({
+                "issuePe": pe.get("value"),
+                "issuePeDisplay": pe.get("display"),
+                "issuePeFiscalYear": pe.get("fiscalYear"),
+                "issuePeBasis": pe.get("basis"),
+            })
+        return item
+
+
+def read_issue_pe_records() -> dict[str, Any]:
+    if not ISSUE_PE_PATH.exists():
+        raise RuntimeError("Missing data/issue_pe.json")
+    payload = json.loads(ISSUE_PE_PATH.read_text(encoding="utf-8"))
+    records = payload.get("records")
+    if not isinstance(records, dict):
+        raise RuntimeError("Invalid issue P/E data file")
+    return records
 
 
 def read_hkex_listings(year: int, as_of: date) -> tuple[list[Listing], str]:
@@ -591,6 +611,7 @@ def build_report(as_of: date) -> dict[str, Any]:
     week_start = as_of - timedelta(days=6)
     listings, nlr_label = read_hkex_listings(as_of.year, as_of)
     weekly_listings = [x for x in listings if week_start <= x.listing_date <= as_of]
+    issue_pe_records = read_issue_pe_records()
 
     latest_text, market_date, market_url = quote_text_for_day(as_of)
     market_now = parse_market_highlights(latest_text)
@@ -603,7 +624,7 @@ def build_report(as_of: date) -> dict[str, Any]:
     public_listings = []
     returns = []
     for listing in listings:
-        item = listing.public()
+        item = listing.public(issue_pe_records)
         quote = latest_quotes.get(listing.code)
         if quote and listing.offer_price:
             item["latestClose"] = quote["close"]
@@ -624,7 +645,7 @@ def build_report(as_of: date) -> dict[str, Any]:
         first_day_quotes[listing_day] = parse_quotes(quote_text)
         first_day_sources.append(source(quote_url, f"HKEX 每日报价 {listing_day}", "本周新股首日收市价", listing_day.isoformat()))
     for listing in weekly_listings:
-        item = listing.public()
+        item = listing.public(issue_pe_records)
         quote = first_day_quotes[listing.listing_date].get(listing.code)
         if not quote:
             raise RuntimeError(f"Missing first-day quote for {listing.code}")
@@ -773,6 +794,11 @@ def validate_report(report: dict[str, Any]) -> None:
     for item in weekly["companies"]:
         if item["offerPrice"] <= 0 or item["fundraisingHkd100m"] <= 0:
             raise RuntimeError(f"Invalid listing economics for {item['stockCode']}")
+        if not item.get("issuePeDisplay"):
+            raise RuntimeError(
+                f"Missing verified issue P/E for {item['stockCode']}; "
+                "update data/issue_pe.json from the final HKEX prospectus"
+            )
 
 
 def write_report(report: dict[str, Any], output: Path) -> None:

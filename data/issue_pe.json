@@ -1,0 +1,26 @@
+{
+  "methodology": "最终发售价（按招股章程披露汇率折算人民币）÷（最近完整年度归母净利润÷发行后总股本）；最近年度亏损则记为NM。",
+  "records": {
+    "03231": {
+      "value": null,
+      "display": "NM（亏损）",
+      "fiscalYear": 2025,
+      "basis": "2025年度归母净亏损人民币1.108亿元",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0831/2026083100010_c.pdf"
+    },
+    "09976": {
+      "value": 65.9,
+      "display": "65.9x",
+      "fiscalYear": 2025,
+      "basis": "按2025年度归母净利润、最终发售价、招股章程汇率及发行后股本计算",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0831/2026083100048_c.pdf"
+    },
+    "02041": {
+      "value": 146.9,
+      "display": "146.9x",
+      "fiscalYear": 2025,
+      "basis": "按2025年度归母净利润、最终发售价、招股章程汇率及发行后股本计算",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082800010_c.pdf"
+    }
+  }
+}

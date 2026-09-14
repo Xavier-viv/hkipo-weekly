@@ -58,7 +58,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/report.json data/history poster.png
+          git add data/report.json data/history poster.png archive
           if ! git diff --cached --quiet; then
             REPORT_DATE=$(python -c "import json; print(json.load(open('data/report.json', encoding='utf-8'))['meta']['asOf'])")
             git commit -m "Update IPO weekly report ${REPORT_DATE}"

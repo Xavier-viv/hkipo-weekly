@@ -20,9 +20,9 @@ function render(report) {
   $('weekly-listings').innerHTML=issuance.weekly.companies.length?issuance.weekly.companies.map(item=>`<tr>
     <td data-label="公司"><strong>${safe(item.shortName||item.name)}</strong><small class="company-full-name">${safe(item.name)} · ${item.code}</small></td>
     <td data-label="行业">${industry(item.industry)}</td>
-    <td data-label="上市日">${item.listedOn}</td><td data-label="发行价">HK$${item.offerPrice.toFixed(2)}</td><td data-label="募资额">${money(item.fundraisingHkd100m)}</td>
+    <td data-label="上市日">${item.listedOn}</td><td data-label="发行价">HK$${item.offerPrice.toFixed(2)}</td><td data-label="发行市盈率">${safe(item.issuePeDisplay||'待核验')}</td><td data-label="募资额">${money(item.fundraisingHkd100m)}</td>
     <td data-label="首日收市">HK$${item.firstDayClose.toFixed(2)}</td><td data-label="首日涨跌" class="${item.firstDayReturn>=0?'positive':'negative'}">${pct(item.firstDayReturn)}</td>
-    <td data-label="保荐人" class="sponsor-cell">${safe(item.sponsors||'—')}</td></tr>`).join(''):'<tr><td colspan="8">本周无新上市公司</td></tr>';
+    <td data-label="保荐人" class="sponsor-cell">${safe(item.sponsors||'—')}</td></tr>`).join(''):'<tr><td colspan="9">本周无新上市公司</td></tr>';
   $('annual-funds').textContent=money(issuance.annual.fundraisingHkd100m);
   $('annual-count').textContent=`${issuance.annual.count}家`;
   $('return-universe').textContent=`${issuance.annual.returnUniverse}家`;
@@ -47,5 +47,17 @@ function render(report) {
   $('consumer-pe').textContent=`可选消费 ${valuation.consumerDiscretionaryPe.toFixed(1)}x`;$('hsi-pe').textContent=`${valuation.hsiPe.toFixed(1)}x`;$('hstech-pe').textContent=`${valuation.hstechPe.toFixed(1)}x`;$('consumer-return').textContent=pct(valuation.consumerDiscretionaryOneMonthReturn);$('valuation-date').textContent=`估值数据截至 ${valuation.asOf}`;
   $('sentiment-label').textContent=sentiment.label;$('ipo-median').textContent=`新股中位数 ${pct(sentiment.weeklyIpoMedianReturn)}`;$('ipo-positive').textContent=sentiment.weeklyIpoCount?`${Math.round(sentiment.weeklyIpoPositiveRatio*sentiment.weeklyIpoCount)}/${sentiment.weeklyIpoCount}`:'—';$('market-breadth').textContent=`${market.advances.toLocaleString('zh-CN')} / ${market.declines.toLocaleString('zh-CN')}`;$('breadth-ratio').textContent=market.advanceDeclineRatio?.toFixed(2)??'—';}
 
-fetch(`data/report.json?v=${Date.now()}`).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}).then(render).catch(error=>{document.body.innerHTML=`<main class="load-error"><h1>数据加载失败</h1><p>${safe(error.message)}</p></main>`;});
+function renderHistory(data){
+  const reports=data?.reports||[];
+  $('history-list').innerHTML=reports.length?reports.map(item=>`<article class="history-card"><a href="archive/${safe(item.file)}" target="_blank" rel="noopener"><img src="archive/${safe(item.file)}" alt="港股IPO周报 ${safe(item.date)}" loading="lazy"></a><footer><strong>截至 ${safe(item.date)}</strong><a href="archive/${safe(item.file)}" download>下载长图</a></footer></article>`).join(''):'<p class="history-empty">暂无历史周报</p>';
+}
 
+async function init(){
+  try{
+    const [reportResponse,historyResponse]=await Promise.all([fetch(`data/report.json?v=${Date.now()}`),fetch(`archive/index.json?v=${Date.now()}`)]);
+    if(!reportResponse.ok)throw new Error(`数据文件 HTTP ${reportResponse.status}`);
+    const report=await reportResponse.json();render(report);
+    if(historyResponse.ok)renderHistory(await historyResponse.json());else renderHistory({reports:[]});
+  }catch(error){document.body.innerHTML=`<main class="load-error"><h1>数据加载失败</h1><p>${safe(error.message)}</p></main>`;}
+}
+init();

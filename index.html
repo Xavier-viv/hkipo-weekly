@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/overrides.css">
   <link rel="stylesheet" href="assets/decision.css">
+  <link rel="stylesheet" href="assets/history.css">
 </head>
 <body>
   <header class="hero">
@@ -46,11 +47,12 @@
       <div class="table-card">
         <div class="table-scroll">
           <table class="responsive-table">
-            <thead><tr><th>公司</th><th>行业</th><th>上市日</th><th>发行价</th><th>募资额</th><th>首日收市</th><th>首日涨跌</th><th>保荐人</th></tr></thead>
+            <thead><tr><th>公司</th><th>行业</th><th>上市日</th><th>发行价</th><th>发行市盈率</th><th>募资额</th><th>首日收市</th><th>首日涨跌</th><th>保荐人</th></tr></thead>
             <tbody id="weekly-listings"></tbody>
           </table>
         </div>
       </div>
+      <p class="method-note">发行市盈率按最终发售价、招股章程披露汇率、最近完整年度归母净利润及发行后总股本计算；NM表示最近年度亏损，不适用市盈率。</p>
       <div class="annual-grid">
         <article class="money-card"><span>年内累计募资</span><strong id="annual-funds">—</strong><small>IPO及介绍上市口径</small></article>
         <article class="metric-card"><span>年内 IPO / 介绍上市</span><strong id="annual-count">—</strong><small>不含 GEM 转主板</small></article>
@@ -138,6 +140,15 @@
         </article>
       </div>
       <p class="decision-note">拥挤度和窗口判断属于内部计算指标，用于观察趋势，不构成对具体申报或发行时间的建议。估值采用恒生指数公司最新月度指数基本面数据。</p>
+    </section>
+
+    <section class="history-section" id="history">
+      <div class="section-heading">
+        <b>05</b>
+        <div><h2>历史周报</h2><p>按数据截止日期保存，旧版本不会被覆盖</p></div>
+      </div>
+      <div id="history-list" class="history-grid"><p class="history-empty">正在读取历史周报</p></div>
+      <p class="history-more">每周更新后，当前长图会同时保存到历史目录。</p>
     </section>
   </main>
 
