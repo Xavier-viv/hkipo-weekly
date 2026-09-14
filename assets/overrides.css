@@ -6,3 +6,5 @@
 @media(max-width:700px){.hero-topline{align-items:flex-start;flex-direction:column}.data-status{align-self:flex-start}.responsive-table thead{display:none}.responsive-table,.responsive-table tbody,.responsive-table tr,.responsive-table td{display:block;width:100%}.responsive-table tr{margin:12px;border:1px solid #e4e7ec;border-radius:16px;background:#fff;box-shadow:0 8px 22px rgba(28,34,48,.05)}.responsive-table td{display:grid;grid-template-columns:95px 1fr;gap:10px;padding:11px 14px;border-bottom:1px solid #edf0f3;white-space:normal}.responsive-table td:last-child{border-bottom:0}.responsive-table td::before{color:#7b8493;font-size:11px;font-weight:700;content:attr(data-label)}.company-full-name,.sponsor-cell{max-width:none}.tag-list{grid-template-columns:1fr}.event-card{grid-template-columns:60px 1fr}.event-card>strong{font-size:40px}}
 
 .pending-dot{background:#d3a44b}
+
+.donut small{display:block;margin-top:4px;color:#8a94a4;font-size:10px;font-weight:600}

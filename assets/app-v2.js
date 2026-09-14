@@ -30,6 +30,7 @@ function render(report) {
   $('top-performers').innerHTML=issuance.annual.topPerformers.map(item=>`<li><span><b>${safe(item.shortName||item.name)}</b>${industry(item.industry)}</span><strong>${pct(item.latestReturn)}</strong></li>`).join('');
 
   const workload=hkex.officialWorkload;
+  $('workload-as-of').textContent=`截至 ${workload.asOf}`;
   $('active-total').textContent=workload.underProcessing;$('public-visible').textContent=`${hkex.activeCount}家`;$('ytd-processed').textContent=`${workload.processed}宗`;$('approved-pending').textContent=`${workload.approvedPending}宗`;
   const visibleRate=workload.underProcessing?Math.min(100,hkex.activeCount/workload.underProcessing*100):0;$('pipeline-donut').style.background=`conic-gradient(${palette.blue} 0 ${visibleRate}%,#eadde0 ${visibleRate}% 100%)`;
   $('phip-count').textContent=hkex.weeklyPhips.length;$('a1-count').textContent=hkex.weeklyApplicationProofs.length;
