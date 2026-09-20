@@ -218,7 +218,7 @@ def generate(report, site_url, output):
         ("申报拥挤度", f"{congestion['underProcessing']}宗 · {congestion['label']}", f"公开{congestion['publicVisible']}宗 · 年内新申请/上市{congestion['newApplicationToListingRatio']:.1f}x · {congestion['medianApplicationToHearingBundleDays']}天"),
         ("二级市场", f"恒指 {pct(market['hsiWeeklyReturn'])}", f"国企指数{pct(market['hsceiWeeklyReturn'])} · 周五成交额环比{pct(market['turnoverWeeklyChange'])}"),
         ("估值水平", f"可选消费 {valuation['consumerDiscretionaryPe']:.1f}x", f"恒指{valuation['hsiPe']:.1f}x · 恒科{valuation['hstechPe']:.1f}x"),
-        ("市场情绪", f"新股中位数 {pct(sentiment['weeklyIpoMedianReturn'])}", f"上涨比例{sentiment['weeklyIpoPositiveRatio']*100:.0f}% · 涨跌证券比{market['advanceDeclineRatio']:.2f}"),
+        ("市场情绪", f"新股中位数 {pct(sentiment['weeklyIpoMedianReturn'])}", (f"上涨比例{sentiment['weeklyIpoPositiveRatio']*100:.0f}% · 涨跌证券比{market['advanceDeclineRatio']:.2f}" if sentiment.get('weeklyIpoPositiveRatio') is not None else "上涨比例— · 涨跌证券比—")),
     ]
     for idx, (label, value, detail) in enumerate(cards):
         col, row = idx % 2, idx // 2
