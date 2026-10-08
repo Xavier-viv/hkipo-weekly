@@ -21,6 +21,7 @@ import re
 import ssl
 import statistics
 import sys
+import time
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -68,13 +69,22 @@ OPENER = build_opener(HttpsOnlyRedirect())
 SSL_CONTEXT = ssl.create_default_context()
 
 
-def fetch(url: str, *, timeout: int = 60, referer: str | None = None) -> bytes:
+def fetch(url: str, *, timeout: int = 60, referer: str | None = None, attempts: int = 1) -> bytes:
     headers = {"User-Agent": USER_AGENT, "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.7"}
     if referer:
         headers["Referer"] = referer
     req = Request(url, headers=headers)
-    with OPENER.open(req, timeout=timeout) as resp:
-        return resp.read()
+    last_error: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            with OPENER.open(req, timeout=timeout) as resp:
+                return resp.read()
+        except Exception as exc:
+            last_error = exc
+            if attempt + 1 < attempts:
+                time.sleep(3 * (attempt + 1))
+    assert last_error is not None
+    raise last_error
 
 
 def fetch_json(url: str) -> dict[str, Any]:
@@ -530,13 +540,13 @@ def discover_csrc_table(as_of: date) -> tuple[str, str]:
 
 
 def download_csrc_xlsx(page_url: str) -> tuple[bytes, str]:
-    page = fetch(page_url)
+    page = fetch(page_url, attempts=3)
     doc = html.fromstring(page.decode("utf-8", errors="replace"))
     links = doc.xpath('//a[contains(translate(@href,"XLSX","xlsx"),".xlsx")]/@href')
     if not links:
         raise RuntimeError("CSRC filing page did not contain an XLSX link")
     xlsx_url = quote(urljoin(page_url, links[0]), safe=":/%?=&")
-    payload = fetch(xlsx_url, referer=page_url)
+    payload = fetch(xlsx_url, referer=page_url, attempts=3)
     if not payload.startswith(b"PK"):
         raise RuntimeError("CSRC filing table did not return a valid XLSX file")
     return payload, xlsx_url
