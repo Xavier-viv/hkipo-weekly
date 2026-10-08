@@ -42,6 +42,13 @@
       "fiscalYear": 2025,
       "basis": "2025年度归母净亏损人民币4,548.7万元",
       "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0921/2026092100017.pdf"
+    },
+    "03228": {
+      "value": 52.7,
+      "display": "52.7x",
+      "fiscalYear": 2025,
+      "basis": "按2025年度归母净利润人民币12.310亿元、最终发售价HK$69.88、招股章程汇率HK$1=RMB0.86384及发行后1,074,268,341股计算",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0921/2026092100105_c.htm"
     }
   }
 }
