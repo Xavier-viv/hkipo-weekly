@@ -44,6 +44,8 @@ ISSUE_PE_PATH = DATA_DIR / "issue_pe.json"
 HKEX_NLR = "https://www2.hkexnews.hk/-/media/HKEXnews/Homepage/New-Listings/New-Listing-Information/New-Listing-Report/Main/NLR{year}_Eng.xlsx"
 HKEX_NLR_CHI = "https://www2.hkexnews.hk/-/media/HKEXnews/Homepage/New-Listings/New-Listing-Information/New-Listing-Report/Main/NLR{year}_Chi.xlsx"
 HKEX_JSON = "https://www1.hkexnews.hk/ncms/json/eds/{name}.json"
+HKEX_ACTIVE_STOCKS = "https://www1.hkexnews.hk/ncms/script/eds/activestock_sehk_c.json"
+HKEX_TITLE_SEARCH = "https://www1.hkexnews.hk/search/titlesearch.xhtml"
 HKEX_QUOTE = "https://www.hkex.com.hk/eng/stat/smstat/dayquot/d{stamp}e.htm"
 CSRC_API = "https://neris.csrc.gov.cn/portal/rest/announce/get-all"
 HSI_FACTSHEET = "https://origin-www.hsi.com.hk/static/uploads/contents/en/dl_centre/factsheets/hsie.pdf"
@@ -231,6 +233,210 @@ def read_issue_pe_records() -> dict[str, Any]:
     records = payload.get("records")
     if not isinstance(records, dict):
         raise RuntimeError("Invalid issue P/E data file")
+    return records
+
+
+def write_issue_pe_records(payload: dict[str, Any]) -> None:
+    ISSUE_PE_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def hkex_active_stock_ids() -> dict[str, str]:
+    rows = json.loads(fetch(HKEX_ACTIVE_STOCKS, attempts=3).decode("utf-8-sig"))
+    return {str(row.get("c", "")).zfill(5): str(row.get("i", "")) for row in rows if row.get("c") and row.get("i")}
+
+
+def discover_listing_documents(listing: Listing, stock_id: str) -> tuple[str, str]:
+    params = {
+        "category": 0,
+        "documentType": -1,
+        "from": (listing.prospectus_date - timedelta(days=14)).strftime("%Y%m%d"),
+        "lang": "EN",
+        "market": "SEHK",
+        "searchType": 0,
+        "stockId": stock_id,
+        "t1code": -2,
+        "t2Gcode": -2,
+        "t2code": -2,
+        "to": (listing.listing_date + timedelta(days=14)).strftime("%Y%m%d"),
+    }
+    page = fetch(f"{HKEX_TITLE_SEARCH}?{urlencode(params)}", attempts=3)
+    doc = html.fromstring(page.decode("utf-8", errors="replace"))
+    prospectus_url = ""
+    allotment_url = ""
+    for row in doc.xpath("//tr"):
+        row_text = re.sub(r"\s+", " ", row.text_content()).strip()
+        hrefs = row.xpath('.//a[contains(@href,".pdf")]/@href')
+        if not hrefs:
+            continue
+        if "Listing Documents" in row_text and re.search(r"Global Offering", row_text, re.I):
+            prospectus_url = urljoin("https://www1.hkexnews.hk/", hrefs[0])
+        if "Allotment Results" in row_text and re.search(r"Offer Price|Allotment Results", row_text, re.I):
+            allotment_url = urljoin("https://www1.hkexnews.hk/", hrefs[0])
+    if not prospectus_url or not allotment_url:
+        raise RuntimeError(f"Unable to locate final HKEX prospectus/allotment result for {listing.code}")
+    return prospectus_url, allotment_url
+
+
+def normalized_pdf_lines(url: str) -> list[str]:
+    text_value = pdf_text(url)
+    cleaned = re.sub(r"/H\d+", " ", text_value)
+    return [re.sub(r"\s+", " ", line).strip() for line in cleaned.splitlines() if line.strip()]
+
+
+def financial_tokens(text_value: str) -> list[float]:
+    tokens = re.findall(r"\(?[\d,]+(?:\.\d+)?\)?", text_value)
+    result = []
+    for token in tokens:
+        negative = token.startswith("(") and token.endswith(")")
+        numeric = token.strip("()").replace(",", "")
+        if not numeric:
+            continue
+        number = float(numeric)
+        result.append(-number if negative else number)
+    return result
+
+
+def latest_full_year_value(values: list[float]) -> float | None:
+    """Pick the third full-year column, tolerating PDF-split first values."""
+    large = [value for value in values if abs(value) >= 10_000]
+    if len(large) >= 5:
+        return large[2]
+    if len(large) == 4:
+        return large[1]
+    if len(large) >= 3:
+        return large[2]
+    return None
+
+
+def extract_latest_full_year_profit(prospectus_url: str, fiscal_year: int) -> float:
+    lines = normalized_pdf_lines(prospectus_url)
+    candidates = (
+        ("profit attributable to ordinary equity holders of the parent, used in the basic", False),
+        ("profit for the year/period attributable to shareholders of the company", False),
+        ("profit attributable to: shareholders of the company", False),
+        ("profit attributable to shareholders of the company", False),
+        ("profit attributable to owners of the parent", False),
+        ("earnings/(loss) for the purpose of basic and diluted earnings/(loss) per share attributable to owners", None),
+        ("loss attributable to ordinary equity holders of the parent", True),
+        ("loss attributable to: owners of the parent", True),
+        ("loss for the year/period attributable to owners", True),
+        ("loss for the purpose of basic and diluted", True),
+    )
+    stop_markers = (
+        "non-controlling interests",
+        "interest on convertible bonds",
+        "number of shares",
+        "shares weighted average",
+        "total comprehensive",
+    )
+    for marker, force_loss in candidates:
+        for index in range(len(lines)):
+            row_text = " ".join(lines[index:index + 6])
+            lowered = row_text.lower()
+            if marker not in lowered:
+                continue
+            tail = row_text[lowered.index(marker) + len(marker):]
+            tail_lower = tail.lower()
+            cut_positions = [tail_lower.index(stop) for stop in stop_markers if stop in tail_lower]
+            if cut_positions:
+                tail = tail[:min(cut_positions)]
+            value = latest_full_year_value(financial_tokens(tail))
+            if value is None:
+                continue
+            if force_loss is True:
+                return -abs(value)
+            if force_loss is False:
+                return value
+            return value
+
+    # Last-resort total profit/loss row. Use only when the attributable row is
+    # absent; this remains safe for wholly owned issuers.
+    for index, line in enumerate(lines):
+        match = re.search(r"(profit|loss) for the year/period", line, re.I)
+        if not match:
+            continue
+        value = latest_full_year_value(financial_tokens(" ".join(lines[index:index + 2])))
+        if value is not None:
+            return -abs(value) if match.group(1).lower() == "loss" else value
+    raise RuntimeError(f"Unable to extract {fiscal_year} attributable profit/loss from {prospectus_url}")
+
+
+def extract_offer_terms(allotment_url: str) -> tuple[float, int]:
+    text_value = " ".join(normalized_pdf_lines(allotment_url))
+    price_match = re.search(r"Final Offer Price\s*:?\s*HK\$\s*([\d,.]+)", text_value, re.I)
+    shares_match = re.search(r"Number of issued [Ss]hares upon Listing.*?([\d,]{6,})\s*(?:Shares)?", text_value, re.I)
+    if not price_match or not shares_match:
+        raise RuntimeError(f"Unable to extract final offer price/issued shares from {allotment_url}")
+    return float(price_match.group(1).replace(",", "")), int(shares_match.group(1).replace(",", ""))
+
+
+def extract_hkd_rmb_rate(prospectus_url: str) -> float:
+    text_value = " ".join(normalized_pdf_lines(prospectus_url))
+    patterns = (
+        r"HK\$\s*1(?:\.00)?\s*(?:=|to)\s*RMB\s*(\d+(?:\.\d+)?)",
+        r"HKD\s*1(?:\.00)?\s*(?:=|to)\s*RMB\s*(\d+(?:\.\d+)?)",
+        r"RMB\s*(\d+(?:\.\d+)?)\s*(?:=|to)\s*HK\$\s*1(?:\.00)?",
+        r"RMB\s*(\d+(?:\.\d+)?)\s*(?:=|to)\s*HKD\s*1(?:\.00)?",
+    )
+    for pattern in patterns:
+        match = re.search(pattern, text_value, re.I)
+        if match:
+            rate = float(match.group(1))
+            if 0.7 <= rate <= 1.1:
+                return rate
+    raise RuntimeError(f"Unable to extract HKD/RMB rate from {prospectus_url}")
+
+
+def derive_issue_pe_record(listing: Listing, stock_id: str) -> dict[str, Any]:
+    prospectus_url, allotment_url = discover_listing_documents(listing, stock_id)
+    fiscal_year = listing.listing_date.year - 1
+    profit_thousand = extract_latest_full_year_profit(prospectus_url, fiscal_year)
+    if profit_thousand <= 0:
+        return {
+            "value": None,
+            "display": "NM（亏损）",
+            "fiscalYear": fiscal_year,
+            "basis": f"{fiscal_year}年度归母净亏损人民币{abs(profit_thousand) / 100000:.3f}亿元（自动核验）",
+            "source": prospectus_url,
+            "allotmentSource": allotment_url,
+            "verifiedBy": "HKEX-auto",
+        }
+    offer_price, issued_shares = extract_offer_terms(allotment_url)
+    exchange_rate = extract_hkd_rmb_rate(prospectus_url)
+    earnings_per_share = profit_thousand * 1000 / issued_shares
+    issue_pe = round(offer_price * exchange_rate / earnings_per_share, 1)
+    if not 0 < issue_pe < 1000:
+        raise RuntimeError(f"Implausible issue P/E {issue_pe} for {listing.code}")
+    return {
+        "value": issue_pe,
+        "display": f"{issue_pe:.1f}x",
+        "fiscalYear": fiscal_year,
+        "basis": (
+            f"按{fiscal_year}年度归母净利润人民币{profit_thousand / 100000:.3f}亿元、"
+            f"最终发售价HK${offer_price:.2f}、招股章程汇率HK$1=RMB{exchange_rate:.5f}及"
+            f"发行后{issued_shares:,}股自动计算"
+        ),
+        "source": prospectus_url,
+        "allotmentSource": allotment_url,
+        "verifiedBy": "HKEX-auto",
+    }
+
+
+def ensure_issue_pe_records(weekly_listings: list[Listing]) -> dict[str, Any]:
+    payload = json.loads(ISSUE_PE_PATH.read_text(encoding="utf-8"))
+    records = payload.get("records")
+    if not isinstance(records, dict):
+        raise RuntimeError("Invalid issue P/E data file")
+    missing = [listing for listing in weekly_listings if listing.code not in records]
+    if not missing:
+        return records
+    stock_ids = hkex_active_stock_ids()
+    for listing in missing:
+        stock_id = stock_ids.get(listing.code)
+        if not stock_id:
+            raise RuntimeError(f"Unable to locate HKEX stock ID for {listing.code}")
+        records[listing.code] = derive_issue_pe_record(listing, stock_id)
+    write_issue_pe_records(payload)
     return records
 
 
@@ -637,7 +843,7 @@ def build_report(as_of: date) -> dict[str, Any]:
     week_start = as_of - timedelta(days=6)
     listings, nlr_label = read_hkex_listings(as_of.year, as_of)
     weekly_listings = [x for x in listings if week_start <= x.listing_date <= as_of]
-    issue_pe_records = read_issue_pe_records()
+    issue_pe_records = ensure_issue_pe_records(weekly_listings)
 
     latest_text, market_date, market_url = quote_text_for_day(as_of)
     market_now = parse_market_highlights(latest_text)
