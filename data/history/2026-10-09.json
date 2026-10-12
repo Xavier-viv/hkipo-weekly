@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "title": "港股市场审核动态周报",
+    "asOf": "2026-10-09",
+    "weekStart": "2026-10-03",
+    "weekEnd": "2026-10-09",
+    "marketDataAsOf": "2026-10-09",
+    "generatedAt": "2026-10-12T02:16:02+00:00",
+    "sourcePolicy": "primary-only",
+    "theme": "VIVAIA"
+  },
+  "issuance": {
+    "annual": {
+      "count": 115,
+      "fundraisingHkd100m": 3903.733991,
+      "returnUniverse": 110,
+      "averageLatestReturn": 0.2816798916843312,
+      "medianLatestReturn": -0.07374429223744289,
+      "topPerformers": [
+        {
+          "code": "2723.HK",
+          "stockCode": "2723",
+          "name": "北京深演智能科技股份有限公司 - H股",
+          "shortName": "深演智能",
+          "industry": "人工智能营销",
+          "prospectusDate": "2026-05-18",
+          "listedOn": "2026-05-27",
+          "sponsors": "ICBC International Capital Limited",
+          "fundraisingHkd100m": 5.03274,
+          "offerPrice": 55.5,
+          "latestClose": 650.0,
+          "latestReturn": 10.711711711711711
+        },
+        {
+          "code": "2797.HK",
+          "stockCode": "2797",
+          "name": "江西齐云山食品股份有限公司 - H 股",
+          "shortName": "齐云山食品",
+          "industry": "食品饮料",
+          "prospectusDate": "2026-06-30",
+          "listedOn": "2026-07-09",
+          "sponsors": "Zhongtai International Capital Limited",
+          "fundraisingHkd100m": 2.0,
+          "offerPrice": 8.0,
+          "latestClose": 92.8,
+          "latestReturn": 10.6
+        },
+        {
+          "code": "2672.HK",
+          "stockCode": "2672",
+          "name": "白鸽在线 (厦门 )数字科技股份有限公司 - H股",
+          "shortName": "白鸽在线 (厦门 )数字科技",
+          "industry": "科技制造",
+          "prospectusDate": "2026-06-18",
+          "listedOn": "2026-06-29",
+          "sponsors": "CMBC International Capital Limited / BOCI Asia Limited",
+          "fundraisingHkd100m": 5.201726,
+          "offerPrice": 15.6,
+          "latestClose": 74.25,
+          "latestReturn": 3.759615384615385
+        },
+        {
+          "code": "6658.HK",
+          "stockCode": "6658",
+          "name": "溜溜梅股份有限公司 - H股",
+          "shortName": "溜溜梅",
+          "industry": "食品饮料",
+          "prospectusDate": "2026-06-05",
+          "listedOn": "2026-06-15",
+          "sponsors": "CITIC Securities (Hong Kong) Limited / Guoyuan Capital (Hong Kong) Limited",
+          "fundraisingHkd100m": 4.996055,
+          "offerPrice": 43.58,
+          "latestClose": 178.0,
+          "latestReturn": 3.0844424047728314
+        },
+        {
+          "code": "1392.HK",
+          "stockCode": "1392",
+          "name": "深圳海清智元科技股份有限公司 - H股",
+          "shortName": "深圳海清智元科技",
+          "industry": "科技制造",
+          "prospectusDate": "2026-06-11",
+          "listedOn": "2026-06-22",
+          "sponsors": "CMBC International Capital Limited / SPDB International Capital Limited",
+          "fundraisingHkd100m": 6.1317,
+          "offerPrice": 7.2,
+          "latestClose": 21.92,
+          "latestReturn": 2.0444444444444447
+        }
+      ],
+      "officialReportLabel": "Year 2026 (up to 9 October 2026) "
+    },
+    "weekly": {
+      "count": 1,
+      "fundraisingHkd100m": 25.068305,
+      "companies": [
+        {
+          "code": "1256.HK",
+          "stockCode": "1256",
+          "name": "北京奕斯伟计算技术股份有限公司 - H 股",
+          "shortName": "北京奕斯伟计算技术股份有限公司 - H 股",
+          "industry": "其他",
+          "prospectusDate": "2026-09-28",
+          "listedOn": "2026-10-09",
+          "sponsors": "CITIC Securities (Hong Kong) Limited / China Securities (International) Corporate Finance Company Limited",
+          "fundraisingHkd100m": 25.068305,
+          "offerPrice": 1.55,
+          "issuePe": null,
+          "issuePeDisplay": "NM（亏损）",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "2025年度归母净亏损人民币15.158亿元",
+          "firstDayClose": 1.535,
+          "firstDayReturn": -0.00967741935483879,
+          "firstDayTurnoverHkd": 260029916,
+          "latestClose": 1.535
+        }
+      ]
+    }
+  },
+  "hkex": {
+    "activeCount": 364,
+    "mainBoardCount": 353,
+    "gemCount": 11,
+    "weeklyApplicationProofs": [
+      {
+        "id": "108926",
+        "company": "Pinnacle Marine Holdings Ltd",
+        "date": "2026-10-08",
+        "board": "主板",
+        "industry": "其他",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108926/documents/sehk26100801297.pdf"
+      }
+    ],
+    "weeklyPhips": [
+      {
+        "id": "108340",
+        "company": "广州天赐高新材料股份有限公司",
+        "date": "2026-10-05",
+        "board": "主板",
+        "industry": "其他",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108340/documents/sehk26100500007_c.pdf"
+      },
+      {
+        "id": "108373",
+        "company": "江苏瘦西湖文化旅游股份有限公司",
+        "date": "2026-10-07",
+        "board": "主板",
+        "industry": "其他",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108373/documents/sehk26100700089.pdf"
+      },
+      {
+        "id": "108374",
+        "company": "常州微亿智造科技股份有限公司",
+        "date": "2026-10-09",
+        "board": "主板",
+        "industry": "科技制造",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108374/documents/sehk26100901431_c.pdf"
+      }
+    ],
+    "officialUpdated": {
+      "mainBoard": "11/10/2026",
+      "gem": "11/09/2026"
+    },
+    "officialWorkload": {
+      "processed": 879,
+      "newApplications": 501,
+      "listedApplications": 118,
+      "approvedPending": 26,
+      "underProcessing": 589,
+      "scope": "Main Board + GEM",
+      "allScopes": {
+        "processed": 933,
+        "newApplications": 554,
+        "listedApplications": 169,
+        "approvedPending": 28,
+        "underProcessing": 590
+      },
+      "byBoard": {
+        "main": {
+          "processed": 861,
+          "newApplications": 489,
+          "listedApplications": 116,
+          "approvedPending": 26,
+          "underProcessing": 577
+        },
+        "gem": {
+          "processed": 18,
+          "newApplications": 12,
+          "listedApplications": 2,
+          "approvedPending": 0,
+          "underProcessing": 12
+        },
+        "others": {
+          "processed": 54,
+          "newApplications": 53,
+          "listedApplications": 51,
+          "approvedPending": 2,
+          "underProcessing": 1
+        }
+      },
+      "listedCompanies": 118,
+      "medianApplicationToHearingBundleDays": 110,
+      "asOf": "2026-09-30"
+    }
+  },
+  "decision": {
+    "windowSummary": "恒指周涨1.0%，成交额增加43.5%；1只新股首日0涨1跌，申请版本1宗、上市1宗",
+    "congestion": {
+      "label": "高位",
+      "underProcessing": 589,
+      "publicVisible": 364,
+      "ytdProcessed": 879,
+      "ytdNewApplications": 501,
+      "approvedPending": 26,
+      "medianApplicationToHearingBundleDays": 110,
+      "newApplicationToListingRatio": 4.245762711864407,
+      "officialAsOf": "2026-09-30",
+      "weeklyApplicationProofs": 1,
+      "weeklyPhips": 3,
+      "weeklyListings": 1
+    },
+    "market": {
+      "label": "震荡",
+      "asOf": "2026-10-09",
+      "comparisonDate": "2026-10-02",
+      "hsiClose": 24211.35,
+      "hsiWeeklyReturn": 0.00997234723924989,
+      "hsceiClose": 8147.87,
+      "hsceiWeeklyReturn": 0.01461047451354447,
+      "turnoverHkd": 209199247143,
+      "turnoverWeeklyChange": 0.4347950381596304,
+      "advances": 5798,
+      "declines": 5358,
+      "advanceDeclineRatio": 1.0821201941022769
+    },
+    "valuation": {
+      "asOf": "2026-08-31",
+      "hsiDividendYield": 2.93,
+      "hsiPe": 14.16,
+      "hsiVolatility1y": 18.75,
+      "hstechDividendYield": 1.03,
+      "hstechPe": 30.78,
+      "hstechVolatility1y": 27.98,
+      "consumerDiscretionaryOneMonthReturn": -0.0556,
+      "consumerDiscretionaryDividendYield": 1.71,
+      "consumerDiscretionaryPe": 20.05
+    },
+    "sentiment": {
+      "label": "分化",
+      "weeklyIpoMedianReturn": -0.00967741935483879,
+      "weeklyIpoAverageReturn": -0.00967741935483879,
+      "weeklyIpoPositiveRatio": 0.0,
+      "weeklyIpoCount": 1
+    }
+  },
+  "csrc": {
+    "officialTitle": "境内企业境外发行证券和上市备案情况表（首次公开发行及全流通）（截至2026年9月30日）",
+    "recordCount": 266,
+    "receivedCount": 74,
+    "statusCounts": {
+      "补充材料": 89,
+      "征求意见": 103,
+      "已接收": 74
+    },
+    "weeklyNewReceived": []
+  }
+}

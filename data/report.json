@@ -1,36 +1,22 @@
 {
   "meta": {
     "title": "港股市场审核动态周报",
-    "asOf": "2026-10-02",
-    "weekStart": "2026-09-26",
-    "weekEnd": "2026-10-02",
-    "marketDataAsOf": "2026-10-02",
-    "generatedAt": "2026-10-08T03:53:10+00:00",
+    "asOf": "2026-10-09",
+    "weekStart": "2026-10-03",
+    "weekEnd": "2026-10-09",
+    "marketDataAsOf": "2026-10-09",
+    "generatedAt": "2026-10-12T02:16:02+00:00",
     "sourcePolicy": "primary-only",
     "theme": "VIVAIA"
   },
   "issuance": {
     "annual": {
-      "count": 113,
-      "fundraisingHkd100m": 3871.845677,
+      "count": 115,
+      "fundraisingHkd100m": 3903.733991,
       "returnUniverse": 110,
-      "averageLatestReturn": 0.35956450483067415,
-      "medianLatestReturn": -0.06380653492144778,
+      "averageLatestReturn": 0.2816798916843312,
+      "medianLatestReturn": -0.07374429223744289,
       "topPerformers": [
-        {
-          "code": "2797.HK",
-          "stockCode": "2797",
-          "name": "江西齐云山食品股份有限公司 - H 股",
-          "shortName": "齐云山食品",
-          "industry": "食品饮料",
-          "prospectusDate": "2026-06-30",
-          "listedOn": "2026-07-09",
-          "sponsors": "Zhongtai International Capital Limited",
-          "fundraisingHkd100m": 2.0,
-          "offerPrice": 8.0,
-          "latestClose": 102.9,
-          "latestReturn": 11.8625
-        },
         {
           "code": "2723.HK",
           "stockCode": "2723",
@@ -42,36 +28,22 @@
           "sponsors": "ICBC International Capital Limited",
           "fundraisingHkd100m": 5.03274,
           "offerPrice": 55.5,
-          "latestClose": 696.5,
-          "latestReturn": 11.54954954954955
+          "latestClose": 650.0,
+          "latestReturn": 10.711711711711711
         },
         {
-          "code": "2513.HK",
-          "stockCode": "2513",
-          "name": "北京智谱华章科技股份有限公司 - H股",
-          "shortName": "智谱",
-          "industry": "人工智能",
-          "prospectusDate": "2025-12-30",
-          "listedOn": "2026-01-08",
-          "sponsors": "China International Capital Corporation Hong Kong Securities Limited",
-          "fundraisingHkd100m": 50.003649,
-          "offerPrice": 116.2,
-          "latestClose": 626.5,
-          "latestReturn": 4.3915662650602405
-        },
-        {
-          "code": "6658.HK",
-          "stockCode": "6658",
-          "name": "溜溜梅股份有限公司 - H股",
-          "shortName": "溜溜梅",
+          "code": "2797.HK",
+          "stockCode": "2797",
+          "name": "江西齐云山食品股份有限公司 - H 股",
+          "shortName": "齐云山食品",
           "industry": "食品饮料",
-          "prospectusDate": "2026-06-05",
-          "listedOn": "2026-06-15",
-          "sponsors": "CITIC Securities (Hong Kong) Limited / Guoyuan Capital (Hong Kong) Limited",
-          "fundraisingHkd100m": 4.996055,
-          "offerPrice": 43.58,
-          "latestClose": 170.0,
-          "latestReturn": 2.900871959614502
+          "prospectusDate": "2026-06-30",
+          "listedOn": "2026-07-09",
+          "sponsors": "Zhongtai International Capital Limited",
+          "fundraisingHkd100m": 2.0,
+          "offerPrice": 8.0,
+          "latestClose": 92.8,
+          "latestReturn": 10.6
         },
         {
           "code": "2672.HK",
@@ -84,173 +56,109 @@
           "sponsors": "CMBC International Capital Limited / BOCI Asia Limited",
           "fundraisingHkd100m": 5.201726,
           "offerPrice": 15.6,
-          "latestClose": 58.3,
-          "latestReturn": 2.7371794871794872
+          "latestClose": 74.25,
+          "latestReturn": 3.759615384615385
+        },
+        {
+          "code": "6658.HK",
+          "stockCode": "6658",
+          "name": "溜溜梅股份有限公司 - H股",
+          "shortName": "溜溜梅",
+          "industry": "食品饮料",
+          "prospectusDate": "2026-06-05",
+          "listedOn": "2026-06-15",
+          "sponsors": "CITIC Securities (Hong Kong) Limited / Guoyuan Capital (Hong Kong) Limited",
+          "fundraisingHkd100m": 4.996055,
+          "offerPrice": 43.58,
+          "latestClose": 178.0,
+          "latestReturn": 3.0844424047728314
+        },
+        {
+          "code": "1392.HK",
+          "stockCode": "1392",
+          "name": "深圳海清智元科技股份有限公司 - H股",
+          "shortName": "深圳海清智元科技",
+          "industry": "科技制造",
+          "prospectusDate": "2026-06-11",
+          "listedOn": "2026-06-22",
+          "sponsors": "CMBC International Capital Limited / SPDB International Capital Limited",
+          "fundraisingHkd100m": 6.1317,
+          "offerPrice": 7.2,
+          "latestClose": 21.92,
+          "latestReturn": 2.0444444444444447
         }
       ],
-      "officialReportLabel": "Year 2026 (up to 29 September 2026) "
+      "officialReportLabel": "Year 2026 (up to 9 October 2026) "
     },
     "weekly": {
-      "count": 4,
-      "fundraisingHkd100m": 143.525065,
+      "count": 1,
+      "fundraisingHkd100m": 25.068305,
       "companies": [
         {
-          "code": "6731.HK",
-          "stockCode": "6731",
-          "name": "本末动力（北京）科技股份有限公司 - H 股",
-          "shortName": "本末动力（北京）科技股份有限公司 - H 股",
-          "industry": "科技制造",
-          "prospectusDate": "2026-09-21",
-          "listedOn": "2026-09-29",
-          "sponsors": "CITIC Securities (Hong Kong) Limited",
-          "fundraisingHkd100m": 10.8,
-          "offerPrice": 21.6,
-          "issuePe": null,
-          "issuePeDisplay": "NM（亏损）",
-          "issuePeFiscalYear": 2025,
-          "issuePeBasis": "2025年度归母净亏损人民币8.810亿元",
-          "firstDayClose": 23.2,
-          "firstDayReturn": 0.07407407407407396,
-          "firstDayTurnoverHkd": 304428667,
-          "latestClose": 24.5
-        },
-        {
-          "code": "9607.HK",
-          "stockCode": "9607",
-          "name": "彤程新材料集团股份有限公司",
-          "shortName": "彤程新材料集团",
+          "code": "1256.HK",
+          "stockCode": "1256",
+          "name": "北京奕斯伟计算技术股份有限公司 - H 股",
+          "shortName": "北京奕斯伟计算技术股份有限公司 - H 股",
           "industry": "其他",
-          "prospectusDate": "2026-09-21",
-          "listedOn": "2026-09-29",
-          "sponsors": "Haitong International Capital Limited",
-          "fundraisingHkd100m": 29.972228,
-          "offerPrice": 44.0,
-          "issuePe": 46.2,
-          "issuePeDisplay": "46.2x",
-          "issuePeFiscalYear": 2025,
-          "issuePeBasis": "按2025年度归母净利润人民币5.625亿元、最终发售价HK$44.00、招股章程汇率HK$1=RMB0.86384及发行后684,188,336股计算",
-          "firstDayClose": 39.98,
-          "firstDayReturn": -0.09136363636363642,
-          "firstDayTurnoverHkd": 416006170,
-          "latestClose": 40.32
-        },
-        {
-          "code": "3757.HK",
-          "stockCode": "3757",
-          "name": "罗博特科智能科技股份有限公司 - H 股",
-          "shortName": "罗博特科智能科技股份有限公司 - H 股",
-          "industry": "科技制造",
-          "prospectusDate": "2026-09-21",
-          "listedOn": "2026-09-29",
-          "sponsors": "Huatai Financial Holdings (Hong Kong) Limited/ Citigroup Global Markets Asia Limited/ Orient Capital (Hong Kong) Limited",
-          "fundraisingHkd100m": 51.77936,
-          "offerPrice": 436.0,
+          "prospectusDate": "2026-09-28",
+          "listedOn": "2026-10-09",
+          "sponsors": "CITIC Securities (Hong Kong) Limited / China Securities (International) Corporate Finance Company Limited",
+          "fundraisingHkd100m": 25.068305,
+          "offerPrice": 1.55,
           "issuePe": null,
           "issuePeDisplay": "NM（亏损）",
           "issuePeFiscalYear": 2025,
-          "issuePeBasis": "2025年度归母净亏损人民币4,548.7万元",
-          "firstDayClose": 414.4,
-          "firstDayReturn": -0.04954128440366978,
-          "firstDayTurnoverHkd": 1075645231,
-          "latestClose": 397.4
-        },
-        {
-          "code": "3228.HK",
-          "stockCode": "3228",
-          "name": "深圳市景旺电子股份有限公司 - H 股",
-          "shortName": "深圳市景旺电子股份有限公司 - H 股",
-          "industry": "PCB电子",
-          "prospectusDate": "2026-09-21",
-          "listedOn": "2026-09-29",
-          "sponsors": "CITIC Securities (Hong Kong) Limited / Merrill Lynch (Asia Pacific) Limited / Guolian Securities International Capital Market Co., Limited",
-          "fundraisingHkd100m": 50.973477,
-          "offerPrice": 69.88,
-          "issuePe": 52.7,
-          "issuePeDisplay": "52.7x",
-          "issuePeFiscalYear": 2025,
-          "issuePeBasis": "按2025年度归母净利润人民币12.310亿元、最终发售价HK$69.88、招股章程汇率HK$1=RMB0.86384及发行后1,074,268,341股计算",
-          "firstDayClose": 77.05,
-          "firstDayReturn": 0.10260446479679453,
-          "firstDayTurnoverHkd": 1655639019,
-          "latestClose": 74.4
+          "issuePeBasis": "2025年度归母净亏损人民币15.158亿元",
+          "firstDayClose": 1.535,
+          "firstDayReturn": -0.00967741935483879,
+          "firstDayTurnoverHkd": 260029916,
+          "latestClose": 1.535
         }
       ]
     }
   },
   "hkex": {
-    "activeCount": 365,
-    "mainBoardCount": 354,
+    "activeCount": 364,
+    "mainBoardCount": 353,
     "gemCount": 11,
     "weeklyApplicationProofs": [
       {
-        "id": "108906",
-        "company": "上海寅家电子科技股份有限公司",
-        "date": "2026-09-27",
-        "board": "主板",
-        "industry": "科技制造",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108906/documents/sehk26092700111.pdf"
-      },
-      {
-        "id": "108907",
-        "company": "山东力诺医药包装股份有限公司",
-        "date": "2026-09-28",
-        "board": "主板",
-        "industry": "医疗健康",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108907/documents/sehk26092800295_c.pdf"
-      },
-      {
-        "id": "108908",
-        "company": "北京九章云极科技股份有限公司",
-        "date": "2026-09-29",
-        "board": "主板",
-        "industry": "科技制造",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108908/documents/sehk26092900993.pdf"
-      },
-      {
-        "id": "108909",
-        "company": "柳道实业控股有限公司",
-        "date": "2026-09-29",
+        "id": "108926",
+        "company": "Pinnacle Marine Holdings Ltd",
+        "date": "2026-10-08",
         "board": "主板",
         "industry": "其他",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108909/documents/sehk26092902077_c.pdf"
-      },
-      {
-        "id": "108910",
-        "company": "北京百普赛斯生物科技股份有限公司",
-        "date": "2026-09-30",
-        "board": "主板",
-        "industry": "医疗健康",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108910/documents/sehk26093002651_c.pdf"
-      },
-      {
-        "id": "108912",
-        "company": "基汇资本房地产私募债务开放式基金型公司",
-        "date": "2026-10-02",
-        "board": "主板",
-        "industry": "其他",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108912/documents/sehk26100203577.pdf"
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108926/documents/sehk26100801297.pdf"
       }
     ],
     "weeklyPhips": [
       {
-        "id": "108258",
-        "company": "安徽希磁科技股份有限公司",
-        "date": "2026-09-28",
+        "id": "108340",
+        "company": "广州天赐高新材料股份有限公司",
+        "date": "2026-10-05",
         "board": "主板",
-        "industry": "科技制造",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108258/documents/sehk26092802069_c.pdf"
+        "industry": "其他",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108340/documents/sehk26100500007_c.pdf"
       },
       {
-        "id": "108911",
-        "company": "珠海一微科技股份有限公司",
-        "date": "2026-09-30",
+        "id": "108373",
+        "company": "江苏瘦西湖文化旅游股份有限公司",
+        "date": "2026-10-07",
+        "board": "主板",
+        "industry": "其他",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108373/documents/sehk26100700089.pdf"
+      },
+      {
+        "id": "108374",
+        "company": "常州微亿智造科技股份有限公司",
+        "date": "2026-10-09",
         "board": "主板",
         "industry": "科技制造",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108911/documents/sehk26093003029_c.pdf"
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108374/documents/sehk26100901431_c.pdf"
       }
     ],
     "officialUpdated": {
-      "mainBoard": "07/10/2026",
+      "mainBoard": "11/10/2026",
       "gem": "11/09/2026"
     },
     "officialWorkload": {
@@ -296,34 +204,34 @@
     }
   },
   "decision": {
-    "windowSummary": "恒指周跌2.2%，成交额增加42.7%；4只新股首日2涨2跌，申请版本6宗、上市4宗",
+    "windowSummary": "恒指周涨1.0%，成交额增加43.5%；1只新股首日0涨1跌，申请版本1宗、上市1宗",
     "congestion": {
       "label": "高位",
       "underProcessing": 589,
-      "publicVisible": 365,
+      "publicVisible": 364,
       "ytdProcessed": 879,
       "ytdNewApplications": 501,
       "approvedPending": 26,
       "medianApplicationToHearingBundleDays": 110,
       "newApplicationToListingRatio": 4.245762711864407,
       "officialAsOf": "2026-09-30",
-      "weeklyApplicationProofs": 6,
-      "weeklyPhips": 2,
-      "weeklyListings": 4
+      "weeklyApplicationProofs": 1,
+      "weeklyPhips": 3,
+      "weeklyListings": 1
     },
     "market": {
-      "label": "偏弱",
-      "asOf": "2026-10-02",
-      "comparisonDate": "2026-09-25",
-      "hsiClose": 23972.29,
-      "hsiWeeklyReturn": -0.02194198389316393,
-      "hsceiClose": 8030.54,
-      "hsceiWeeklyReturn": -0.01656179813808356,
-      "turnoverHkd": 145804272791,
-      "turnoverWeeklyChange": 0.42661498214061333,
-      "advances": 4545,
-      "declines": 7134,
-      "advanceDeclineRatio": 0.637089991589571
+      "label": "震荡",
+      "asOf": "2026-10-09",
+      "comparisonDate": "2026-10-02",
+      "hsiClose": 24211.35,
+      "hsiWeeklyReturn": 0.00997234723924989,
+      "hsceiClose": 8147.87,
+      "hsceiWeeklyReturn": 0.01461047451354447,
+      "turnoverHkd": 209199247143,
+      "turnoverWeeklyChange": 0.4347950381596304,
+      "advances": 5798,
+      "declines": 5358,
+      "advanceDeclineRatio": 1.0821201941022769
     },
     "valuation": {
       "asOf": "2026-08-31",
@@ -339,10 +247,10 @@
     },
     "sentiment": {
       "label": "分化",
-      "weeklyIpoMedianReturn": 0.012266394835202088,
-      "weeklyIpoAverageReturn": 0.00894340452589057,
-      "weeklyIpoPositiveRatio": 0.5,
-      "weeklyIpoCount": 4
+      "weeklyIpoMedianReturn": -0.00967741935483879,
+      "weeklyIpoAverageReturn": -0.00967741935483879,
+      "weeklyIpoPositiveRatio": 0.0,
+      "weeklyIpoCount": 1
     }
   },
   "csrc": {
@@ -354,25 +262,6 @@
       "征求意见": 103,
       "已接收": 74
     },
-    "weeklyNewReceived": [
-      {
-        "company": "杭州邦顺制药股份有限公司",
-        "industry": "医疗健康",
-        "receivedOn": "2026-09-30",
-        "status": "已接收"
-      },
-      {
-        "company": "四川百利天恒药业股份有限公司",
-        "industry": "医疗健康",
-        "receivedOn": "2026-09-30",
-        "status": "已接收"
-      },
-      {
-        "company": "杭州铜师傅文创（集团）股份有限公司",
-        "industry": "其他",
-        "receivedOn": "2026-09-30",
-        "status": "已接收"
-      }
-    ]
+    "weeklyNewReceived": []
   }
 }
