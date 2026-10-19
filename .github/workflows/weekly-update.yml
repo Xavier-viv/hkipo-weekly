@@ -12,6 +12,14 @@ on:
     - cron: "30 2 * * 6"
     # Sunday retry for late official publications or transient source failures.
     - cron: "30 2 * * 0"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/weekly-update.yml"
+      - "requirements.txt"
+      - "scripts/fetch_data.py"
+      - "scripts/generate_poster.py"
+      - "scripts/verify_issue_pe_auto.py"
 
 permissions:
   contents: write
