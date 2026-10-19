@@ -1,11 +1,11 @@
 {
   "meta": {
     "title": "港股市场审核动态周报",
-    "asOf": "2026-10-09",
-    "weekStart": "2026-10-03",
-    "weekEnd": "2026-10-09",
-    "marketDataAsOf": "2026-10-09",
-    "generatedAt": "2026-10-12T03:01:17+00:00",
+    "asOf": "2026-10-16",
+    "weekStart": "2026-10-10",
+    "weekEnd": "2026-10-16",
+    "marketDataAsOf": "2026-10-16",
+    "generatedAt": "2026-10-19T16:06:11+08:00",
     "sourcePolicy": "primary-only",
     "theme": "VIVAIA"
   },
@@ -14,23 +14,9 @@
       "count": 115,
       "fundraisingHkd100m": 3903.733991,
       "returnUniverse": 110,
-      "averageLatestReturn": 0.2816798916843312,
-      "medianLatestReturn": -0.07374429223744289,
+      "averageLatestReturn": 0.05933259506414244,
+      "medianLatestReturn": -0.1896754764736555,
       "topPerformers": [
-        {
-          "code": "2723.HK",
-          "stockCode": "2723",
-          "name": "北京深演智能科技股份有限公司 - H股",
-          "shortName": "深演智能",
-          "industry": "人工智能营销",
-          "prospectusDate": "2026-05-18",
-          "listedOn": "2026-05-27",
-          "sponsors": "ICBC International Capital Limited",
-          "fundraisingHkd100m": 5.03274,
-          "offerPrice": 55.5,
-          "latestClose": 650.0,
-          "latestReturn": 10.711711711711711
-        },
         {
           "code": "2797.HK",
           "stockCode": "2797",
@@ -42,8 +28,8 @@
           "sponsors": "Zhongtai International Capital Limited",
           "fundraisingHkd100m": 2.0,
           "offerPrice": 8.0,
-          "latestClose": 92.8,
-          "latestReturn": 10.6
+          "latestClose": 88.9,
+          "latestReturn": 10.1125
         },
         {
           "code": "2672.HK",
@@ -56,8 +42,8 @@
           "sponsors": "CMBC International Capital Limited / BOCI Asia Limited",
           "fundraisingHkd100m": 5.201726,
           "offerPrice": 15.6,
-          "latestClose": 74.25,
-          "latestReturn": 3.759615384615385
+          "latestClose": 66.0,
+          "latestReturn": 3.230769230769231
         },
         {
           "code": "6658.HK",
@@ -70,8 +56,8 @@
           "sponsors": "CITIC Securities (Hong Kong) Limited / Guoyuan Capital (Hong Kong) Limited",
           "fundraisingHkd100m": 4.996055,
           "offerPrice": 43.58,
-          "latestClose": 178.0,
-          "latestReturn": 3.0844424047728314
+          "latestClose": 164.3,
+          "latestReturn": 2.7700780174391926
         },
         {
           "code": "1392.HK",
@@ -84,37 +70,34 @@
           "sponsors": "CMBC International Capital Limited / SPDB International Capital Limited",
           "fundraisingHkd100m": 6.1317,
           "offerPrice": 7.2,
-          "latestClose": 21.92,
-          "latestReturn": 2.0444444444444447
+          "latestClose": 17.18,
+          "latestReturn": 1.386111111111111
+        },
+        {
+          "code": "3231.HK",
+          "stockCode": "3231",
+          "name": "优地机器人（无锡）股份有限公司 - H 股",
+          "shortName": "优地机器人",
+          "industry": "机器人",
+          "prospectusDate": "2026-08-31",
+          "listedOn": "2026-09-09",
+          "sponsors": "Silver Nile Global Investments Limited",
+          "fundraisingHkd100m": 6.5025,
+          "offerPrice": 14.45,
+          "issuePe": null,
+          "issuePeDisplay": "NM（亏损）",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "2025年度归母净亏损人民币1.108亿元",
+          "latestClose": 34.38,
+          "latestReturn": 1.37923875432526
         }
       ],
       "officialReportLabel": "Year 2026 (up to 9 October 2026) "
     },
     "weekly": {
-      "count": 1,
-      "fundraisingHkd100m": 25.068305,
-      "companies": [
-        {
-          "code": "1256.HK",
-          "stockCode": "1256",
-          "name": "北京奕斯伟计算技术股份有限公司 - H 股",
-          "shortName": "北京奕斯伟计算技术股份有限公司 - H 股",
-          "industry": "其他",
-          "prospectusDate": "2026-09-28",
-          "listedOn": "2026-10-09",
-          "sponsors": "CITIC Securities (Hong Kong) Limited / China Securities (International) Corporate Finance Company Limited",
-          "fundraisingHkd100m": 25.068305,
-          "offerPrice": 1.55,
-          "issuePe": null,
-          "issuePeDisplay": "NM（亏损）",
-          "issuePeFiscalYear": 2025,
-          "issuePeBasis": "2025年度归母净亏损人民币15.158亿元",
-          "firstDayClose": 1.535,
-          "firstDayReturn": -0.00967741935483879,
-          "firstDayTurnoverHkd": 260029916,
-          "latestClose": 1.535
-        }
-      ]
+      "count": 0,
+      "fundraisingHkd100m": 0,
+      "companies": []
     }
   },
   "hkex": {
@@ -123,42 +106,26 @@
     "gemCount": 11,
     "weeklyApplicationProofs": [
       {
-        "id": "108926",
-        "company": "Pinnacle Marine Holdings Ltd",
-        "date": "2026-10-08",
+        "id": "108946",
+        "company": "山东信得科技股份有限公司",
+        "date": "2026-10-14",
         "board": "主板",
-        "industry": "其他",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108926/documents/sehk26100801297.pdf"
+        "industry": "科技制造",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108946/documents/sehk26101400165_c.pdf"
       }
     ],
     "weeklyPhips": [
       {
-        "id": "108340",
-        "company": "广州天赐高新材料股份有限公司",
-        "date": "2026-10-05",
+        "id": "108550",
+        "company": "苏州东山精密制造股份有限公司",
+        "date": "2026-10-11",
         "board": "主板",
         "industry": "其他",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108340/documents/sehk26100500007_c.pdf"
-      },
-      {
-        "id": "108373",
-        "company": "江苏瘦西湖文化旅游股份有限公司",
-        "date": "2026-10-07",
-        "board": "主板",
-        "industry": "其他",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108373/documents/sehk26100700089.pdf"
-      },
-      {
-        "id": "108374",
-        "company": "常州微亿智造科技股份有限公司",
-        "date": "2026-10-09",
-        "board": "主板",
-        "industry": "科技制造",
-        "document": "https://www1.hkexnews.hk/app/sehk/2026/108374/documents/sehk26100901431_c.pdf"
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108550/documents/sehk26101100053_c.pdf"
       }
     ],
     "officialUpdated": {
-      "mainBoard": "11/10/2026",
+      "mainBoard": "15/10/2026",
       "gem": "11/09/2026"
     },
     "officialWorkload": {
@@ -204,7 +171,7 @@
     }
   },
   "decision": {
-    "windowSummary": "恒指周涨1.0%，成交额增加43.5%；1只新股首日0涨1跌，申请版本1宗、上市1宗",
+    "windowSummary": "恒指周跌0.1%，成交额回落14.8%；0只新股首日0涨0跌，申请版本1宗、上市0宗",
     "congestion": {
       "label": "高位",
       "underProcessing": 589,
@@ -216,52 +183,65 @@
       "newApplicationToListingRatio": 4.245762711864407,
       "officialAsOf": "2026-09-30",
       "weeklyApplicationProofs": 1,
-      "weeklyPhips": 3,
-      "weeklyListings": 1
+      "weeklyPhips": 1,
+      "weeklyListings": 0
     },
     "market": {
       "label": "震荡",
-      "asOf": "2026-10-09",
-      "comparisonDate": "2026-10-02",
-      "hsiClose": 24211.35,
-      "hsiWeeklyReturn": 0.00997234723924989,
-      "hsceiClose": 8147.87,
-      "hsceiWeeklyReturn": 0.01461047451354447,
-      "turnoverHkd": 209199247143,
-      "turnoverWeeklyChange": 0.4347950381596304,
-      "advances": 5798,
-      "declines": 5358,
-      "advanceDeclineRatio": 1.0821201941022769
+      "asOf": "2026-10-16",
+      "comparisonDate": "2026-10-09",
+      "hsiClose": 24186.83,
+      "hsiWeeklyReturn": -0.001012748153242038,
+      "hsceiClose": 8128.25,
+      "hsceiWeeklyReturn": -0.002407991290975464,
+      "turnoverHkd": 178207245132,
+      "turnoverWeeklyChange": -0.14814585823922755,
+      "advances": 4998,
+      "declines": 4496,
+      "advanceDeclineRatio": 1.1116548042704626
     },
     "valuation": {
-      "asOf": "2026-08-31",
-      "hsiDividendYield": 2.93,
-      "hsiPe": 14.16,
-      "hsiVolatility1y": 18.75,
-      "hstechDividendYield": 1.03,
-      "hstechPe": 30.78,
-      "hstechVolatility1y": 27.98,
-      "consumerDiscretionaryOneMonthReturn": -0.0556,
-      "consumerDiscretionaryDividendYield": 1.71,
-      "consumerDiscretionaryPe": 20.05
+      "asOf": "2026-09-30",
+      "hsiDividendYield": 2.97,
+      "hsiPe": 13.79,
+      "hsiVolatility1y": 18.36,
+      "hstechDividendYield": 1.1,
+      "hstechPe": 28.23,
+      "hstechVolatility1y": 27.15,
+      "consumerDiscretionaryOneMonthReturn": -0.0768,
+      "consumerDiscretionaryDividendYield": 1.84,
+      "consumerDiscretionaryPe": 18.37
     },
     "sentiment": {
       "label": "分化",
-      "weeklyIpoMedianReturn": -0.00967741935483879,
-      "weeklyIpoAverageReturn": -0.00967741935483879,
-      "weeklyIpoPositiveRatio": 0.0,
-      "weeklyIpoCount": 1
+      "weeklyIpoMedianReturn": null,
+      "weeklyIpoAverageReturn": null,
+      "weeklyIpoPositiveRatio": null,
+      "weeklyIpoCount": 0
     }
   },
   "csrc": {
-    "officialTitle": "境内企业境外发行证券和上市备案情况表（首次公开发行及全流通）（截至2026年9月30日）",
+    "officialTitle": "境内企业境外发行证券和上市备案情况表（首次公开发行及全流通）（截至2026年10月16日）",
     "recordCount": 266,
-    "receivedCount": 74,
+    "receivedCount": 70,
     "statusCounts": {
       "补充材料": 89,
-      "征求意见": 103,
-      "已接收": 74
+      "征求意见": 107,
+      "已接收": 70
     },
-    "weeklyNewReceived": []
+    "weeklyNewReceived": [
+      {
+        "company": "四川好医生云医疗科技集团股份有限公司",
+        "industry": "医疗健康",
+        "receivedOn": "2026-10-13",
+        "status": "已接收"
+      },
+      {
+        "company": "视觉（中国）文化发展股份有限公司",
+        "industry": "其他",
+        "receivedOn": "2026-10-14",
+        "status": "已接收"
+      }
+    ]
   }
 }

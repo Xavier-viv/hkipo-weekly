@@ -48,9 +48,10 @@ HKEX_ACTIVE_STOCKS = "https://www1.hkexnews.hk/ncms/script/eds/activestock_sehk_
 HKEX_TITLE_SEARCH = "https://www1.hkexnews.hk/search/titlesearch.xhtml"
 HKEX_QUOTE = "https://www.hkex.com.hk/eng/stat/smstat/dayquot/d{stamp}e.htm"
 CSRC_API = "https://neris.csrc.gov.cn/portal/rest/announce/get-all"
-HSI_FACTSHEET = "https://origin-www.hsi.com.hk/static/uploads/contents/en/dl_centre/factsheets/hsie.pdf"
-HSTECH_FACTSHEET = "https://origin-www.hsi.com.hk/static/uploads/contents/en/dl_centre/factsheets/hsteche.pdf"
-INDUSTRY_FACTSHEET = "https://origin-www.hsi.com.hk/static/uploads/contents/en/dl_centre/factsheets/industrye.pdf"
+HSI_GCS_DOWNLOAD = "https://www.hsi.com.hk/api/wsit-hsi-ddoc-ea-public-website-proxy/v1/content/gcs/download?resource="
+HSI_FACTSHEET = HSI_GCS_DOWNLOAD + "%2Fpublic-website%2Fwebapp%2Ffactsheets%2Fen-hk%2Fhsi.pdf"
+HSTECH_FACTSHEET = HSI_GCS_DOWNLOAD + "%2Fpublic-website%2Fwebapp%2Ffactsheets%2Fen-hk%2Fhstech.pdf"
+INDUSTRY_FACTSHEET = HSI_GCS_DOWNLOAD + "%2Fpublic-website%2Fwebapp%2Ffactsheets%2Fen-hk%2Findustry.pdf"
 HKEX_PROGRESS_MAIN = "https://www2.hkexnews.hk/New-Listings/Progress-Report-for-New-Listing-Applications/Main-Board?sc_lang=en"
 HKEX_PROGRESS_GEM = "https://www2.hkexnews.hk/New-Listings/Progress-Report-for-New-Listing-Applications/GEM?sc_lang=en"
 HKEX_PROGRESS_OTHERS = "https://www2.hkexnews.hk/New-Listings/Progress-Report-for-New-Listing-Applications/Others?sc_lang=en"
@@ -541,7 +542,7 @@ def parse_market_highlights(text: str) -> dict[str, Any]:
 
 
 def pdf_text(url: str) -> str:
-    payload = fetch(url, timeout=60)
+    payload = fetch(url, timeout=60, attempts=3)
     if not payload.startswith(b"%PDF"):
         raise RuntimeError(f"Factsheet did not return a PDF: {url}")
     return "\n".join(page.extract_text() or "" for page in PdfReader(io.BytesIO(payload)).pages)
