@@ -110,7 +110,7 @@ def generate(report, site_url, output):
     text(draw, (360, 345), f"数据截至 {report['meta']['asOf']}", 20, "#efd6db")
     draw.line((68, 382, 1012, 382), fill="#b96976", width=1)
     weekly = report["issuance"]["weekly"]
-    headline = f"本周 {weekly['count']} 家上市   {len(report['hkex']['weeklyPhips'])} 宗通过聆讯   {len(report['hkex']['weeklyApplicationProofs'])} 宗申请版本"
+    headline = f"本周 {weekly['count']} 家上市   {len(report['hkex']['weeklyPhips'])} 宗通过聆讯"
     text(draw, (68, 440), headline, 24, C["white"], True)
     qr = qrcode.make(site_url).convert("RGB").resize((96, 96))
     rr(draw, (852, 388, 1006, 506), 18, C["cream2"])

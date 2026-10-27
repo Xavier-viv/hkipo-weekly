@@ -14,7 +14,7 @@ function render(report) {
   const {meta,issuance,hkex,csrc}=report;
   $('report-period').textContent=period(meta.weekStart,meta.weekEnd);
   $('as-of').textContent=`数据截至 ${meta.asOf}`;
-  $('weekly-totals').innerHTML=`<span>本周<strong>${issuance.weekly.count}</strong>上市</span><span><strong>${hkex.weeklyPhips.length}</strong>通过聆讯</span><span><strong>${hkex.weeklyApplicationProofs.length}</strong>申请版本</span>`;
+  $('weekly-totals').innerHTML=`<span>本周<strong>${issuance.weekly.count}</strong>上市</span><span><strong>${hkex.weeklyPhips.length}</strong>通过聆讯</span>`;
   $('weekly-listing-count').textContent=`${issuance.weekly.count}家`;
   $('weekly-listings').innerHTML=issuance.weekly.companies.length?issuance.weekly.companies.map(item=>`<tr>
     <td data-label="公司"><strong>${safe(item.shortName||item.name)}</strong><small class="company-full-name">${safe(item.name)} · ${item.code}</small></td>
