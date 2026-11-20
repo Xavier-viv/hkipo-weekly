@@ -5,14 +5,14 @@
     "weekStart": "2026-11-07",
     "weekEnd": "2026-11-13",
     "marketDataAsOf": "2026-11-13",
-    "generatedAt": "2026-11-20T01:47:12+00:00",
+    "generatedAt": "2026-11-16T18:38:12+08:00",
     "sourcePolicy": "primary-only",
     "theme": "VIVAIA"
   },
   "issuance": {
     "annual": {
       "count": 124,
-      "fundraisingHkd100m": 4096.39395,
+      "fundraisingHkd100m": 4094.099238,
       "returnUniverse": 117,
       "averageLatestReturn": -0.032204612045495365,
       "medianLatestReturn": -0.25823701914783503,
@@ -96,7 +96,7 @@
           "latestReturn": 1.3006134969325154
         }
       ],
-      "officialReportLabel": "Year 2026 (up to 18 November 2026) "
+      "officialReportLabel": "Year 2026 (up to 13 November 2026) "
     },
     "weekly": {
       "count": 7,
@@ -125,7 +125,7 @@
         {
           "code": "2065.HK",
           "stockCode": "2065",
-          "name": "珠海一微科技股份有限公司 - H 股",
+          "name": "珠海一微科技股份有限公司 - P - H 股",
           "shortName": "珠海一微-P",
           "industry": "机器人",
           "prospectusDate": "2026-10-31",
@@ -246,8 +246,8 @@
     }
   },
   "hkex": {
-    "activeCount": 339,
-    "mainBoardCount": 329,
+    "activeCount": 341,
+    "mainBoardCount": 331,
     "gemCount": 10,
     "weeklyApplicationProofs": [
       {
@@ -270,7 +270,7 @@
       }
     ],
     "officialUpdated": {
-      "mainBoard": "19/11/2026",
+      "mainBoard": "13/11/2026",
       "gem": "10/11/2026"
     },
     "officialWorkload": {
@@ -320,7 +320,7 @@
     "congestion": {
       "label": "高位",
       "underProcessing": 610,
-      "publicVisible": 339,
+      "publicVisible": 341,
       "ytdProcessed": 914,
       "ytdNewApplications": 536,
       "approvedPending": 36,

@@ -48,10 +48,20 @@ jobs:
         run: |
           if [ -n "${{ inputs.as_of }}" ]; then
             python scripts/fetch_data.py --as-of "${{ inputs.as_of }}"
+            echo "REPORT_REFRESHED=true" >> "$GITHUB_ENV"
           else
-            python scripts/fetch_data.py
+            TARGET=$(python -c "import sys; from datetime import date; sys.path.insert(0, 'scripts'); from fetch_data import latest_friday; print(latest_friday(date.today()))")
+            CURRENT=$(python -c "import json; print(json.load(open('data/report.json', encoding='utf-8'))['meta']['asOf'])")
+            if [[ "$TARGET" > "$CURRENT" ]]; then
+              python scripts/fetch_data.py --as-of "$TARGET"
+              echo "REPORT_REFRESHED=true" >> "$GITHUB_ENV"
+            else
+              echo "Preserving verified report $CURRENT; latest completed week is $TARGET"
+              echo "REPORT_REFRESHED=false" >> "$GITHUB_ENV"
+            fi
           fi
       - name: Generate poster with this site's QR code
+        if: env.REPORT_REFRESHED == 'true'
         shell: bash
         run: |
           REPO_NAME="${GITHUB_REPOSITORY#*/}"

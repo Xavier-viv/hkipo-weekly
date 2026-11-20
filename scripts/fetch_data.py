@@ -468,6 +468,12 @@ def read_hkex_listings(year: int, as_of: date) -> tuple[list[Listing], str]:
     listings: list[Listing] = []
     current: Listing | None = None
     report_label = str(ws.cell(1, 1).value or "")
+    snapshot_match = re.search(r"\bup to (\d{1,2} [A-Za-z]+ \d{4})\b", report_label, re.I)
+    if not snapshot_match:
+        raise RuntimeError(f"Cannot verify HKEX listing report cutoff: {report_label!r}")
+    snapshot_date = datetime.strptime(snapshot_match.group(1), "%d %B %Y").date()
+    if snapshot_date > as_of:
+        raise RuntimeError(f"HKEX listing report is dated {snapshot_date}, after requested cutoff {as_of}")
     for row in ws.iter_rows(min_row=3, values_only=True):
         ordinal, code, name, prospectus, listed, sponsors, _, _, funds, price, tranche, *_ = row
         if ordinal is not None and code not in (None, '"') and parse_ddmmyyyy(listed):
@@ -702,6 +708,13 @@ def read_hkex_pipeline(as_of: date, week_start: date) -> tuple[dict[str, Any], l
     active_gem = fetch_json(active_gem_url)
     year_main = fetch_json(year_main_url)
     year_gem = fetch_json(year_gem_url)
+    for board, snapshot in (("main board", active_main), ("GEM", active_gem)):
+        updated = parse_ddmmyyyy(snapshot.get("uDate"))
+        if not updated or updated > as_of:
+            raise RuntimeError(
+                f"HKEX {board} active-application snapshot {snapshot.get('uDate')!r} "
+                f"cannot be used for cutoff {as_of}"
+            )
 
     def count_as_of(rows: list[dict[str, Any]]) -> int:
         count = 0
