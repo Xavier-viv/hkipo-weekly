@@ -56,6 +56,69 @@
       "fiscalYear": 2025,
       "basis": "2025年度归母净亏损人民币15.158亿元",
       "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0928/2026092800035.pdf"
+    },
+    "09621": {
+      "value": 22.3,
+      "display": "22.3x",
+      "fiscalYear": 2025,
+      "basis": "按2025年度归母净利润人民币1.541亿元、最终发售价HK$9.78、招股章程汇率HK$1=RMB0.85630及发行后409,540,500股自动计算",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103000021.pdf",
+      "allotmentSource": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1106/2026110601520.pdf",
+      "verifiedBy": "HKEX-auto"
+    },
+    "07672": {
+      "value": null,
+      "display": "NM（亏损）",
+      "fiscalYear": 2025,
+      "basis": "2025年度归母净亏损人民币4.372亿元（自动核验）",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103000027.pdf",
+      "allotmentSource": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1109/2026110901273.pdf",
+      "verifiedBy": "HKEX-auto"
+    },
+    "09917": {
+      "value": null,
+      "display": "NM（亏损）",
+      "fiscalYear": 2025,
+      "basis": "2025年度归母净亏损人民币2.810亿元（自动核验）",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103000023.pdf",
+      "allotmentSource": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1109/2026110901211.pdf",
+      "verifiedBy": "HKEX-auto"
+    },
+    "02206": {
+      "value": 21.1,
+      "display": "21.1x",
+      "fiscalYear": 2025,
+      "basis": "按2025年度归母净利润人民币1.064亿元、最终发售价HK$40.20、招股章程汇率HK$1=RMB0.85619及发行后65,172,741股自动计算",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103000019.pdf",
+      "allotmentSource": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1110/2026111000975.pdf",
+      "verifiedBy": "HKEX-auto"
+    },
+    "02065": {
+      "value": null,
+      "display": "NM（亏损）",
+      "fiscalYear": 2025,
+      "basis": "2025年度归母净亏损人民币1.559亿元（自动核验）",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103002447.pdf",
+      "allotmentSource": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1111/2026111101359.pdf",
+      "verifiedBy": "HKEX-auto"
+    },
+    "02681": {
+      "value": 22.1,
+      "display": "22.1x",
+      "fiscalYear": 2025,
+      "basis": "按2025年度归母净利润人民币13.639亿元、最终发售价HK$72.83、招股章程汇率HK$1=RMB0.85630及发行后482,531,284股自动计算",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1030/2026103000025.pdf",
+      "allotmentSource": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1111/2026111101283.pdf",
+      "verifiedBy": "HKEX-auto"
+    },
+    "06935": {
+      "value": null,
+      "display": "NM（亏损）",
+      "fiscalYear": 2025,
+      "basis": "2025年度归母净亏损人民币2.559亿元（自动核验）",
+      "source": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1105/2026110500055.pdf",
+      "allotmentSource": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1112/2026111201542.pdf",
+      "verifiedBy": "HKEX-auto"
     }
   }
 }

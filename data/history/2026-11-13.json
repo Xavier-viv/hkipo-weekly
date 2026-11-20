@@ -1,0 +1,392 @@
+{
+  "meta": {
+    "title": "港股市场审核动态周报",
+    "asOf": "2026-11-13",
+    "weekStart": "2026-11-07",
+    "weekEnd": "2026-11-13",
+    "marketDataAsOf": "2026-11-13",
+    "generatedAt": "2026-11-16T18:38:12+08:00",
+    "sourcePolicy": "primary-only",
+    "theme": "VIVAIA"
+  },
+  "issuance": {
+    "annual": {
+      "count": 124,
+      "fundraisingHkd100m": 4094.099238,
+      "returnUniverse": 117,
+      "averageLatestReturn": -0.032204612045495365,
+      "medianLatestReturn": -0.25823701914783503,
+      "topPerformers": [
+        {
+          "code": "2797.HK",
+          "stockCode": "2797",
+          "name": "江西齐云山食品股份有限公司 - H 股",
+          "shortName": "齐云山食品",
+          "industry": "食品饮料",
+          "prospectusDate": "2026-06-30",
+          "listedOn": "2026-07-09",
+          "sponsors": "Zhongtai International Capital Limited",
+          "fundraisingHkd100m": 2.0,
+          "offerPrice": 8.0,
+          "latestClose": 80.95,
+          "latestReturn": 9.11875
+        },
+        {
+          "code": "6658.HK",
+          "stockCode": "6658",
+          "name": "溜溜梅股份有限公司 - H股",
+          "shortName": "溜溜梅",
+          "industry": "食品饮料",
+          "prospectusDate": "2026-06-05",
+          "listedOn": "2026-06-15",
+          "sponsors": "CITIC Securities (Hong Kong) Limited / Guoyuan Capital (Hong Kong) Limited",
+          "fundraisingHkd100m": 4.996055,
+          "offerPrice": 43.58,
+          "latestClose": 145.6,
+          "latestReturn": 2.3409821018815973
+        },
+        {
+          "code": "6810.HK",
+          "stockCode": "6810",
+          "name": "上海商米科技集团股份有限公司 - W - H股",
+          "shortName": "上海商米科技集团股份有限公司 - W",
+          "industry": "科技制造",
+          "prospectusDate": "2026-04-21",
+          "listedOn": "2026-04-29",
+          "sponsors": "Deutsche Securities Asia Limited / CITIC Securities (Hong Kong) Limited / ABCI Capital Limited",
+          "fundraisingHkd100m": 10.597022,
+          "offerPrice": 24.86,
+          "latestClose": 81.4,
+          "latestReturn": 2.274336283185841
+        },
+        {
+          "code": "3231.HK",
+          "stockCode": "3231",
+          "name": "优地机器人（无锡）股份有限公司 - H 股",
+          "shortName": "优地机器人",
+          "industry": "机器人",
+          "prospectusDate": "2026-08-31",
+          "listedOn": "2026-09-09",
+          "sponsors": "Silver Nile Global Investments Limited",
+          "fundraisingHkd100m": 6.5025,
+          "offerPrice": 14.45,
+          "issuePe": null,
+          "issuePeDisplay": "NM（亏损）",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "2025年度归母净亏损人民币1.108亿元",
+          "latestClose": 34.48,
+          "latestReturn": 1.3861591695501727
+        },
+        {
+          "code": "9621.HK",
+          "stockCode": "9621",
+          "name": "深圳市远信储能技术股份有限公司 - H 股",
+          "shortName": "远信储能",
+          "industry": "新能源",
+          "prospectusDate": "2026-10-30",
+          "listedOn": "2026-11-09",
+          "sponsors": "CMB International Capital Limited",
+          "fundraisingHkd100m": 5.627461,
+          "offerPrice": 9.78,
+          "issuePe": 22.3,
+          "issuePeDisplay": "22.3x",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "按2025年度归母净利润人民币1.541亿元、最终发售价HK$9.78、招股章程汇率HK$1=RMB0.85630及发行后409,540,500股自动计算",
+          "latestClose": 22.5,
+          "latestReturn": 1.3006134969325154
+        }
+      ],
+      "officialReportLabel": "Year 2026 (up to 13 November 2026) "
+    },
+    "weekly": {
+      "count": 7,
+      "fundraisingHkd100m": 57.174595,
+      "companies": [
+        {
+          "code": "6935.HK",
+          "stockCode": "6935",
+          "name": "成都国星宇航科技股份有限公司 - H 股",
+          "shortName": "国星宇航",
+          "industry": "航空航天",
+          "prospectusDate": "2026-11-05",
+          "listedOn": "2026-11-13",
+          "sponsors": "Guotai Junan Capital Limited",
+          "fundraisingHkd100m": 7.500129,
+          "offerPrice": 24.9,
+          "issuePe": null,
+          "issuePeDisplay": "NM（亏损）",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "2025年度归母净亏损人民币2.559亿元（自动核验）",
+          "firstDayClose": 24.02,
+          "firstDayReturn": -0.03534136546184741,
+          "firstDayTurnoverHkd": 181374415,
+          "latestClose": 24.02
+        },
+        {
+          "code": "2065.HK",
+          "stockCode": "2065",
+          "name": "珠海一微科技股份有限公司 - P - H 股",
+          "shortName": "珠海一微-P",
+          "industry": "机器人",
+          "prospectusDate": "2026-10-31",
+          "listedOn": "2026-11-12",
+          "sponsors": "China Securities (International) Corporate Finance Company Limited / Guotai Junan Capital Limited",
+          "fundraisingHkd100m": 7.097013,
+          "offerPrice": 9.9,
+          "issuePe": null,
+          "issuePeDisplay": "NM（亏损）",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "2025年度归母净亏损人民币1.559亿元（自动核验）",
+          "firstDayClose": 13.68,
+          "firstDayReturn": 0.38181818181818183,
+          "firstDayTurnoverHkd": 242323323,
+          "latestClose": 11.85
+        },
+        {
+          "code": "2681.HK",
+          "stockCode": "2681",
+          "name": "深圳宏芯宇电子股份有限公司 - H 股",
+          "shortName": "宏芯宇",
+          "industry": "半导体",
+          "prospectusDate": "2026-10-30",
+          "listedOn": "2026-11-12",
+          "sponsors": "China Securities (International) Corporate Finance Company Limited",
+          "fundraisingHkd100m": 10.718537,
+          "offerPrice": 72.83,
+          "issuePe": 22.1,
+          "issuePeDisplay": "22.1x",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "按2025年度归母净利润人民币13.639亿元、最终发售价HK$72.83、招股章程汇率HK$1=RMB0.85630及发行后482,531,284股自动计算",
+          "firstDayClose": 72.8,
+          "firstDayReturn": -0.000411918165591163,
+          "firstDayTurnoverHkd": 179778560,
+          "latestClose": 71.65
+        },
+        {
+          "code": "2206.HK",
+          "stockCode": "2206",
+          "name": "四川新荷花中药饮片股份有限公司 - H 股",
+          "shortName": "新荷花",
+          "industry": "医疗健康",
+          "prospectusDate": "2026-10-30",
+          "listedOn": "2026-11-11",
+          "sponsors": "GF Capital (Hong Kong) Limited / ABCI Capital Limited",
+          "fundraisingHkd100m": 2.619955,
+          "offerPrice": 40.2,
+          "issuePe": 21.1,
+          "issuePeDisplay": "21.1x",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "按2025年度归母净利润人民币1.064亿元、最终发售价HK$40.20、招股章程汇率HK$1=RMB0.85619及发行后65,172,741股自动计算",
+          "firstDayClose": 69.0,
+          "firstDayReturn": 0.716417910447761,
+          "firstDayTurnoverHkd": 193742576,
+          "latestClose": 73.7
+        },
+        {
+          "code": "7672.HK",
+          "stockCode": "7672",
+          "name": "江苏芯德半导体科技股份有限公司 - H 股",
+          "shortName": "芯德半导体",
+          "industry": "半导体",
+          "prospectusDate": "2026-10-30",
+          "listedOn": "2026-11-10",
+          "sponsors": "Huatai Financial Holdings (Hong Kong) Limited",
+          "fundraisingHkd100m": 9.46275,
+          "offerPrice": 8.88,
+          "issuePe": null,
+          "issuePeDisplay": "NM（亏损）",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "2025年度归母净亏损人民币4.372亿元（自动核验）",
+          "firstDayClose": 11.4,
+          "firstDayReturn": 0.28378378378378377,
+          "firstDayTurnoverHkd": 244915172,
+          "latestClose": 12.6
+        },
+        {
+          "code": "9917.HK",
+          "stockCode": "9917",
+          "name": "苏州登临科技股份有限公司 - P - H 股",
+          "shortName": "登临科技-P",
+          "industry": "半导体",
+          "prospectusDate": "2026-10-30",
+          "listedOn": "2026-11-10",
+          "sponsors": "CITIC Securities (Hong Kong) Limited / China Securities (International) Corporate Finance Company Limited / BOCI Asia Limited",
+          "fundraisingHkd100m": 14.14875,
+          "offerPrice": 231.0,
+          "issuePe": null,
+          "issuePeDisplay": "NM（亏损）",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "2025年度归母净亏损人民币2.810亿元（自动核验）",
+          "firstDayClose": 213.0,
+          "firstDayReturn": -0.07792207792207795,
+          "firstDayTurnoverHkd": 143393805,
+          "latestClose": 177.3
+        },
+        {
+          "code": "9621.HK",
+          "stockCode": "9621",
+          "name": "深圳市远信储能技术股份有限公司 - H 股",
+          "shortName": "远信储能",
+          "industry": "新能源",
+          "prospectusDate": "2026-10-30",
+          "listedOn": "2026-11-09",
+          "sponsors": "CMB International Capital Limited",
+          "fundraisingHkd100m": 5.627461,
+          "offerPrice": 9.78,
+          "issuePe": 22.3,
+          "issuePeDisplay": "22.3x",
+          "issuePeFiscalYear": 2025,
+          "issuePeBasis": "按2025年度归母净利润人民币1.541亿元、最终发售价HK$9.78、招股章程汇率HK$1=RMB0.85630及发行后409,540,500股自动计算",
+          "firstDayClose": 15.55,
+          "firstDayReturn": 0.5899795501022496,
+          "firstDayTurnoverHkd": 238381303,
+          "latestClose": 22.5
+        }
+      ]
+    }
+  },
+  "hkex": {
+    "activeCount": 341,
+    "mainBoardCount": 331,
+    "gemCount": 10,
+    "weeklyApplicationProofs": [
+      {
+        "id": "109026",
+        "company": "宁波江丰电子材料股份有限公司",
+        "date": "2026-11-12",
+        "board": "主板",
+        "industry": "科技制造",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/109026/documents/sehk26111201124_c.pdf"
+      }
+    ],
+    "weeklyPhips": [
+      {
+        "id": "108706",
+        "company": "Joint Stock Company National Company Kazakhstan Temir Zholy",
+        "date": "2026-11-11",
+        "board": "主板",
+        "industry": "其他",
+        "document": "https://www1.hkexnews.hk/app/sehk/2026/108706/documents/sehk26111101191_c.pdf"
+      }
+    ],
+    "officialUpdated": {
+      "mainBoard": "13/11/2026",
+      "gem": "10/11/2026"
+    },
+    "officialWorkload": {
+      "processed": 914,
+      "newApplications": 536,
+      "listedApplications": 121,
+      "approvedPending": 36,
+      "underProcessing": 610,
+      "scope": "Main Board + GEM",
+      "allScopes": {
+        "processed": 971,
+        "newApplications": 592,
+        "listedApplications": 175,
+        "approvedPending": 38,
+        "underProcessing": 611
+      },
+      "byBoard": {
+        "main": {
+          "processed": 896,
+          "newApplications": 524,
+          "listedApplications": 119,
+          "approvedPending": 36,
+          "underProcessing": 599
+        },
+        "gem": {
+          "processed": 18,
+          "newApplications": 12,
+          "listedApplications": 2,
+          "approvedPending": 0,
+          "underProcessing": 11
+        },
+        "others": {
+          "processed": 57,
+          "newApplications": 56,
+          "listedApplications": 54,
+          "approvedPending": 2,
+          "underProcessing": 1
+        }
+      },
+      "listedCompanies": 121,
+      "medianApplicationToHearingBundleDays": 116,
+      "asOf": "2026-10-30"
+    }
+  },
+  "decision": {
+    "windowSummary": "恒指周跌3.4%，成交额回落20.8%；7只新股首日4涨3跌，申请版本1宗、上市7宗",
+    "congestion": {
+      "label": "高位",
+      "underProcessing": 610,
+      "publicVisible": 341,
+      "ytdProcessed": 914,
+      "ytdNewApplications": 536,
+      "approvedPending": 36,
+      "medianApplicationToHearingBundleDays": 116,
+      "newApplicationToListingRatio": 4.429752066115703,
+      "officialAsOf": "2026-10-30",
+      "weeklyApplicationProofs": 1,
+      "weeklyPhips": 1,
+      "weeklyListings": 7
+    },
+    "market": {
+      "label": "偏弱",
+      "asOf": "2026-11-13",
+      "comparisonDate": "2026-11-06",
+      "hsiClose": 23637.6,
+      "hsiWeeklyReturn": -0.03448512490472544,
+      "hsceiClose": 7937.53,
+      "hsceiWeeklyReturn": -0.0406775359253575,
+      "turnoverHkd": 195857007139,
+      "turnoverWeeklyChange": -0.20842734794625362,
+      "advances": 4873,
+      "declines": 6497,
+      "advanceDeclineRatio": 0.7500384792981376
+    },
+    "valuation": {
+      "asOf": "2026-10-30",
+      "hsiDividendYield": 3.14,
+      "hsiPe": 13.04,
+      "hsiVolatility1y": 18.29,
+      "hstechDividendYield": 1.23,
+      "hstechPe": 25.43,
+      "hstechVolatility1y": 26.93,
+      "consumerDiscretionaryOneMonthReturn": -0.0576,
+      "consumerDiscretionaryDividendYield": 1.95,
+      "consumerDiscretionaryPe": 17.31
+    },
+    "sentiment": {
+      "label": "分化",
+      "weeklyIpoMedianReturn": 0.28378378378378377,
+      "weeklyIpoAverageReturn": 0.26547486637177997,
+      "weeklyIpoPositiveRatio": 0.5714285714285714,
+      "weeklyIpoCount": 7
+    }
+  },
+  "csrc": {
+    "officialTitle": "境内企业境外发行证券和上市备案情况表（首次公开发行及全流通）（截至2026年11月13日）",
+    "recordCount": 278,
+    "receivedCount": 74,
+    "statusCounts": {
+      "补充材料": 78,
+      "征求意见": 126,
+      "已接收": 74
+    },
+    "weeklyNewReceived": [
+      {
+        "company": "数说故事人工智能科技股份有限公司",
+        "industry": "科技制造",
+        "receivedOn": "2026-11-10",
+        "status": "已接收"
+      },
+      {
+        "company": "翱捷科技股份有限公司",
+        "industry": "半导体",
+        "receivedOn": "2026-11-11",
+        "status": "已接收"
+      }
+    ]
+  }
+}

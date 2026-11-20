@@ -128,7 +128,8 @@ def generate(report, site_url, output):
         y += 105
 
     section("01", "发行上市情况", "港交所官方发行和行情数据")
-    rr(draw, (58, y, 1022, y + 240), 24, C["white"], C["line"])
+    listing_table_height = max(240, 104 + 50 * len(weekly["companies"]))
+    rr(draw, (58, y, 1022, y + listing_table_height), 24, C["white"], C["line"])
     text(draw, (84, y + 39), "本周新上市", 20, C["ruby"], True)
     text(draw, (988, y + 39), f"{weekly['count']}家", 18, C["ruby"], True, "ra")
     for label, x in zip(("公司", "行业", "募资额", "发行市盈率", "首日涨跌", "保荐人"), (84, 315, 430, 555, 665, 775)):
@@ -143,16 +144,16 @@ def generate(report, site_url, output):
         text(draw, (555, yy), item.get("issuePeDisplay") or "待核验", 14, C["ruby"], True)
         text(draw, (665, yy), pct(item["firstDayReturn"]), 15, C["red"] if item["firstDayReturn"] >= 0 else C["green"], True)
         fit_text(draw, item.get("sponsors") or "—", (775, yy - 15, 990, yy + 15), 11, C["muted"], max_lines=1)
-    y += 270
-    rr(draw, (58, y, 1022, y + 190), 24, C["white"], C["line"])
+    y += listing_table_height + 30
+    rr(draw, (58, y, 1022, y + 205), 24, C["white"], C["line"])
     text(draw, (84, y + 38), "年内概览", 20, C["ruby"], True)
     rr(draw, (84, y + 60, 362, y + 164), 16, C["ruby"])
-    text(draw, (106, y + 91), "累计募资", 15, "#f0c9cf")
-    text(draw, (106, y + 108), money(report["issuance"]["annual"]["fundraisingHkd100m"]), 25, C["white"], True, "lt")
+    text(draw, (106, y + 73), "累计募资", 15, "#f0c9cf", anchor="lt")
+    text(draw, (106, y + 105), money(report["issuance"]["annual"]["fundraisingHkd100m"]), 25, C["white"], True, "lt")
     rr(draw, (382, y + 60, 602, y + 164), 16, "#fafbfc", C["line"])
-    text(draw, (404, y + 91), "IPO / 介绍上市", 14, C["muted"])
-    text(draw, (404, y + 106), f"{report['issuance']['annual']['count']}家", 30, C["ruby"], True, "lt")
-    rr(draw, (622, y + 60, 998, y + 164), 16, "#fafbfc", C["line"])
+    text(draw, (404, y + 73), "IPO / 介绍上市", 14, C["muted"], anchor="lt")
+    text(draw, (404, y + 102), f"{report['issuance']['annual']['count']}家", 30, C["ruby"], True, "lt")
+    rr(draw, (622, y + 60, 998, y + 185), 16, "#fafbfc", C["line"])
     text(draw, (644, y + 88), "年内涨幅前五", 14, C["muted"], True)
     for idx, item in enumerate(report["issuance"]["annual"]["topPerformers"][:5]):
         text(draw, (644, y + 111 + idx * 16), f"{idx + 1}  {(item.get('shortName') or item['name'])[:16]} · {item.get('industry', '其他')}", 11, bold=True)
@@ -225,15 +226,19 @@ def generate(report, site_url, output):
         x1 = 58 + col * 490
         yy = y + 104 + row * 132
         rr(draw, (x1, yy, x1 + 472, yy + 112), 17, C["white"], C["line"])
-        text(draw, (x1 + 20, yy + 29), label, 13, C["muted"], True)
-        text(draw, (x1 + 20, yy + 42), value, 24, C["ruby"], True, "lt")
+        text(draw, (x1 + 20, yy + 17), label, 13, C["muted"], True, "lt")
+        text(draw, (x1 + 20, yy + 41), value, 24, C["ruby"], True, "lt")
         text(draw, (x1 + 20, yy + 82), detail, 12, C["muted"], anchor="lt")
-    draw.rectangle((0, 3290, W, H), fill=C["ink"])
-    text(draw, (58, 3333), "港股市场审核动态周报", 15, C["white"], True)
-    text(draw, (58, 3365), "仅供信息参考，不构成投资建议", 12, "#aab4c5")
-    text(draw, (1020, 3365), report["meta"]["asOf"], 12, "#aab4c5", anchor="ra")
+    footer_y = y + 104 + 132 + 112 + 45
+    footer_bottom = footer_y + 110
+    if footer_bottom > H:
+        raise RuntimeError(f"Poster content exceeds canvas: {footer_bottom} > {H}")
+    draw.rectangle((0, footer_y, W, footer_bottom), fill=C["ink"])
+    text(draw, (58, footer_y + 43), "港股市场审核动态周报", 15, C["white"], True)
+    text(draw, (58, footer_y + 75), "仅供信息参考，不构成投资建议", 12, "#aab4c5")
+    text(draw, (1020, footer_y + 75), report["meta"]["asOf"], 12, "#aab4c5", anchor="ra")
     output.parent.mkdir(parents=True, exist_ok=True)
-    image.save(output, "PNG", optimize=True)
+    image.crop((0, 0, W, footer_bottom)).save(output, "PNG", optimize=True)
 
 
 def main():

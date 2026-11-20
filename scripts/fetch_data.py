@@ -119,7 +119,11 @@ def as_float(value: Any, default: float = 0.0) -> float:
     except ValueError:
         return default
 def latest_friday(today: date) -> date:
-    return today - timedelta(days=(today.weekday() - 4) % 7)
+    # A Friday is not a completed reporting week until its official closing
+    # data and late issuer documents have been published. The scheduled run is
+    # on Saturday, so a Friday manual/push run keeps the preceding full week.
+    days_since_friday = (today.weekday() - 4) % 7
+    return today - timedelta(days=days_since_friday or 7)
 
 
 def source(url: str, label: str, used_for: str, as_of: str | None = None) -> dict[str, Any]:
@@ -127,6 +131,9 @@ def source(url: str, label: str, used_for: str, as_of: str | None = None) -> dic
 
 
 SHORT_NAME_BY_CODE = {
+    "09621": "远信储能", "07672": "芯德半导体", "09917": "登临科技-P",
+    "02206": "新荷花", "02065": "珠海一微-P", "02681": "宏芯宇",
+    "06935": "国星宇航",
     "02041": "麦科田", "09976": "江波龙", "03231": "优地机器人",
     "02797": "齐云山食品", "02723": "深演智能", "02513": "智谱",
     "02526": "德适-B", "06658": "溜溜梅",
@@ -140,6 +147,9 @@ INDUSTRY_BY_NAME = {
     "翱捷科技": "半导体",
 }
 INDUSTRY_BY_CODE = {
+    "09621": "新能源", "07672": "半导体", "09917": "半导体",
+    "02206": "医疗健康", "02065": "机器人", "02681": "半导体",
+    "06935": "航空航天",
     "02041": "医疗器械", "09976": "半导体存储", "03231": "机器人",
     "02797": "食品饮料", "02723": "人工智能营销", "02513": "人工智能",
     "02526": "生物科技", "06658": "食品饮料",
@@ -317,6 +327,7 @@ def extract_latest_full_year_profit(prospectus_url: str, fiscal_year: int) -> fl
         ("profit attributable to: shareholders of the company", False),
         ("profit attributable to shareholders of the company", False),
         ("profit attributable to owners of the parent", False),
+        ("earnings (loss) for the purpose of basic and diluted earnings (loss) per share", None),
         ("earnings/(loss) for the purpose of basic and diluted earnings/(loss) per share attributable to owners", None),
         ("loss attributable to ordinary equity holders of the parent", True),
         ("loss attributable to: owners of the parent", True),
@@ -332,7 +343,12 @@ def extract_latest_full_year_profit(prospectus_url: str, fiscal_year: int) -> fl
     )
     for marker, force_loss in candidates:
         for index in range(len(lines)):
-            row_text = " ".join(lines[index:index + 6])
+            # HKEX prospectuses sometimes split the earnings-per-share label,
+            # attributable-owner qualifier, year headers and numeric row across
+            # eight or more extracted PDF lines. Keep the window narrow enough
+            # to remain inside the same financial table, but include the value
+            # row when those labels wrap heavily.
+            row_text = " ".join(lines[index:index + 10])
             lowered = row_text.lower()
             if marker not in lowered:
                 continue
